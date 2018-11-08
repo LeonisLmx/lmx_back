@@ -1,29 +1,30 @@
-package com.lmx.blog.controller;
+package com.lmx.blog.task;
 
-import com.lmx.blog.common.Response;
 import com.lmx.blog.service.JuejinCrawerService;
-import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-@RequestMapping("/user")
-@RestController
-public class UserController {
+/**
+ * @author 刘明新
+ * @date 2018/11/8 下午4:46
+ */
+@Component
+public class JuejinTask {
 
-    private static int produceTaskMaxNumber = 10;
+    @Autowired
+    private JuejinCrawerService juejinCrawerService;
 
-    @Autowired private JuejinCrawerService juejinCrawerService;
-
-    @RequestMapping("/test")
-    public Response test(){
+    @Scheduled(cron = "0 0 1 * * ?")
+    public void crawerJuejin(){
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(2,4,3, TimeUnit.SECONDS,
                 new ArrayBlockingQueue<>(6),new ThreadPoolExecutor.DiscardOldestPolicy());
-        for(int i = 1;i <= produceTaskMaxNumber;i++) {
+        for(int i = 1;i <= 10;i++) {
             threadPoolExecutor.execute(new Runnable() {
                 @Override
                 public void run() {
@@ -35,12 +36,5 @@ public class UserController {
                 }
             });
         }
-        return Response.ok(true);
     }
-
-    @RequestMapping("/achieve")
-    public Response achieve(){
-        return Response.ok(true);
-    }
-
 }

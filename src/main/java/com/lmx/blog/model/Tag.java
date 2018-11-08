@@ -5,9 +5,9 @@ import java.util.Date;
 public class Tag {
 
     private Long id;
-    private Long articleDescriptionId;
     private String name;
     private Date createTime;
+    private Long xuehuaId;
 
     public Long getId() {
         return id;
@@ -15,14 +15,6 @@ public class Tag {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Long getArticleDescriptionId() {
-        return articleDescriptionId;
-    }
-
-    public void setArticleDescriptionId(Long articleDescriptionId) {
-        this.articleDescriptionId = articleDescriptionId;
     }
 
     public String getName() {
@@ -39,5 +31,13 @@ public class Tag {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public Long getXuehuaId() {
+        return xuehuaId;
+    }
+
+    public void setXuehuaId(Long xuehuaId) {
+        this.xuehuaId = xuehuaId;
     }
 }

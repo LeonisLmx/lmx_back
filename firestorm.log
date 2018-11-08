@@ -1,0 +1,48 @@
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10001} connected
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10002} connected
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10003} connected
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10004} connected
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10005} connected
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} created. select * from users
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : []
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} Types : []
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} executed. 16.20924 millis. select * from users
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, name, password]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1, test, 123456]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10001} connected
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10002} connected
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10003} connected
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10004} connected
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10005} connected
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} created. select * from users
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : []
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Types : []
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} executed. 16.100354 millis. select * from users
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, name, password]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1, test, 123456]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10001} connected
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10002} connected
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10003} connected
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10004} connected
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10005} connected
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} created. select * from users
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : []
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} Types : []
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} executed. 18.39275 millis. select * from users
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, name, password]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1, test, 123456]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10005} pool-recycle

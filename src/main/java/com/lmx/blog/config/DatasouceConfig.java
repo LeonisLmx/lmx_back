@@ -14,7 +14,6 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 
-@Configuration
 public class DatasouceConfig {
 
     @Value("${spring.datasource.url}")
@@ -65,7 +64,6 @@ public class DatasouceConfig {
     @Value("${spring.datasource.logSlowSql}")
     private String logSlowSql;
 
-    @Bean
     public ServletRegistrationBean druidServlet() {
         ServletRegistrationBean reg = new ServletRegistrationBean();
         reg.setServlet(new StatViewServlet());
@@ -76,7 +74,6 @@ public class DatasouceConfig {
         return reg;
     }
 
-    @Bean
     public FilterRegistrationBean filterRegistrationBean() {
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
         filterRegistrationBean.setFilter(new WebStatFilter());
@@ -86,7 +83,6 @@ public class DatasouceConfig {
         return filterRegistrationBean;
     }
 
-    @Bean
     public DataSource getDataSource() {
         DruidDataSource datasource = new DruidDataSource();
         datasource.setUrl(dbUrl);

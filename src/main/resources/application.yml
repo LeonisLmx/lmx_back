@@ -1,6 +1,7 @@
 server:
   port: 8888
 spring:
+  profiles.active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://101.132.137.156:3306/lmx?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true
@@ -22,3 +23,10 @@ spring:
     # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
     filters: stat,wall,log4j
     logSlowSql: true
+  resources:
+        staticLocations:classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+logging:
+    config: classpath:logback.xml
+mybatis:
+  mapper-locations: classpath:mybatis-config.xml
+  type-aliases-package: com.lmx.log.mapper

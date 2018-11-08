@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+
+    <property name="LOG_DIR" value="/data/log//" />
+    <property name="APP_NAME" value="blog" />
+
+    <!-- 控制台输出日志 -->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8">
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{26} - %msg%n</Pattern>
+        </encoder>
+    </appender>
+
+    <!-- 文件输出日志(Default) -->
+    <appender name="default-log-file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_DIR}/${APP_NAME}(${HOSTNAME})-default-current.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/history/${APP_NAME}(${HOSTNAME})-debug-%d{yyyy-MM-dd}.log.zip</fileNamePattern>
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+        <encoder charset="UTF-8">
+            <Pattern>[%d{HH:mm:ss}] [%thread] |%level| %marker %logger{50} -> %X{rpid} %msg %n%ex</Pattern>
+        </encoder>
+    </appender>
+
+    <!-- MyBatis日志 -->
+    <appender name="mybatis-log-file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_DIR}/${APP_NAME}(${HOSTNAME})-mybatis-current.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/history/${APP_NAME}(${HOSTNAME})-mybatis-%d{yyyy-MM-dd}.log.zip</fileNamePattern>
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+        <encoder charset="UTF-8">
+            <Pattern>[%d{HH:mm:ss}] [%thread] |%level| %marker %logger{50} -> %X{rpid} %msg %n%ex</Pattern>
+        </encoder>
+    </appender>
+
+    <!-- 文件输出日志(ERROR) -->
+    <appender name="error-file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_DIR}/${APP_NAME}(${HOSTNAME})-error-current.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>error</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/history/${APP_NAME}(${HOSTNAME})-error-%d{yyyy-MM}.log.zip</fileNamePattern>
+            <maxHistory>12</maxHistory>
+        </rollingPolicy>
+        <encoder charset="UTF-8">
+            <Pattern>[%d{dd|HH:mm:ss}] [%thread] |%level| %marker %logger{50} -> %X{rpid} %msg %n%ex</Pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.lmx.blog.mapper" level="DEBUG" >
+        <appender-ref ref="mybatis-log-file" />
+    </logger>
+
+    <logger name="search-log" level="ERROR" >
+    </logger>
+
+    <!-- 文件输出SQL语句(Default) -->
+    <logger name="com.lmx.blog.mapper" level="DEBUG" >
+        <appender-ref ref="stdout" />
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="stdout" />
+        <appender-ref ref="default-log-file" />
+        <appender-ref ref="error-file" />
+    </root>
+
+</configuration>

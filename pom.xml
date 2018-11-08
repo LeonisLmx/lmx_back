@@ -59,6 +59,12 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.3.2</version>
         </dependency>
+        <!--分页插件  要用spring-boot的分页插件，自带pagehelper需要额外引依赖-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>4.1.6</version>
+        </dependency>
     </dependencies>
 
     <build>

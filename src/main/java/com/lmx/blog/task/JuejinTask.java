@@ -20,7 +20,7 @@ public class JuejinTask {
     @Autowired
     private JuejinCrawerService juejinCrawerService;
 
-    @Scheduled(cron = "0 0 1 * * ?")
+    @Scheduled(cron = "0 0 * * * ?")
     public void crawerJuejin(){
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(2,4,3, TimeUnit.SECONDS,
                 new ArrayBlockingQueue<>(6),new ThreadPoolExecutor.DiscardOldestPolicy());

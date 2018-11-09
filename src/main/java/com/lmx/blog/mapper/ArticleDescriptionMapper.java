@@ -17,11 +17,11 @@ public interface ArticleDescriptionMapper {
         "insert into article_description (title, type, author, ",
         "create_time, good_num, ",
         "message_num, article_url, ",
-        "authorUrl, modify_time)",
+        "authorUrl,is_origin, modify_time)",
         "values (#{title,jdbcType=VARCHAR},#{type,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, ",
         "#{createTime,jdbcType=TIMESTAMP}, #{goodNum,jdbcType=INTEGER}, ",
         "#{messageNum,jdbcType=INTEGER}, #{articleUrl,jdbcType=VARCHAR}, ",
-        "#{authorurl,jdbcType=VARCHAR}, #{modifyTime,jdbcType=TIMESTAMP})"
+        "#{authorurl,jdbcType=VARCHAR}, #{isOrigin,jdbcType=INTEGER},#{modifyTime,jdbcType=TIMESTAMP})"
     })
     @Options(useGeneratedKeys=true,keyProperty="id")
     int insert(ArticleDescription record);
@@ -33,7 +33,7 @@ public interface ArticleDescriptionMapper {
     @Select({
         "select",
         "id, title, type, author, create_time, good_num, message_num, article_url, authorUrl, ",
-        "modify_time",
+        "is_origin,modify_time",
         "from article_description",
         "where id = #{id,jdbcType=BIGINT}"
     })
@@ -46,7 +46,8 @@ public interface ArticleDescriptionMapper {
         @Result(column="good_num", property="goodNum", jdbcType=JdbcType.INTEGER),
         @Result(column="message_num", property="messageNum", jdbcType=JdbcType.INTEGER),
         @Result(column="article_url", property="articleUrl", jdbcType=JdbcType.VARCHAR),
-        @Result(column="authorUrl", property="authorurl", jdbcType=JdbcType.VARCHAR),
+        @Result(column="author_url", property="authorUrl", jdbcType=JdbcType.VARCHAR),
+        @Result(column="is_origin", property="isOrigin", jdbcType=JdbcType.INTEGER),
         @Result(column="modify_time", property="modifyTime", jdbcType=JdbcType.TIMESTAMP)
     })
     ArticleDescription selectByPrimaryKey(Long id);
@@ -62,7 +63,8 @@ public interface ArticleDescriptionMapper {
           "good_num = #{goodNum,jdbcType=INTEGER},",
           "message_num = #{messageNum,jdbcType=INTEGER},",
           "article_url = #{articleUrl,jdbcType=VARCHAR},",
-          "authorUrl = #{authorurl,jdbcType=VARCHAR},",
+          "author_url = #{authorUrl,jdbcType=VARCHAR},",
+          "is_origin = #{isOrigin,jdbcType=INTEGER},",
           "modify_time = #{modifyTime,jdbcType=TIMESTAMP}",
         "where id = #{id,jdbcType=BIGINT}"
     })
@@ -71,10 +73,10 @@ public interface ArticleDescriptionMapper {
 
     @Insert({
         "<script>",
-            "insert into article_description (title,type,author,create_time,good_num,message_num,article_url,author_url,xuehua_id)",
+            "insert into article_description (title,type,author,create_time,good_num,message_num,article_url,is_origin,author_url,xuehua_id)",
             "values",
             "<foreach collection='list' item='entity' index='index' separator=','>",
-            "(#{entity.title},#{entity.type},#{entity.author},#{entity.createTime},#{entity.goodNum},#{entity.messageNum},#{entity.articleUrl},#{entity.authorUrl},#{entity.xuehuaId})",
+            "(#{entity.title},#{entity.type},#{entity.author},#{entity.createTime},#{entity.goodNum},#{entity.messageNum},#{entity.articleUrl},#{entity.isOrigin},#{entity.authorUrl},#{entity.xuehuaId})",
             "</foreach>",
         "</script>"
     })

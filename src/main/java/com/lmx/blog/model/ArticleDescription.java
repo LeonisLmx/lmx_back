@@ -21,6 +21,8 @@ public class ArticleDescription {
 
     private String authorUrl;
 
+    private Integer isOrigin;
+
     private Date modifyTime;
 
     private Long xuehuaId;
@@ -95,6 +97,14 @@ public class ArticleDescription {
 
     public void setAuthorUrl(String authorUrl) {
         this.authorUrl = authorUrl;
+    }
+
+    public Integer getIsOrigin() {
+        return isOrigin;
+    }
+
+    public void setIsOrigin(Integer isOrigin) {
+        this.isOrigin = isOrigin;
     }
 
     public Date getModifyTime() {

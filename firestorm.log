@@ -1,375 +1,53 @@
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20171} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20171} Parameters : [https://juejin.im/post/5bdede60518825171a180c44]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20171} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20170} executed. 6.475955 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20170, rs-50166} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20170, rs-50166} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20170, rs-50166} Result: [2]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20170, rs-50166} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20170} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20171} executed. 4.961654 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20171, rs-50167} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20171, rs-50167} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20171, rs-50167} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20171, rs-50167} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20171} closed
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20172} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20172} Parameters : [https://juejin.im/post/5be3f730f265da617264f998]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20172} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20173} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20173} Parameters : [https://juejin.im/post/5bddb33b51882516da0de017]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20173} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20172} executed. 5.671255 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20172, rs-50168} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20172, rs-50168} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20172, rs-50168} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20172, rs-50168} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20172} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20173} executed. 5.40268 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20173, rs-50169} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20173, rs-50169} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20173, rs-50169} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20173, rs-50169} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20173} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20174} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20174} Parameters : [https://juejin.im/post/5be08b20e51d451ae86cd825]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20174} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20175} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20175} Parameters : [http://www.iocoder.cn/Apollo/config-service-notifications?juejin&2018-11-08]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20175} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20174} executed. 5.496918 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20174, rs-50170} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20174, rs-50170} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20174, rs-50170} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20174, rs-50170} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20174} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20175} executed. 6.241295 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20175, rs-50171} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20175, rs-50171} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20175, rs-50171} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20175, rs-50171} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20175} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20176} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20176} Parameters : [https://juejin.im/post/5be30d566fb9a04a0f64a788]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20176} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20177} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20177} Parameters : [https://mp.weixin.qq.com/s/LXcWMwxgk3SXDI1cI_Kg8w]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20177} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20176} executed. 5.935177 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20176, rs-50172} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20176, rs-50172} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20176, rs-50172} Result: [2]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20176, rs-50172} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20176} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20177} executed. 5.866926 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20177, rs-50173} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20177, rs-50173} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20177, rs-50173} Result: [4]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20177, rs-50173} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20177} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20178} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20178} Parameters : [https://juejin.im/post/5be2d829e51d450aa46c770f]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20178} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20178} executed. 5.581136 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20178, rs-50174} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20178, rs-50174} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20178, rs-50174} Result: [2]
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20178, rs-50174} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20178} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20179} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20179} Parameters : [https://juejin.im/post/5be3f6326fb9a04a0279d640]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20179} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20179} executed. 5.710672 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20179, rs-50175} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20179, rs-50175} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20179, rs-50175} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20179, rs-50175} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20179} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20180} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20180} Parameters : [https://juejin.im/post/5be28dd66fb9a049ac78a03e]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20180} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20180} executed. 5.224065 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20180, rs-50176} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20180, rs-50176} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20180, rs-50176} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20180, rs-50176} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20180} closed
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20181} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20181} Parameters : [https://juejin.im/post/5be3b0f46fb9a049e65fbb33]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20181} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20181} executed. 6.28298 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20181, rs-50177} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20181, rs-50177} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20181, rs-50177} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20181, rs-50177} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20181} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20182} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20182} Parameters : [https://juejin.im/post/5be3f051f265da613621f412]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20182} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20182} executed. 5.623116 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20182, rs-50178} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20182, rs-50178} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20182, rs-50178} Result: [2]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20182, rs-50178} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20182} closed
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20183} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20183} Parameters : [https://blog.csdn.net/linsongbin1/article/details/83860077]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20183} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20183} executed. 7.105238 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20183, rs-50179} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20183, rs-50179} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20183, rs-50179} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20183, rs-50179} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20183} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20184} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20184} Parameters : [https://juejin.im/post/5be3043ee51d4537fc7ad513]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20184} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20184} executed. 5.247509 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20184, rs-50180} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20184, rs-50180} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20184, rs-50180} Result: [2]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20184, rs-50180} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20184} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20185} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20185} Parameters : [https://juejin.im/post/5be13b83f265da6116393fc7]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20185} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20186} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20185} executed. 6.166207 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20185, rs-50181} open
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20186} Parameters : [https://juejin.im/post/5be24d02e51d450b3647d90e]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20185, rs-50181} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20186} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20185, rs-50181} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20185, rs-50181} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20185} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20186} executed. 5.129773 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20186, rs-50182} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20186, rs-50182} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20186, rs-50182} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20186, rs-50182} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20186} closed
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20187} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20187} Parameters : [https://juejin.im/post/5be2c213e51d453dfe02d406]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20187} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20188} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20188} Parameters : [https://juejin.im/post/5bdc257e6fb9a049ba410098]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20188} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20187} executed. 6.313506 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20187, rs-50183} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20187, rs-50183} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20187, rs-50183} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20187, rs-50183} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20187} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20188} executed. 5.189225 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20188, rs-50184} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20188, rs-50184} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20188, rs-50184} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20188, rs-50184} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20188} closed
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20189} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20189} Parameters : [https://juejin.im/post/5be24e85e51d451c6a14c406]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20189} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20190} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20190} Parameters : [https://juejin.im/post/5be3a0e2e51d4566f5205ced]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20190} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20189} executed. 6.100915 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20189, rs-50185} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20189, rs-50185} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20190} executed. 5.492002 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20190, rs-50186} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20190, rs-50186} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20189, rs-50185} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20190, rs-50186} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20189, rs-50185} closed
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20190, rs-50186} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20189} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20190} closed
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20191} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20191} Parameters : [https://juejin.im/post/5be2c5b26fb9a049f153adfd]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20191} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20192} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20192} Parameters : [https://mp.weixin.qq.com/s/S6ga8y88qaAjbKjuKMrowQ]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20192} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20191} executed. 5.641961 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20191, rs-50187} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20191, rs-50187} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20191, rs-50187} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20191, rs-50187} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20191} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20192} executed. 5.810012 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20192, rs-50188} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20192, rs-50188} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20192, rs-50188} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20192, rs-50188} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20192} closed
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20193} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20193} Parameters : [https://juejin.im/post/5be10686e51d45053f0de84c]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20193} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20194} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20194} Parameters : [https://juejin.im/post/5be07753f265da61524cdad6]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20194} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20193} executed. 6.099999 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20193, rs-50189} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20193, rs-50189} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20193, rs-50189} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20193, rs-50189} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20193} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20194} executed. 5.9538 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20194, rs-50190} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20194, rs-50190} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20194, rs-50190} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20194, rs-50190} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20194} closed
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20195} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20195} Parameters : [https://juejin.im/post/5bdebd3ee51d4576452d224f]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20195} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20196} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20196} Parameters : [https://juejin.im/post/5be04516f265da611d661cbf]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20196} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20195} executed. 6.034814 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20195, rs-50191} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20195, rs-50191} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20195, rs-50191} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20195, rs-50191} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20195} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20196} executed. 5.223881 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20196, rs-50192} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20196, rs-50192} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20196, rs-50192} Result: [2]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20196, rs-50192} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20196} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20197} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20197} Parameters : [https://draveness.me/dns-coredns]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20197} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20198} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20198} Parameters : [https://juejin.im/post/5be2b0a0e51d4549d46dc1f2]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20198} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20197} executed. 5.540157 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20197, rs-50193} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20197, rs-50193} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20197, rs-50193} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20197, rs-50193} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20197} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20198} executed. 6.227758 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50194} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50194} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50194} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50194} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20198} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20199} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20199} Parameters : [https://my.oschina.net/wenzhenxi/blog/2873131]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20199} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20200} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20200} Parameters : [https://juejin.im/post/5bda570f5188257f764c63c6]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20200} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20199} executed. 4.664087 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20199, rs-50195} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20199, rs-50195} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20199, rs-50195} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20199, rs-50195} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20199} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20200} executed. 6.560814 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50196} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50196} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50196} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50196} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20200} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20201} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20201} Parameters : [https://juejin.im/post/5be23a01518825697344f05e]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20201} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20201} executed. 4.812848 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20201, rs-50197} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20201, rs-50197} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20201, rs-50197} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10003, pstmt-20201, rs-50197} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10003, pstmt-20201} closed
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20202} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20202} Parameters : [https://juejin.im/post/5be39386518825594036684e]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20202} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20202} executed. 5.782814 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50198} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50198} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50198} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50198} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20202} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10003} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20203} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20203} Parameters : [https://juejin.im/post/5be37eddf265da615f76c25d]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20203} Types : [VARCHAR]
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20203} executed. 6.177222 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20203, rs-50199} open
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20203, rs-50199} Header: [count(*)]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20203, rs-50199} Result: [1]
-DEBUG pool-2-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-20203, rs-50199} closed
-DEBUG pool-2-thread-4 druid.sql.Statement - {conn-10005, pstmt-20203} closed
-DEBUG pool-2-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG Thread-9 druid.sql.Connection - {conn-10001} closed
-DEBUG Thread-9 druid.sql.Connection - {conn-10004} closed
-DEBUG Thread-9 druid.sql.Connection - {conn-10002} closed
-DEBUG Thread-9 druid.sql.Connection - {conn-10003} closed
-DEBUG Thread-9 druid.sql.Connection - {conn-10005} closed
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20198} Parameters : [https://www.cnblogs.com/hvkcode/p/6913033.html]
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20198} Types : [VARCHAR]
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20198} executed. 5.794817 millis. select count(*) from article_description where article_url = ?
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50196} open
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50196} Header: [count(*)]
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50196} Result: [1]
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50196} closed
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20198} closed
+DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20199} created. select count(*) from article_description where article_url = ?
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20199} Parameters : [https://juejin.im/post/5be13b83f265da6116393fc7]
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20199} Types : [VARCHAR]
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20199} executed. 5.136385 millis. select count(*) from article_description where article_url = ?
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20199, rs-50197} open
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20199, rs-50197} Header: [count(*)]
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20199, rs-50197} Result: [1]
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20199, rs-50197} closed
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20199} closed
+DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20200} created. select count(*) from article_description where article_url = ?
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20200} Parameters : [https://juejin.im/post/5be452d96fb9a049ef261452]
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20200} Types : [VARCHAR]
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20200} executed. 4.684801 millis. select count(*) from article_description where article_url = ?
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50198} open
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50198} Header: [count(*)]
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50198} Result: [1]
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50198} closed
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20200} closed
+DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20201} created. select count(*) from article_description where article_url = ?
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20201} Parameters : [https://juejin.im/post/5be3f01ce51d452c4c4a10c1]
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20201} Types : [VARCHAR]
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20201} executed. 4.422315 millis. select count(*) from article_description where article_url = ?
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20201, rs-50199} open
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20201, rs-50199} Header: [count(*)]
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20201, rs-50199} Result: [1]
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20201, rs-50199} closed
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20201} closed
+DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20202} created. select count(*) from article_description where article_url = ?
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20202} Parameters : [https://juejin.im/post/5bdad0f4e51d4526030aa95f]
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20202} Types : [VARCHAR]
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20202} executed. 5.605035 millis. select count(*) from article_description where article_url = ?
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50200} open
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50200} Header: [count(*)]
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50200} Result: [1]
+DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50200} closed
+DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20202} closed
+DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-recycle

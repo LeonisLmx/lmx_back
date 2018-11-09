@@ -45,7 +45,11 @@ public class ArticleDescriptionSqlProvider {
         }
         
         if (record.getAuthorUrl() != null) {
-            VALUES("authorUrl", "#{authorurl,jdbcType=VARCHAR}");
+            VALUES("author_url", "#{authorUrl,jdbcType=VARCHAR}");
+        }
+
+        if (record.getIsOrigin() != null) {
+            VALUES("is_origin", "#{isOrigin,jdbcType=INTEGER}");
         }
         
         if (record.getModifyTime() != null) {
@@ -92,9 +96,13 @@ public class ArticleDescriptionSqlProvider {
         }
         
         if (record.getAuthorUrl() != null) {
-            SET("authorUrl = #{authorurl,jdbcType=VARCHAR}");
+            SET("author_url = #{authorUrl,jdbcType=VARCHAR}");
         }
-        
+
+        if (record.getIsOrigin() != null) {
+            SET("is_origin = #{isOrigin,jdbcType=INTEGER}");
+        }
+
         if (record.getModifyTime() != null) {
             SET("modify_time = #{modifyTime,jdbcType=TIMESTAMP}");
         }

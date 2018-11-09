@@ -44,20 +44,20 @@ public class JuejinCrawerService {
             Long xuehuaId = Commonservice.getNextId();
             // 只对重复数据加锁 ，防止数据库数据出现重复
             synchronized (entity.getOriginalUrl()){
-            if(articleDescriptionMapper.selectArticleIsHave(entity.getOriginalUrl()) > 0){
-                continue;
-            }
-                ArticleDescription articleDescription = new ArticleDescription();
-                articleDescription.setArticleUrl(entity.getOriginalUrl());
-                articleDescription.setTitle(entity.getTitle());
-                articleDescription.setAuthor(entity.getUser().getUsername());
-                articleDescription.setAuthorUrl("https://juejin.im/user/" + entity.getUser().getObjectId());
-                articleDescription.setCreateTime(entity.getCreatedAt());
-                articleDescription.setGoodNum(entity.getCollectionCount());
-                articleDescription.setMessageNum(entity.getCommentsCount());
-                articleDescription.setType("后端");
-                articleDescription.setXuehuaId(xuehuaId);
-                articleDescriptions.add(articleDescription);
+                if(articleDescriptionMapper.selectArticleIsHave(entity.getOriginalUrl()) == 0) {
+                    ArticleDescription articleDescription = new ArticleDescription();
+                    articleDescription.setArticleUrl(entity.getOriginalUrl());
+                    articleDescription.setTitle(entity.getTitle());
+                    articleDescription.setAuthor(entity.getUser().getUsername());
+                    articleDescription.setAuthorUrl("https://juejin.im/user/" + entity.getUser().getObjectId());
+                    articleDescription.setCreateTime(entity.getCreatedAt());
+                    articleDescription.setGoodNum(entity.getCollectionCount());
+                    articleDescription.setMessageNum(entity.getCommentsCount());
+                    articleDescription.setType("后端");
+                    articleDescription.setXuehuaId(xuehuaId);
+                    articleDescription.setIsOrigin(-1);
+                    articleDescriptions.add(articleDescription);
+                }
             }
             for(JuejinTags juejinTags:entity.getTags()){
                 Tag tag = new Tag();

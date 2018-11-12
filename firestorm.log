@@ -1,53 +1,665 @@
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20198} Parameters : [https://www.cnblogs.com/hvkcode/p/6913033.html]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20198} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20198} executed. 5.794817 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50196} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50196} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50196} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20198, rs-50196} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20198} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20199} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20199} Parameters : [https://juejin.im/post/5be13b83f265da6116393fc7]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20199} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20199} executed. 5.136385 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20199, rs-50197} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20199, rs-50197} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20199, rs-50197} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20199, rs-50197} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20199} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20200} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20200} Parameters : [https://juejin.im/post/5be452d96fb9a049ef261452]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20200} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20200} executed. 4.684801 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50198} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50198} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50198} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20200, rs-50198} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20200} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20201} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20201} Parameters : [https://juejin.im/post/5be3f01ce51d452c4c4a10c1]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20201} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20201} executed. 4.422315 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20201, rs-50199} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20201, rs-50199} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20201, rs-50199} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20201, rs-50199} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20201} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20202} created. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20202} Parameters : [https://juejin.im/post/5bdad0f4e51d4526030aa95f]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20202} Types : [VARCHAR]
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20202} executed. 5.605035 millis. select count(*) from article_description where article_url = ?
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50200} open
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50200} Header: [count(*)]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50200} Result: [1]
-DEBUG pool-2-thread-2 druid.sql.ResultSet - {conn-10005, pstmt-20202, rs-50200} closed
-DEBUG pool-2-thread-2 druid.sql.Statement - {conn-10005, pstmt-20202} closed
-DEBUG pool-2-thread-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20333, rs-50334} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20333, rs-50334} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20334, rs-50333} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20334, rs-50333} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20333, rs-50334} Result: [312]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20334, rs-50333} Result: [253]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20334, rs-50333} closed
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20333, rs-50334} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20334} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20333} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20335} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20335} Parameters : [https://mp.weixin.qq.com/s?__biz=MzI0MDQ4MTM5NQ==&mid=2247487483&idx=1&sn=4c2b512e03f41504634f7f5e47873008&chksm=e91b6ae7de6ce3f1cf481d2cbc0d57667c4f05bf869acee6034139d8c5638f78f4301edae04d&token=983212655&lang=zh_CN#rd]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20335} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20336} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20336} Parameters : [https://juejin.im/post/5be82ec56fb9a049d61d0e40]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20336} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20335} executed. 4.603564 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20335, rs-50335} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20335, rs-50335} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20335, rs-50335} Result: [273]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20335, rs-50335} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20335} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20336} executed. 4.708694 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20336, rs-50336} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20336, rs-50336} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20336, rs-50336} Result: [253]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20336, rs-50336} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20336} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20337} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20337} Parameters : [https://mp.weixin.qq.com/s?__biz=MzI0MDQ4MTM5NQ==&mid=2247487483&idx=1&sn=4c2b512e03f41504634f7f5e47873008&chksm=e91b6ae7de6ce3f1cf481d2cbc0d57667c4f05bf869acee6034139d8c5638f78f4301edae04d&token=983212655&lang=zh_CN#rd]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20337} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20338} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20338} Parameters : [https://juejin.im/post/5be7e0cdf265da611a476151]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20338} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20337} executed. 4.879361 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20337, rs-50337} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20337, rs-50337} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20337, rs-50337} Result: [273]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20337, rs-50337} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20337} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20338} executed. 4.720641 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20338, rs-50338} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20338, rs-50338} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20338, rs-50338} Result: [295]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20338, rs-50338} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20338} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20339} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20339} Parameters : [https://juejin.im/post/5be8d4076fb9a049b829f9bd]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20339} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20340} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20340} Parameters : [https://juejin.im/post/5be7e0cdf265da611a476151]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20340} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20339} executed. 5.116588 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20339, rs-50339} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20339, rs-50339} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20339, rs-50339} Result: [274]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20339, rs-50339} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20339} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20340} executed. 4.099756 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20340, rs-50340} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20340, rs-50340} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20340, rs-50340} Result: [295]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20340, rs-50340} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20340} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20341} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20341} Parameters : [https://juejin.im/post/5be8d4076fb9a049b829f9bd]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20341} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20342} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20342} Parameters : [https://juejin.im/post/5be8edb86fb9a049c30ac30a]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20342} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20341} executed. 5.702315 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20341, rs-50341} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20341, rs-50341} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20341, rs-50341} Result: [274]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20341, rs-50341} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20341} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20342} executed. 4.729857 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20342, rs-50342} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20342, rs-50342} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20342, rs-50342} Result: [280]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20342, rs-50342} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20342} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20343} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20343} Parameters : [https://juejin.im/post/5be54cee51882516be2ea92a]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20343} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20344} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20344} Parameters : [https://juejin.im/post/5be8edb86fb9a049c30ac30a]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20344} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20343} executed. 5.70607 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20343, rs-50343} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20343, rs-50343} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20343, rs-50343} Result: [275]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20343, rs-50343} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20343} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20344} executed. 4.895745 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20344, rs-50344} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20344, rs-50344} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20344, rs-50344} Result: [280]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20344, rs-50344} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20344} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20345} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20345} Parameters : [https://juejin.im/post/5be54cee51882516be2ea92a]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20345} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20346} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20346} Parameters : [https://juejin.im/post/5be6d78a6fb9a049ec6a9513]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20346} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20345} executed. 5.653846 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20345, rs-50345} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20345, rs-50345} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20345, rs-50345} Result: [275]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20345, rs-50345} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20345} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20346} executed. 5.075628 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20346, rs-50346} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20346, rs-50346} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20346, rs-50346} Result: [297]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20346, rs-50346} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20346} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20347} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20347} Parameters : [https://juejin.im/post/5be7eaf26fb9a049d4415278]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20347} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20348} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20348} Parameters : [https://juejin.im/post/5be6d78a6fb9a049ec6a9513]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20348} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20347} executed. 4.500481 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20347, rs-50347} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20347, rs-50347} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20347, rs-50347} Result: [313]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20347, rs-50347} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20347} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20348} executed. 5.46031 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20348, rs-50348} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20348, rs-50348} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20348, rs-50348} Result: [297]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20348, rs-50348} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20348} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20349} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20349} Parameters : [https://juejin.im/post/5be7eaf26fb9a049d4415278]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20349} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20349} executed. 4.718935 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20349, rs-50349} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20349, rs-50349} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20349, rs-50349} Result: [313]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20349, rs-50349} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20349} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20350} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20350} Parameters : [https://mp.weixin.qq.com/s/Ntr-l4zquY40bZ55iUg25w]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20350} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20350} executed. 4.734977 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20350, rs-50350} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20350, rs-50350} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20350, rs-50350} Result: [237]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20350, rs-50350} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20350} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20351} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20351} Parameters : [https://juejin.im/post/5be8da8a6fb9a049a62c188d]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20351} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20352} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20352} Parameters : [https://mp.weixin.qq.com/s/Ntr-l4zquY40bZ55iUg25w]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20352} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20351} executed. 5.657259 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20351, rs-50351} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20351, rs-50351} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20351, rs-50351} Result: [268]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20351, rs-50351} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20351} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20352} executed. 4.324694 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20352, rs-50352} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20352, rs-50352} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20352, rs-50352} Result: [237]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20352, rs-50352} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20352} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20353} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20353} Parameters : [https://mp.weixin.qq.com/s?__biz=MjM5NjMyMjUzNg==&mid=2448131542&idx=1&sn=27b0cfdb3a2999dc5f9109034f28de5c&chksm=b2f428518583a147a512a78c72990a27aa6db6a59ca9b9409e7e2282f72b94036bb44dbbe2d0&mpshare=1&scene=1&srcid=1112rDmZX77ZhiuFDHbnLcSw#rd]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20353} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20354} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20354} Parameters : [https://juejin.im/post/5be8da8a6fb9a049a62c188d]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20354} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20353} executed. 4.732929 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20353, rs-50353} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20353, rs-50353} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20353, rs-50353} Result: [238]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20353, rs-50353} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20353} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20354} executed. 6.008492 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20354, rs-50354} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20354, rs-50354} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20354, rs-50354} Result: [268]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20354, rs-50354} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20354} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20355} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20355} Parameters : [https://mp.weixin.qq.com/s?__biz=MjM5NjMyMjUzNg==&mid=2448131542&idx=1&sn=27b0cfdb3a2999dc5f9109034f28de5c&chksm=b2f428518583a147a512a78c72990a27aa6db6a59ca9b9409e7e2282f72b94036bb44dbbe2d0&mpshare=1&scene=1&srcid=1112rDmZX77ZhiuFDHbnLcSw#rd]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20355} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20356} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20356} Parameters : [https://juejin.im/post/5be6929ae51d450aa46c868a]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20356} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20355} executed. 6.538582 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20355, rs-50355} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20355, rs-50355} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20355, rs-50355} Result: [238]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20355, rs-50355} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20355} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20356} executed. 6.91166 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20356, rs-50356} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20356, rs-50356} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20356, rs-50356} Result: [291]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20356, rs-50356} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20356} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20357} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20357} Parameters : [https://juejin.im/post/5be8ddec51882511630d2cef]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20357} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20358} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20358} Parameters : [https://juejin.im/post/5be6929ae51d450aa46c868a]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20358} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20357} executed. 4.90735 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20357, rs-50357} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20357, rs-50357} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20357, rs-50357} Result: [272]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20358} executed. 4.385793 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20357, rs-50357} closed
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20358, rs-50358} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20358, rs-50358} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20357} closed
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20358, rs-50358} Result: [291]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20358, rs-50358} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20358} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20359} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20359} Parameters : [https://juejin.im/post/5be8ddec51882511630d2cef]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20359} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20360} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20360} Parameters : [https://juejin.im/post/5be64f27f265da617006a334]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20360} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20359} executed. 4.809388 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20359, rs-50359} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20359, rs-50359} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20359, rs-50359} Result: [272]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20359, rs-50359} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20359} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20360} executed. 5.482497 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20360, rs-50360} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20360, rs-50360} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20360, rs-50360} Result: [293]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20360, rs-50360} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20360} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20361} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20361} Parameters : [http://www.iocoder.cn/Sharding-JDBC/sql-parse-2?juejin&2018-11-11]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20361} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20362} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20362} Parameters : [https://juejin.im/post/5be64f27f265da617006a334]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20362} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20361} executed. 5.145601 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20361, rs-50361} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20361, rs-50361} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20361, rs-50361} Result: [224]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20361, rs-50361} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20361} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20362} executed. 4.844544 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20362, rs-50362} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20362, rs-50362} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20362, rs-50362} Result: [293]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20362, rs-50362} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20362} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20363} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20363} Parameters : [http://www.iocoder.cn/Sharding-JDBC/sql-parse-2?juejin&2018-11-11]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20363} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20364} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20364} Parameters : [https://juejin.im/post/5be580c251882516c15af3d7]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20364} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20363} executed. 5.031596 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20363, rs-50363} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20363, rs-50363} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20363, rs-50363} Result: [224]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20363, rs-50363} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20363} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20364} executed. 5.58831 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20364, rs-50364} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20364, rs-50364} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20364, rs-50364} Result: [292]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20364, rs-50364} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20364} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20365} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20365} Parameters : [https://juejin.im/post/5bc033a86fb9a05ce02a9d7a]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20365} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20366} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20366} Parameters : [https://juejin.im/post/5be580c251882516c15af3d7]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20366} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20365} executed. 5.875713 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20365, rs-50365} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20365, rs-50365} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20365, rs-50365} Result: [281]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20365, rs-50365} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20365} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20366} executed. 4.5667 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20366, rs-50366} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20366, rs-50366} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20366, rs-50366} Result: [292]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20366, rs-50366} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20366} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20367} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20367} Parameters : [https://juejin.im/post/5bc033a86fb9a05ce02a9d7a]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20367} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20368} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20368} Parameters : [https://juejin.im/post/5be92a95f265da61764a69b6]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20368} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20367} executed. 4.636673 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20367, rs-50367} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20367, rs-50367} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20367, rs-50367} Result: [281]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20367, rs-50367} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20367} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20368} executed. 4.73566 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20368, rs-50368} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20368, rs-50368} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20368, rs-50368} Result: [290]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20368, rs-50368} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20368} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20369} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20369} Parameters : [https://juejin.im/post/5be55f755188255e9b61890f]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20369} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20370} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20370} Parameters : [https://juejin.im/post/5be92a95f265da61764a69b6]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20370} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20369} executed. 4.864001 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20369, rs-50369} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20369, rs-50369} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20369, rs-50369} Result: [308]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20369, rs-50369} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20369} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20370} executed. 7.555756 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20370, rs-50370} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20370, rs-50370} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20370, rs-50370} Result: [290]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20370, rs-50370} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20370} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20371} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20371} Parameters : [https://juejin.im/post/5be55f755188255e9b61890f]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20371} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20371} executed. 5.133996 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20371, rs-50371} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20371, rs-50371} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20371, rs-50371} Result: [308]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20371, rs-50371} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20371} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20372} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20372} Parameters : [https://juejin.im/post/5be7bfdde51d45547779b463]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20372} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20372} executed. 6.337196 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20372, rs-50372} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20372, rs-50372} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20372, rs-50372} Result: [296]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20372, rs-50372} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20372} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20373} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20373} Parameters : [https://juejin.im/post/5be7c45e6fb9a049ee7ff8e3]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20373} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20373} executed. 7.966722 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20373, rs-50373} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20373, rs-50373} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20373, rs-50373} Result: [317]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20373, rs-50373} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20373} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20374} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20374} Parameters : [https://juejin.im/post/5be7bfdde51d45547779b463]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20374} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20374} executed. 4.64111 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20374, rs-50374} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20374, rs-50374} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20374, rs-50374} Result: [296]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20374, rs-50374} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20374} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20375} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20375} Parameters : [https://juejin.im/post/5be7c45e6fb9a049ee7ff8e3]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20375} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20375} executed. 4.870487 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20375, rs-50375} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20375, rs-50375} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20375, rs-50375} Result: [317]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20375, rs-50375} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20375} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20376} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20376} Parameters : [https://juejin.im/post/5be83e166fb9a049a7115580]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20376} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20376} executed. 5.39887 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20376, rs-50376} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20376, rs-50376} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20376, rs-50376} Result: [266]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20376, rs-50376} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20376} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20377} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20377} Parameters : [https://juejin.im/post/5be29777518825170f50cd46]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20377} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20377} executed. 7.919959 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20377, rs-50377} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20377, rs-50377} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20377, rs-50377} Result: [251]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20377, rs-50377} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20377} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20378} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20378} Parameters : [https://juejin.im/post/5be83e166fb9a049a7115580]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20378} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20378} executed. 12.438189 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20378, rs-50378} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20378, rs-50378} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20378, rs-50378} Result: [266]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20378, rs-50378} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20378} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20379} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20379} Parameters : [https://juejin.im/post/5be29777518825170f50cd46]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20379} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20379} executed. 5.215574 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20379, rs-50379} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20379, rs-50379} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20379, rs-50379} Result: [251]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20379, rs-50379} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20379} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20380} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20380} Parameters : [https://juejin.im/post/5be8c968f265da616f6f7db6]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20380} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20380} executed. 4.657494 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20380, rs-50380} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20380, rs-50380} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20380, rs-50380} Result: [265]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20380, rs-50380} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20380} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20381} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20381} Parameters : [https://juejin.im/post/5be8058ee51d4536f4451432]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20381} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20381} executed. 4.433238 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20381, rs-50381} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20381, rs-50381} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20381, rs-50381} Result: [321]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20381, rs-50381} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20381} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20382} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20382} Parameters : [https://juejin.im/post/5be8c968f265da616f6f7db6]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20382} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20383} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20383} Parameters : [https://juejin.im/post/5be8058ee51d4536f4451432]
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20383} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20382} executed. 5.284524 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20382, rs-50382} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20382, rs-50382} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20382, rs-50382} Result: [265]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20382, rs-50382} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20382} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20383} executed. 4.483073 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20383, rs-50383} open
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20383, rs-50383} Header: [id]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20383, rs-50383} Result: [321]
+DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10003, pstmt-20383, rs-50383} closed
+DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10003, pstmt-20383} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20384} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20384} Parameters : [https://www.cnblogs.com/dy2903/p/8426859.html]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20384} Types : [VARCHAR]
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20384} executed. 5.338113 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20384, rs-50384} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20384, rs-50384} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20384, rs-50384} Result: [309]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20384, rs-50384} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20384} closed
+DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20385} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20385} Parameters : [https://www.cnblogs.com/dy2903/p/8426859.html]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20385} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20385} executed. 4.84591 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20385, rs-50385} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20385, rs-50385} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20385, rs-50385} Result: [309]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20385, rs-50385} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20385} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20386} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20386} Parameters : [https://juejin.im/post/5be7f9405188257b3541c1e6]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20386} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20386} executed. 4.819628 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20386, rs-50386} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20386, rs-50386} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20386, rs-50386} Result: [254]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20386, rs-50386} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20386} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20387} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20387} Parameters : [https://juejin.im/post/5be7f9405188257b3541c1e6]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20387} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20387} executed. 4.763649 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20387, rs-50387} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20387, rs-50387} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20387, rs-50387} Result: [254]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20387, rs-50387} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20387} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20388} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20388} Parameters : [https://juejin.im/post/5be8086be51d454c6e6e5d7c]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20388} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20388} executed. 5.030913 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20388, rs-50388} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20388, rs-50388} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20388, rs-50388} Result: [267]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20388, rs-50388} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20388} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20389} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20389} Parameters : [https://juejin.im/post/5be8086be51d454c6e6e5d7c]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20389} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20389} executed. 4.632236 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20389, rs-50389} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20389, rs-50389} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20389, rs-50389} Result: [267]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20389, rs-50389} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20389} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20390} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20390} Parameters : [https://juejin.im/post/5be682706fb9a049ef261855]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20390} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20390} executed. 6.673068 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20390, rs-50390} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20390, rs-50390} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20390, rs-50390} Result: [307]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20390, rs-50390} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20390} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20391} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20391} Parameters : [https://juejin.im/post/5be682706fb9a049ef261855]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20391} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20391} executed. 5.45246 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20391, rs-50391} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20391, rs-50391} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20391, rs-50391} Result: [307]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20391, rs-50391} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20391} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20392} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20392} Parameters : [https://juejin.im/post/5be8e0b1f265da614d08b45a]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20392} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20392} executed. 4.734636 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20392, rs-50392} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20392, rs-50392} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20392, rs-50392} Result: [252]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20392, rs-50392} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20392} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20393} created. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20393} Parameters : [https://juejin.im/post/5be8e0b1f265da614d08b45a]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20393} Types : [VARCHAR]
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20393} executed. 5.07119 millis. select id from article_description where article_url = ?
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20393, rs-50393} open
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20393, rs-50393} Header: [id]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20393, rs-50393} Result: [252]
+DEBUG pool-3-thread-3 druid.sql.ResultSet - {conn-10002, pstmt-20393, rs-50393} closed
+DEBUG pool-3-thread-3 druid.sql.Statement - {conn-10002, pstmt-20393} closed
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG pool-3-thread-3 druid.sql.Connection - {conn-10002} pool-recycle

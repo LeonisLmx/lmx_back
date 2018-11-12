@@ -25,8 +25,18 @@ spring:
     logSlowSql: true
   resources:
         staticLocations:classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+  data:
+      elasticsearch:
+        # es 集群名称
+        cluster-name: blog
+          # es 节点地址
+        cluster-nodes: 101.132.137.156:9300
+        # 是否开启本地存储
+        repositories:
+          enabled: true
 logging:
     config: classpath:logback.xml
 mybatis:
   mapper-locations: classpath:mybatis-config.xml
   type-aliases-package: com.lmx.log.mapper
+

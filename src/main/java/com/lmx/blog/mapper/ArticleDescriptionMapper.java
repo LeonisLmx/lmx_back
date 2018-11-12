@@ -83,7 +83,16 @@ public interface ArticleDescriptionMapper {
     int batchInsertActicle(@Param("list") List<ArticleDescription> list);
 
     @Select({
-            "select count(*) from article_description where article_url = #{articleUrl}"
+            "select id from article_description where article_url = #{articleUrl}"
     })
-    int selectArticleIsHave(@Param("articleUrl")String articleUrl);
+    Long selectArticleIsHave(@Param("articleUrl")String articleUrl);
+
+    @Update({
+            "<foreach collection=\"list\" item=\"item\" index=\"index\" open=\"\" close=\"\" separator=\";\">",
+                    "        update article_description (good_num,message_num,modify_time) values",
+                    "(#{item.goodNum},#{item.messageNum},now())",
+                    "        where id = #{item.id}",
+            "    </foreach>   "
+    })
+    int batchUpdate(@Param("list")List<ArticleDescription> list);
 }

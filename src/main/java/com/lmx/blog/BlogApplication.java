@@ -1,10 +1,18 @@
 package com.lmx.blog;
 
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.common.transport.TransportAddress;
+import org.elasticsearch.transport.client.PreBuiltTransportClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+import java.io.IOException;
+import java.net.InetAddress;
 
 @SpringBootApplication
 @EnableScheduling
@@ -22,4 +30,16 @@ public class BlogApplication extends WebMvcConfigurerAdapter {
                 .allowedOrigins("*")
                 .allowedMethods("*");
     }
+
+    // 服务器内存不够。es无法运行
+    /*@Bean
+    public TransportClient transportClient() throws IOException {
+        Settings setting = Settings.builder()
+                //.put("cluster.name", es_cluster)//指定集群名称
+                .put("client.transport.sniff", true)//启动嗅探功能
+                .build();
+        TransportClient transportClient = new PreBuiltTransportClient(setting)
+                    .addTransportAddress(new TransportAddress(InetAddress.getByName("101.132.137.156"), 9300));
+        return transportClient;
+    }*/
 }

@@ -39,24 +39,28 @@ public class JuejinCrawerService {
         response = response.substring(response.indexOf("\"entrylist\":") + 12,response.lastIndexOf("}}"));
         Vector<JuejinEntity> reponseMap = new Gson().fromJson(response,new TypeToken<Vector<JuejinEntity>>(){}.getType());
         Vector<ArticleDescription> articleDescriptions = new Vector<>();
+        Vector<ArticleDescription> updateLists = new Vector<>();
         Vector<Tag> tags = new Vector<>();
         for(JuejinEntity entity:reponseMap){
             Long xuehuaId = Commonservice.getNextId();
             // 只对重复数据加锁 ，防止数据库数据出现重复
             synchronized (entity.getOriginalUrl()){
-                if(articleDescriptionMapper.selectArticleIsHave(entity.getOriginalUrl()) == 0) {
-                    ArticleDescription articleDescription = new ArticleDescription();
-                    articleDescription.setArticleUrl(entity.getOriginalUrl());
-                    articleDescription.setTitle(entity.getTitle());
-                    articleDescription.setAuthor(entity.getUser().getUsername());
-                    articleDescription.setAuthorUrl("https://juejin.im/user/" + entity.getUser().getObjectId());
-                    articleDescription.setCreateTime(entity.getCreatedAt());
-                    articleDescription.setGoodNum(entity.getCollectionCount());
-                    articleDescription.setMessageNum(entity.getCommentsCount());
-                    articleDescription.setType("后端");
-                    articleDescription.setXuehuaId(xuehuaId);
-                    articleDescription.setIsOrigin(-1);
+                ArticleDescription articleDescription = new ArticleDescription();
+                articleDescription.setArticleUrl(entity.getOriginalUrl());
+                articleDescription.setTitle(entity.getTitle());
+                articleDescription.setAuthor(entity.getUser().getUsername());
+                articleDescription.setAuthorUrl("https://juejin.im/user/" + entity.getUser().getObjectId());
+                articleDescription.setCreateTime(entity.getCreatedAt());
+                articleDescription.setGoodNum(entity.getCollectionCount());
+                articleDescription.setMessageNum(entity.getCommentsCount());
+                articleDescription.setType("后端");
+                articleDescription.setXuehuaId(xuehuaId);
+                articleDescription.setIsOrigin(-1);
+                if(articleDescriptionMapper.selectArticleIsHave(entity.getOriginalUrl()) == null) {
                     articleDescriptions.add(articleDescription);
+                }else{
+                    articleDescription.setId(articleDescriptionMapper.selectArticleIsHave(entity.getOriginalUrl()));
+                    updateLists.add(articleDescription);
                 }
             }
             for(JuejinTags juejinTags:entity.getTags()){
@@ -70,6 +74,9 @@ public class JuejinCrawerService {
         if(articleDescriptions.size() > 0) {
             articleDescriptionMapper.batchInsertActicle(articleDescriptions);
             tagMapper.batchInsertActicle(tags);
+        }
+        if(updateLists.size() > 0){
+            articleDescriptionMapper.batchUpdate(updateLists);
         }
         return true;
     }

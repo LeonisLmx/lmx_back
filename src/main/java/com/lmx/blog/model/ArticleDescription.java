@@ -9,6 +9,8 @@ public class ArticleDescription {
 
     private String type;
 
+    private Integer hot;
+
     private String author;
 
     private Date createTime;
@@ -49,6 +51,14 @@ public class ArticleDescription {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public Integer getHot() {
+        return hot;
+    }
+
+    public void setHot(Integer hot) {
+        this.hot = hot;
     }
 
     public String getAuthor() {

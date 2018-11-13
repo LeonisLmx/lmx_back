@@ -16,6 +16,7 @@ public class JuejinEntity {
     private Long ngxCachedTime; //抓取到的时间
     private Date createdAt; // 文章创作时间
     private Boolean hot;
+    private String type;
     private String originalUrl; //文章链接
     private Boolean original; // false 为专栏
     private String author;
@@ -78,6 +79,15 @@ public class JuejinEntity {
 
     public void setHot(Boolean hot) {
         this.hot = hot;
+    }
+
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getOriginalUrl() {

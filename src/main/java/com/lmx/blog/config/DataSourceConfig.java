@@ -1,6 +1,7 @@
 package com.lmx.blog.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.wall.WallConfig;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -52,6 +53,13 @@ public class DataSourceConfig {
         return new DataSourceTransactionManager(masterDataSource());
     }
 
+
+    /*@Bean(name = "wallConfig")
+    WallConfig wallFilterConfig(){
+        WallConfig wc = new WallConfig();
+        wc.setMultiStatementAllow(true);
+        return wc;
+    }*/
     /*@Bean
     public Filter characterEncodingFilter() {
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();

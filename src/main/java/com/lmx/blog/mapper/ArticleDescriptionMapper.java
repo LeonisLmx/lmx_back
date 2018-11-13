@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
 
 import java.util.List;
+import java.util.Map;
 
 public interface ArticleDescriptionMapper {
     @Delete({
@@ -73,10 +74,10 @@ public interface ArticleDescriptionMapper {
 
     @Insert({
         "<script>",
-            "insert into article_description (title,type,author,create_time,good_num,message_num,article_url,is_origin,author_url,xuehua_id)",
+            "insert into article_description (title,hot,type,author,create_time,good_num,message_num,article_url,is_origin,author_url,xuehua_id)",
             "values",
             "<foreach collection='list' item='entity' index='index' separator=','>",
-            "(#{entity.title},#{entity.type},#{entity.author},#{entity.createTime},#{entity.goodNum},#{entity.messageNum},#{entity.articleUrl},#{entity.isOrigin},#{entity.authorUrl},#{entity.xuehuaId})",
+            "(#{entity.title},#{entity.hot},#{entity.type},#{entity.author},#{entity.createTime},#{entity.goodNum},#{entity.messageNum},#{entity.articleUrl},#{entity.isOrigin},#{entity.authorUrl},#{entity.xuehuaId})",
             "</foreach>",
         "</script>"
     })
@@ -88,11 +89,19 @@ public interface ArticleDescriptionMapper {
     Long selectArticleIsHave(@Param("articleUrl")String articleUrl);
 
     @Update({
+            "<script>",
             "<foreach collection=\"list\" item=\"item\" index=\"index\" open=\"\" close=\"\" separator=\";\">",
-                    "        update article_description (good_num,message_num,modify_time) values",
-                    "(#{item.goodNum},#{item.messageNum},now())",
-                    "        where id = #{item.id}",
-            "    </foreach>   "
+            "update article_description",
+            "set good_num = #{item.goodNum},message_num = #{item.messageNum},modify_time = now()",
+            "where id = #{item.id}",
+            "</foreach>",
+            "</script>"
     })
     int batchUpdate(@Param("list")List<ArticleDescription> list);
+
+    @Select({
+            "select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a",
+            "order by a.modify_time",
+    })
+    List<Map<String,Object>> queryAllArticles();
 }

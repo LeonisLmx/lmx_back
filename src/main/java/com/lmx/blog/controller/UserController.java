@@ -1,5 +1,7 @@
 package com.lmx.blog.controller;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.lmx.blog.common.Response;
 import com.lmx.blog.model.ArticleDetail;
 import com.lmx.blog.service.ArticleDetailSercice;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -22,6 +25,8 @@ import java.util.concurrent.TimeUnit;
 public class UserController {
 
     private static int produceTaskMaxNumber = 10;
+
+    private static int pageSize = 20;
 
     @Autowired private JuejinCrawerService juejinCrawerService;
 
@@ -51,4 +56,11 @@ public class UserController {
         return Response.ok(articleDetailSercice.getPrimaryKeyById(1L));
     }
 
+    @RequestMapping("/getList")
+    public Response getListArticles(Integer pageNum){
+        PageHelper.startPage(pageNum,pageSize);
+        List<Map<String,Object>> lists = articleDetailSercice.queryAllArticles();
+        PageInfo page = new PageInfo(lists);
+        return Response.ok(page);
+    }
 }

@@ -4,7 +4,7 @@ spring:
   profiles.active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://101.132.137.156:3306/lmx?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true
+    url: jdbc:mysql://101.132.137.156:3306/lmx?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true
     username: root
     password: lmx@123456
     initialSize: 5
@@ -20,8 +20,8 @@ spring:
     testWhileIdle: true
     testOnBorrow: true
     testOnReturn: true
-    # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
-    filters: stat,wall,log4j
+    # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙，加了wall 无法批量更新
+    filters: stat,log4j
     logSlowSql: true
   resources:
         staticLocations:classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/

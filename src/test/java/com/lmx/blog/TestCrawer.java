@@ -20,7 +20,7 @@ public class TestCrawer {
 
     public static void main(String[] args) {
         try{
-            String response = HttpClient.Get("www.baidu.com");
+            String response = HttpClient.Get("https://timeline-merger-ms.juejin.im/v1/get_entry_by_rank?src=web&before=20&limit=20&category=5562b419e4b00c57d9b94ae2");
             response = response.substring(response.indexOf("\"entrylist\":") + 12,response.lastIndexOf("}}"));
             List<JuejinEntity> reponseMap = new Gson().fromJson(response,new TypeToken<ArrayList<JuejinEntity>>(){}.getType());
             System.out.println(reponseMap);

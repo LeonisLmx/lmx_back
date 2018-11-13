@@ -55,10 +55,10 @@ public interface TagMapper {
 
     @Insert({
             "<script>",
-            "insert into tag (name,create_time,xuehua_id)",
+            "insert into tag (name,create_time,xuehua_id,modify_time)",
             "values",
             "<foreach collection='list' item='entity' index='index' separator=','>",
-            "(#{entity.name},#{entity.createTime},#{entity.xuehuaId})",
+            "(#{entity.name},#{entity.createTime},#{entity.xuehuaId},now())",
             "</foreach>",
             "</script>"
     })

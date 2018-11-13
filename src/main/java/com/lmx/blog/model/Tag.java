@@ -8,6 +8,7 @@ public class Tag {
     private String name;
     private Date createTime;
     private Long xuehuaId;
+    private Date modifyTime;
 
     public Long getId() {
         return id;
@@ -39,5 +40,13 @@ public class Tag {
 
     public void setXuehuaId(Long xuehuaId) {
         this.xuehuaId = xuehuaId;
+    }
+
+    public Date getModifyTime() {
+        return modifyTime;
+    }
+
+    public void setModifyTime(Date modifyTime) {
+        this.modifyTime = modifyTime;
     }
 }

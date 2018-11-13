@@ -53,7 +53,8 @@ public class JuejinCrawerService {
                 articleDescription.setCreateTime(entity.getCreatedAt());
                 articleDescription.setGoodNum(entity.getCollectionCount());
                 articleDescription.setMessageNum(entity.getCommentsCount());
-                articleDescription.setType("后端");
+                articleDescription.setType(entity.getType());
+                articleDescription.setHot(entity.getHot()?1:-1);
                 articleDescription.setXuehuaId(xuehuaId);
                 articleDescription.setIsOrigin(-1);
                 if(articleDescriptionMapper.selectArticleIsHave(entity.getOriginalUrl()) == null) {
@@ -75,6 +76,7 @@ public class JuejinCrawerService {
             articleDescriptionMapper.batchInsertActicle(articleDescriptions);
             tagMapper.batchInsertActicle(tags);
         }
+        // 更新点赞数和留言数
         if(updateLists.size() > 0){
             articleDescriptionMapper.batchUpdate(updateLists);
         }

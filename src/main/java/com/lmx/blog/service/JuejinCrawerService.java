@@ -63,13 +63,13 @@ public class JuejinCrawerService {
                     articleDescription.setId(articleDescriptionMapper.selectArticleIsHave(entity.getOriginalUrl()));
                     updateLists.add(articleDescription);
                 }
-            }
-            for(JuejinTags juejinTags:entity.getTags()){
-                Tag tag = new Tag();
-                tag.setName(juejinTags.getTitle());
-                tag.setXuehuaId(xuehuaId);
-                tag.setCreateTime(new Date());
-                tags.add(tag);
+                for(JuejinTags juejinTags:entity.getTags()){
+                    Tag tag = new Tag();
+                    tag.setName(juejinTags.getTitle());
+                    tag.setXuehuaId(xuehuaId);
+                    tag.setCreateTime(new Date());
+                    tags.add(tag);
+                }
             }
         }
         if(articleDescriptions.size() > 0) {

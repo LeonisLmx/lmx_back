@@ -101,7 +101,7 @@ public interface ArticleDescriptionMapper {
 
     @Select({
             "select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a",
-            "order by a.modify_time",
+            "order by a.modify_time desc,id asc",
     })
     List<Map<String,Object>> queryAllArticles();
 }

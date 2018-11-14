@@ -1,496 +1,273 @@
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21449} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21449} executed. 6.90381 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21449, rs-51430} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21449, rs-51430} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21449, rs-51430} Result: [6]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21449, rs-51430} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21449} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21450} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21450} Parameters : [https://juejin.im/post/5be6929ae51d450aa46c868a]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21450} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21450} executed. 5.863083 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21450, rs-51431} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21450, rs-51431} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21450, rs-51431} Result: [14]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21450, rs-51431} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21450} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21451} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21451} Parameters : [https://juejin.im/post/5be9b02651882516d725ba55]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21451} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21451} executed. 4.985857 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21451, rs-51432} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21451, rs-51432} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21451, rs-51432} Result: [176]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21451, rs-51432} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21451} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21452} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21452} Parameters : [https://juejin.im/post/5be4e93b6fb9a049e7019af0]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21452} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21452} executed. 6.057303 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21452, rs-51433} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21452, rs-51433} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21452, rs-51433} Result: [17]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21452, rs-51433} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21452} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21453} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21453} Parameters : [https://juejin.im/post/5be9b02651882516d725ba55]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21453} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21453} executed. 4.760918 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21453, rs-51434} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21453, rs-51434} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21453, rs-51434} Result: [176]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21453, rs-51434} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21453} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21454} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21454} Parameters : [https://juejin.im/post/5be4e93b6fb9a049e7019af0]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21454} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21455} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21455} Parameters : [https://juejin.im/post/5be6b9aff265da614e2b9934]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21455} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21454} executed. 7.590231 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21454, rs-51435} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21454, rs-51435} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21454, rs-51435} Result: [17]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21454, rs-51435} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21454} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21455} executed. 5.212844 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21455, rs-51436} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21455, rs-51436} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21455, rs-51436} Result: [1]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21455, rs-51436} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21455} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21456} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21456} Parameters : [https://juejin.im/post/5be8e0b1f265da614d08b45a]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21456} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21457} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21457} Parameters : [https://juejin.im/post/5be6b9aff265da614e2b9934]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21457} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21456} executed. 5.553835 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21456, rs-51437} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21456, rs-51437} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21456, rs-51437} Result: [20]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21456, rs-51437} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21456} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21457} executed. 5.015895 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21457, rs-51438} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21457, rs-51438} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21457, rs-51438} Result: [1]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21457, rs-51438} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21457} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21458} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21458} Parameters : [https://juejin.im/post/5be8e0b1f265da614d08b45a]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21458} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21459} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21459} Parameters : [https://zhuanlan.zhihu.com/p/49271189]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21459} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21458} executed. 6.092459 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21458, rs-51439} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21458, rs-51439} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21458, rs-51439} Result: [20]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21458, rs-51439} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21458} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21459} executed. 5.145601 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21459, rs-51440} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21459, rs-51440} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21459, rs-51440} Result: [215]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21459, rs-51440} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21459} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21460} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21460} Parameters : [https://blog.csdn.net/seetheworld518/article/details/49639651]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21460} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21461} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21461} Parameters : [https://zhuanlan.zhihu.com/p/49271189]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21461} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21460} executed. 5.256534 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21460, rs-51441} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21460, rs-51441} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21460, rs-51441} Result: [198]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21460, rs-51441} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21460} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21461} executed. 6.104748 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21461, rs-51442} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21461, rs-51442} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21461, rs-51442} Result: [215]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21461, rs-51442} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21461} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21462} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21462} Parameters : [https://blog.csdn.net/seetheworld518/article/details/49639651]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21462} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21463} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21463} Parameters : [https://mp.weixin.qq.com/s?__biz=MzI0MDQ4MTM5NQ==&mid=2247487483&idx=1&sn=4c2b512e03f41504634f7f5e47873008&chksm=e91b6ae7de6ce3f1cf481d2cbc0d57667c4f05bf869acee6034139d8c5638f78f4301edae04d&token=983212655&lang=zh_CN#rd]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21463} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21463} executed. 5.167105 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21463, rs-51443} open
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21462} executed. 6.107137 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21462, rs-51444} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21462, rs-51444} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21463, rs-51443} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21462, rs-51444} Result: [198]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21463, rs-51443} Result: [7]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21462, rs-51444} closed
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21463, rs-51443} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21462} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21463} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21464} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21464} Parameters : [https://mp.weixin.qq.com/s?__biz=MzI0MDQ4MTM5NQ==&mid=2247487483&idx=1&sn=4c2b512e03f41504634f7f5e47873008&chksm=e91b6ae7de6ce3f1cf481d2cbc0d57667c4f05bf869acee6034139d8c5638f78f4301edae04d&token=983212655&lang=zh_CN#rd]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21464} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21465} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21465} Parameters : [https://juejin.im/post/5be7eaf26fb9a049d4415278]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21465} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21464} executed. 5.288961 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21464, rs-51445} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21464, rs-51445} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21464, rs-51445} Result: [7]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21464, rs-51445} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21464} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21465} executed. 6.146391 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21465, rs-51446} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21465, rs-51446} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21465, rs-51446} Result: [13]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21465, rs-51446} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21465} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21466} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21466} Parameters : [https://juejin.im/post/5bea246d6fb9a049b41bffb4]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21466} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21467} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21467} Parameters : [https://juejin.im/post/5be7eaf26fb9a049d4415278]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21467} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21466} executed. 5.881515 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21466, rs-51447} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21466, rs-51447} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21466, rs-51447} Result: [178]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21466, rs-51447} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21466} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21467} executed. 5.366785 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21467, rs-51448} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21467, rs-51448} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21467, rs-51448} Result: [13]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21467, rs-51448} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21467} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21468} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21468} Parameters : [https://juejin.im/post/5bea246d6fb9a049b41bffb4]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21468} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21469} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21469} Parameters : [https://juejin.im/post/5be7f9405188257b3541c1e6]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21469} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21468} executed. 4.99951 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21468, rs-51449} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21468, rs-51449} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21468, rs-51449} Result: [178]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21468, rs-51449} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21468} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21469} executed. 5.765121 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21469, rs-51450} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21469, rs-51450} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21469, rs-51450} Result: [101]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21469, rs-51450} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21469} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21470} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21470} Parameters : [https://juejin.im/post/5be8d4076fb9a049b829f9bd]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21470} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21470} executed. 4.891649 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21470, rs-51451} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21470, rs-51451} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21470, rs-51451} Result: [8]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21470, rs-51451} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21470} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21471} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21471} Parameters : [https://juejin.im/post/5be7f9405188257b3541c1e6]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21471} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21471} executed. 7.031809 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21471, rs-51452} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21471, rs-51452} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21471, rs-51452} Result: [101]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21471, rs-51452} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21471} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21472} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21472} Parameters : [https://juejin.im/post/5be8d4076fb9a049b829f9bd]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21472} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21472} executed. 5.118977 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21472, rs-51453} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21472, rs-51453} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21472, rs-51453} Result: [8]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21472, rs-51453} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21472} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21473} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21473} Parameters : [https://juejin.im/post/5be8ce666fb9a049ba4117d9]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21473} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21473} executed. 5.856257 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21473, rs-51454} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21473, rs-51454} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21473, rs-51454} Result: [194]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21473, rs-51454} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21473} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21474} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21474} Parameters : [https://juejin.im/post/5be996f5f265da615a415a09]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21474} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21474} executed. 5.38624 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21474, rs-51455} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21474, rs-51455} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21474, rs-51455} Result: [177]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21474, rs-51455} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21474} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21475} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21475} Parameters : [https://juejin.im/post/5be8ce666fb9a049ba4117d9]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21475} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21475} executed. 6.208513 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21475, rs-51456} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21475, rs-51456} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21475, rs-51456} Result: [194]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21475, rs-51456} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21475} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21476} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21476} Parameters : [https://juejin.im/post/5be996f5f265da615a415a09]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21476} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21476} executed. 7.314775 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21476, rs-51457} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21476, rs-51457} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21476, rs-51457} Result: [177]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21476, rs-51457} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21476} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21477} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21477} Parameters : [https://juejin.im/post/5be82ec56fb9a049d61d0e40]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21477} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21478} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21478} Parameters : [https://juejin.im/post/5be95831e51d451d2363490a]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21478} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21477} executed. 5.271553 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21477, rs-51458} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21477, rs-51458} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21477, rs-51458} Result: [102]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21477, rs-51458} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21477} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21478} executed. 5.65726 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21478, rs-51459} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21478, rs-51459} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21478, rs-51459} Result: [181]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21478, rs-51459} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21478} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21479} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21479} Parameters : [https://juejin.im/post/5be82ec56fb9a049d61d0e40]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21479} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21480} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21480} Parameters : [https://juejin.im/post/5be95831e51d451d2363490a]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21480} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21479} executed. 6.242305 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21479, rs-51460} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21479, rs-51460} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21479, rs-51460} Result: [102]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21479, rs-51460} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21479} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21480} executed. 5.167446 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21480, rs-51461} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21480, rs-51461} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21480, rs-51461} Result: [181]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21480, rs-51461} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21480} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21481} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21481} Parameters : [https://juejin.im/post/5be99ea2f265da613a538e41]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21481} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21482} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21482} Parameters : [https://juejin.im/post/5be8086be51d454c6e6e5d7c]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21482} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21481} executed. 4.655787 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21481, rs-51462} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21481, rs-51462} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21481, rs-51462} Result: [4]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21481, rs-51462} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21481} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21482} executed. 5.786966 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21482, rs-51463} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21482, rs-51463} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21482, rs-51463} Result: [100]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21482, rs-51463} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21482} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21483} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21483} Parameters : [https://juejin.im/post/5be99ea2f265da613a538e41]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21483} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21484} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21484} Parameters : [https://juejin.im/post/5be8086be51d454c6e6e5d7c]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21484} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21483} executed. 4.276225 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21483, rs-51464} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21483, rs-51464} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21483, rs-51464} Result: [4]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21483, rs-51464} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21483} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21484} executed. 7.788887 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21484, rs-51465} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21484, rs-51465} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21484, rs-51465} Result: [100]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21484, rs-51465} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21484} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21485} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21485} Parameters : [https://juejin.im/post/5bea3bfc51882579117f5b27]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21485} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21485} executed. 5.390679 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21485, rs-51466} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21485, rs-51466} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21485, rs-51466} Result: [185]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21485, rs-51466} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21485} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21486} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21486} Parameters : [http://www.iocoder.cn/Sharding-JDBC/sql-parse-1?juejin&2018-11-10]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21486} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21486} executed. 8.633345 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21486, rs-51467} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21486, rs-51467} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21486, rs-51467} Result: [121]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21486, rs-51467} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21486} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21487} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21487} Parameters : [https://juejin.im/post/5bea3bfc51882579117f5b27]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21487} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21487} executed. 4.066987 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21487, rs-51468} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21487, rs-51468} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21487, rs-51468} Result: [185]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21487, rs-51468} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21487} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21488} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21488} Parameters : [http://www.iocoder.cn/Sharding-JDBC/sql-parse-1?juejin&2018-11-10]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21488} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21489} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21489} Parameters : [https://juejin.im/post/5be54cee51882516be2ea92a]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21489} Types : [VARCHAR]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21488} executed. 5.214551 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21488, rs-51469} open
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21488, rs-51469} Header: [id]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21488, rs-51469} Result: [121]
-DEBUG pool-3-thread-4 druid.sql.ResultSet - {conn-10005, pstmt-21488, rs-51469} closed
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21488} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21489} executed. 5.179734 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21489, rs-51470} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21489, rs-51470} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21489, rs-51470} Result: [9]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21489, rs-51470} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21489} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21490} created. update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21490} Parameters : [25, 0, 16, 18, 4, 12, 23, 0, 11, 0, 0, 180, 22, 0, 105, 18, 7, 15, 140, 44, 118, 257, 54, 120, 7, 0, 10, 11, 0, 14, 14, 0, 17, 13, 8, 20, 1, 0, 198, 10, 0, 13, 9, 8, 101, 1, 0, 194, 12, 0, 102, 15, 0, 100, 27, 1, 121]
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21490} Types : [INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT]
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21491} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21491} Parameters : [https://juejin.im/post/5be54cee51882516be2ea92a]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21491} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21491} executed. 5.529943 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21491, rs-51471} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21491, rs-51471} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21491, rs-51471} Result: [9]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21491, rs-51471} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21491} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21492} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21492} Parameters : [https://www.jianshu.com/p/fdb8c8a604b1]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21492} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21492} executed. 5.345281 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21492, rs-51472} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21492, rs-51472} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21492, rs-51472} Result: [3]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21492, rs-51472} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21492} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21493} created. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21493} Parameters : [https://www.jianshu.com/p/fdb8c8a604b1]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21493} Types : [VARCHAR]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21493} executed. 4.816214 millis. select id from article_description where article_url = ?
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21493, rs-51473} open
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21493, rs-51473} Header: [id]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21493, rs-51473} Result: [3]
-DEBUG pool-3-thread-1 druid.sql.ResultSet - {conn-10002, pstmt-21493, rs-51473} closed
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21493} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21490} executed. 53.025119 millis. update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?
-DEBUG pool-3-thread-4 druid.sql.Statement - {conn-10005, pstmt-21490} closed
-DEBUG pool-3-thread-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-connect
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21494} created. update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21494} Parameters : [2, 0, 175, 3, 1, 184, 6, 0, 182, 59, 3, 5, 5, 1, 183, 1, 0, 210, 2, 0, 186, 24, 0, 6, 3, 0, 176, 38, 3, 1, 1, 0, 215, 39, 6, 7, 2, 0, 178, 15, 3, 8, 4, 0, 177, 1, 1, 181, 10, 0, 4, 1, 0, 185, 25, 11, 9, 7, 0, 3]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21494} Types : [INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT, INTEGER, INTEGER, BIGINT]
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21494} executed. 50.793822 millis. update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?  ;  update article_description set good_num = ?,message_num = ?,modify_time = now() where id = ?
-DEBUG pool-3-thread-1 druid.sql.Statement - {conn-10002, pstmt-21494} closed
-DEBUG pool-3-thread-1 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [count(0)]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [225]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} created. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [0, 20]
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [INTEGER, INTEGER]
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 25.407834 millis. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, title, hot, type, author, create_time, good_num, message_num, article_url, author_url, is_origin, modify_time, xuehua_id, tags]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [81, 计算机系统漫游, -1, post, 刘小绪同学, 2018-11-12 10:33:32.0, 0, 0, https://juejin.im/post/5be82ae0e51d452acb74eef1, https://juejin.im/user/5be82991e51d450698156b13, -1, 2018-11-13 15:00:04.0, 1062027257133924352, Shell,后端,命令行,操作系统]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [85, NSX高级路由架构, -1, post, IT大咖说, 2018-11-12 13:57:56.0, 0, 0, https://juejin.im/post/5be91281518825170d1a9aaf, https://juejin.im/user/5948e562ac502e5490ee6064, -1, 2018-11-13 15:00:04.0, 1062027257343639552, 后端,图片资源,服务器,架构]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [88, C#实现.Net对邮件进行DKIM签名和验证，支持附件，发送邮件签名后直接投递到对方服务器（无需己方邮件服务器）, -1, post, xiangyuecn, 2018-11-12 16:31:43.0, 1, 0, https://juejin.im/post/5be7f05fe51d451e5a32ee85, https://juejin.im/user/5b1e1087e51d4506d168168e, -1, 2018-11-13 15:00:04.0, 1062027257482051584, .NET,C#,后端,服务器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [89, 从零单排学Redis【黄金】, -1, post, Java3y, 2018-11-09 16:39:44.0, 34, 2, https://juejin.im/post/5be523b3f265da613b6f47d5, https://juejin.im/user/5a7005b46fb9a01c995117a7, -1, 2018-11-13 15:00:04.0, 1062027257532383232, Java,Redis,后端,服务器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [91, [kubernetes系列]Scheduler模块深度讲解, -1, post, 奇犽, 2018-11-11 19:45:52.0, 8, 0, https://juejin.im/post/5be816516fb9a049f153b833, https://juejin.im/user/591907fcda2f60005df17496, -1, 2018-11-13 15:00:04.0, 1062027257578520576, Kubernetes ,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [92, php单元测试（phpunit）中自定义万能通用仿件, -1, article, pp3489102, 2018-11-12 10:31:18.0, 3, 0, https://my.oschina.net/u/2394701/blog/2874779, https://juejin.im/user/5a424fd3f265da4327187d47, -1, 2018-11-13 15:00:04.0, 1062027257599492096, PHP,编程语言]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [94, 调用链系列三：解读UAVStack中的调用链技术, -1, post, iEven, 2018-11-12 17:07:21.0, 1, 0, https://juejin.im/post/5be550a05188250ae0661f85, https://juejin.im/user/5bc6c109e51d450e7042db83, -1, 2018-11-13 15:00:04.0, 1062027257729515520, Java,后端,容器,架构]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [95, Go语言学习(3) - 变量与初始化, -1, post, 翻身码农把歌唱, 2018-11-12 10:32:53.0, 1, 0, https://juejin.im/post/5be82c35f265da613e21c40a, https://juejin.im/user/59489e04128fe1006a576fbb, -1, 2018-11-13 15:00:04.0, 1062027257754681344, Go,Java,后端,编译器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [119, Netty实战（三）：客户端与服务端双向通信, -1, article, fageiguanbing, 2018-11-12 17:11:31.0, 1, 0, https://fageiguanbing.gitee.io/blog/2018/11/11/Netty实战（三）：客户端与服务端双向通信/, https://juejin.im/user/5a17bad66fb9a0451a7610c7, -1, 2018-11-13 16:00:03.0, 1062042352429826048, Netty]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [123, Django-Rest-Framework 权限管理源码浅析, -1, post, 行行出bug, 2018-11-12 11:50:50.0, 2, 5, https://juejin.im/post/5be8f771f265da611c2680a0, https://juejin.im/user/5b62ddd451882506e232cdf4, -1, 2018-11-13 17:00:01.0, 1062057441643986944, Django,Python,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [124, 每天一道leetcode142-寻找链表中环的入口, -1, post, 公众号_程序员乔戈里, 2018-11-12 16:56:20.0, 1, 0, https://juejin.im/post/5be8058ee51d4536f4451432, https://juejin.im/user/5be1bd47e51d45562a666aec, -1, 2018-11-13 17:00:01.0, 1062057441681735680, Java,LeetCode,后端,百度]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [138, 如何构建高性能、稳定的后端服务系统 | 美团技术沙龙第45期, -1, entry, 稀土君, 2018-11-12 17:02:37.0, 0, 0, http://www.huodongxing.com/event/4465518704511?qd=juejin, https://juejin.im/user/551d6923e4b0cd5b623f54da, -1, 2018-11-13 18:00:01.0, 1062072545466908672, 后端,架构,线下活动]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [139, 使用 postman 调试 jwt 开发的接口, -1, post, 自行脑补, 2018-11-09 13:59:15.0, 15, 0, https://juejin.im/post/5be4482c518825601330c9cf, https://juejin.im/user/5b8b50e16fb9a019cd4e6d68, -1, 2018-11-13 18:00:01.0, 1062072545487880192, JavaScript,Postman,前端,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [141, 实战swoole【聊天室】, -1, post, OMGZui, 2018-11-09 14:10:29.0, 14, 0, https://juejin.im/post/5be42bf96fb9a049f818c773, https://juejin.im/user/57a7d99a0a2b5800585b73ef, -1, 2018-11-13 21:00:00.0, 1062117839063744512, PHP,Swoole,WebSocket,服务器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [142, 认真的 Netty 源码解析（二）, -1, post, Javajavajava, 2018-11-09 17:50:40.0, 14, 1, https://juejin.im/post/5be54a37f265da61407e68b1, https://juejin.im/user/5a5dfd24f265da3e347b43c4, -1, 2018-11-13 21:00:00.0, 1062117839139241984, Java,Netty,Promise,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [143, 【译】Consul负载均衡策略, -1, post, 爱学园, 2018-11-09 10:41:36.0, 9, 0, https://juejin.im/post/5be4073df265da613b6f450a, https://juejin.im/user/5be2a2e06fb9a049ba410c41, -1, 2018-11-13 21:00:00.0, 1062117839156019200, DNS,Nginx,后端,负载均衡]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [144, 漫话：如何给女朋友解释什么是并发和并行, -1, post, 漫话编程_公众号mhcoding, 2018-11-05 13:42:08.0, 35, 7, https://juejin.im/post/5bdf0667e51d450b267fe3e3, https://juejin.im/user/5ab1e12d6fb9a028be35de21, -1, 2018-11-13 21:00:00.0, 1062117839172796416, Windows,后端,操作系统,面试]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [145, 【动图详解】通过 User-Agent 识别爬虫的原理、实践与对应的绕过方法, -1, post, 韦世东, 2018-11-05 10:34:11.0, 41, 11, https://juejin.im/post/5bdeb32d51882516fa635ace, https://juejin.im/user/59df53d151882578d30167e6, -1, 2018-11-13 21:00:00.0, 1062117839185379328, Nginx,Python,浏览器,爬虫]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [146, go 开发属于自己的日志库-文件日志库原型实现, -1, post, 旱鸭子, 2018-11-09 15:22:11.0, 17, 1, https://juejin.im/post/5be529106fb9a04a0279d97e, https://juejin.im/user/5814c73f5bbb500059a33944, -1, 2018-11-13 21:00:00.0, 1062117839202156544, Go,单元测试,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [147, 数据库中间件 MyCAT 源码解析 —— 分片结果合并（一）, -1, article, Java公众号_芋道源码_每日更新, 2018-11-05 06:00:35.0, 29, 0, http://www.iocoder.cn/MyCAT/sharding-result-merge-first?juejin&2018-11-05, https://juejin.im/user/5904c637b123db3ee479d923, -1, 2018-11-13 21:00:00.0, 1062117839214739456, Java]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} created. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} executed. 5.207382 millis. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} open
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Header: [count(0)]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Result: [225]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} created. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : [0, 20]
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} Types : [INTEGER, INTEGER]
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} executed. 24.105988 millis. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} open
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Header: [id, title, hot, type, author, create_time, good_num, message_num, article_url, author_url, is_origin, modify_time, xuehua_id, tags]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [81, 计算机系统漫游, -1, post, 刘小绪同学, 2018-11-12 10:33:32.0, 0, 0, https://juejin.im/post/5be82ae0e51d452acb74eef1, https://juejin.im/user/5be82991e51d450698156b13, -1, 2018-11-13 15:00:04.0, 1062027257133924352, Shell,后端,命令行,操作系统]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [85, NSX高级路由架构, -1, post, IT大咖说, 2018-11-12 13:57:56.0, 0, 0, https://juejin.im/post/5be91281518825170d1a9aaf, https://juejin.im/user/5948e562ac502e5490ee6064, -1, 2018-11-13 15:00:04.0, 1062027257343639552, 后端,图片资源,服务器,架构]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [88, C#实现.Net对邮件进行DKIM签名和验证，支持附件，发送邮件签名后直接投递到对方服务器（无需己方邮件服务器）, -1, post, xiangyuecn, 2018-11-12 16:31:43.0, 1, 0, https://juejin.im/post/5be7f05fe51d451e5a32ee85, https://juejin.im/user/5b1e1087e51d4506d168168e, -1, 2018-11-13 15:00:04.0, 1062027257482051584, .NET,C#,后端,服务器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [89, 从零单排学Redis【黄金】, -1, post, Java3y, 2018-11-09 16:39:44.0, 34, 2, https://juejin.im/post/5be523b3f265da613b6f47d5, https://juejin.im/user/5a7005b46fb9a01c995117a7, -1, 2018-11-13 15:00:04.0, 1062027257532383232, Java,Redis,后端,服务器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [91, [kubernetes系列]Scheduler模块深度讲解, -1, post, 奇犽, 2018-11-11 19:45:52.0, 8, 0, https://juejin.im/post/5be816516fb9a049f153b833, https://juejin.im/user/591907fcda2f60005df17496, -1, 2018-11-13 15:00:04.0, 1062027257578520576, Kubernetes ,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [92, php单元测试（phpunit）中自定义万能通用仿件, -1, article, pp3489102, 2018-11-12 10:31:18.0, 3, 0, https://my.oschina.net/u/2394701/blog/2874779, https://juejin.im/user/5a424fd3f265da4327187d47, -1, 2018-11-13 15:00:04.0, 1062027257599492096, PHP,编程语言]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [94, 调用链系列三：解读UAVStack中的调用链技术, -1, post, iEven, 2018-11-12 17:07:21.0, 1, 0, https://juejin.im/post/5be550a05188250ae0661f85, https://juejin.im/user/5bc6c109e51d450e7042db83, -1, 2018-11-13 15:00:04.0, 1062027257729515520, Java,后端,容器,架构]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [95, Go语言学习(3) - 变量与初始化, -1, post, 翻身码农把歌唱, 2018-11-12 10:32:53.0, 1, 0, https://juejin.im/post/5be82c35f265da613e21c40a, https://juejin.im/user/59489e04128fe1006a576fbb, -1, 2018-11-13 15:00:04.0, 1062027257754681344, Go,Java,后端,编译器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [119, Netty实战（三）：客户端与服务端双向通信, -1, article, fageiguanbing, 2018-11-12 17:11:31.0, 1, 0, https://fageiguanbing.gitee.io/blog/2018/11/11/Netty实战（三）：客户端与服务端双向通信/, https://juejin.im/user/5a17bad66fb9a0451a7610c7, -1, 2018-11-13 16:00:03.0, 1062042352429826048, Netty]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [123, Django-Rest-Framework 权限管理源码浅析, -1, post, 行行出bug, 2018-11-12 11:50:50.0, 2, 5, https://juejin.im/post/5be8f771f265da611c2680a0, https://juejin.im/user/5b62ddd451882506e232cdf4, -1, 2018-11-13 17:00:01.0, 1062057441643986944, Django,Python,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [124, 每天一道leetcode142-寻找链表中环的入口, -1, post, 公众号_程序员乔戈里, 2018-11-12 16:56:20.0, 1, 0, https://juejin.im/post/5be8058ee51d4536f4451432, https://juejin.im/user/5be1bd47e51d45562a666aec, -1, 2018-11-13 17:00:01.0, 1062057441681735680, Java,LeetCode,后端,百度]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [138, 如何构建高性能、稳定的后端服务系统 | 美团技术沙龙第45期, -1, entry, 稀土君, 2018-11-12 17:02:37.0, 0, 0, http://www.huodongxing.com/event/4465518704511?qd=juejin, https://juejin.im/user/551d6923e4b0cd5b623f54da, -1, 2018-11-13 18:00:01.0, 1062072545466908672, 后端,架构,线下活动]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [139, 使用 postman 调试 jwt 开发的接口, -1, post, 自行脑补, 2018-11-09 13:59:15.0, 15, 0, https://juejin.im/post/5be4482c518825601330c9cf, https://juejin.im/user/5b8b50e16fb9a019cd4e6d68, -1, 2018-11-13 18:00:01.0, 1062072545487880192, JavaScript,Postman,前端,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [141, 实战swoole【聊天室】, -1, post, OMGZui, 2018-11-09 14:10:29.0, 14, 0, https://juejin.im/post/5be42bf96fb9a049f818c773, https://juejin.im/user/57a7d99a0a2b5800585b73ef, -1, 2018-11-13 21:00:00.0, 1062117839063744512, PHP,Swoole,WebSocket,服务器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [142, 认真的 Netty 源码解析（二）, -1, post, Javajavajava, 2018-11-09 17:50:40.0, 14, 1, https://juejin.im/post/5be54a37f265da61407e68b1, https://juejin.im/user/5a5dfd24f265da3e347b43c4, -1, 2018-11-13 21:00:00.0, 1062117839139241984, Java,Netty,Promise,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [143, 【译】Consul负载均衡策略, -1, post, 爱学园, 2018-11-09 10:41:36.0, 9, 0, https://juejin.im/post/5be4073df265da613b6f450a, https://juejin.im/user/5be2a2e06fb9a049ba410c41, -1, 2018-11-13 21:00:00.0, 1062117839156019200, DNS,Nginx,后端,负载均衡]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [144, 漫话：如何给女朋友解释什么是并发和并行, -1, post, 漫话编程_公众号mhcoding, 2018-11-05 13:42:08.0, 35, 7, https://juejin.im/post/5bdf0667e51d450b267fe3e3, https://juejin.im/user/5ab1e12d6fb9a028be35de21, -1, 2018-11-13 21:00:00.0, 1062117839172796416, Windows,后端,操作系统,面试]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [145, 【动图详解】通过 User-Agent 识别爬虫的原理、实践与对应的绕过方法, -1, post, 韦世东, 2018-11-05 10:34:11.0, 41, 11, https://juejin.im/post/5bdeb32d51882516fa635ace, https://juejin.im/user/59df53d151882578d30167e6, -1, 2018-11-13 21:00:00.0, 1062117839185379328, Nginx,Python,浏览器,爬虫]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [146, go 开发属于自己的日志库-文件日志库原型实现, -1, post, 旱鸭子, 2018-11-09 15:22:11.0, 17, 1, https://juejin.im/post/5be529106fb9a04a0279d97e, https://juejin.im/user/5814c73f5bbb500059a33944, -1, 2018-11-13 21:00:00.0, 1062117839202156544, Go,单元测试,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [147, 数据库中间件 MyCAT 源码解析 —— 分片结果合并（一）, -1, article, Java公众号_芋道源码_每日更新, 2018-11-05 06:00:35.0, 29, 0, http://www.iocoder.cn/MyCAT/sharding-result-merge-first?juejin&2018-11-05, https://juejin.im/user/5904c637b123db3ee479d923, -1, 2018-11-13 21:00:00.0, 1062117839214739456, Java]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20004} created. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20004} Parameters : []
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20004} Types : []
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20004} executed. 4.418561 millis. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} open
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Header: [count(0)]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Result: [225]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20004} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20005} created. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20005} Parameters : [0, 20]
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20005} Types : [INTEGER, INTEGER]
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20005} executed. 23.859887 millis. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} open
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Header: [id, title, hot, type, author, create_time, good_num, message_num, article_url, author_url, is_origin, modify_time, xuehua_id, tags]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [81, 计算机系统漫游, -1, post, 刘小绪同学, 2018-11-12 10:33:32.0, 0, 0, https://juejin.im/post/5be82ae0e51d452acb74eef1, https://juejin.im/user/5be82991e51d450698156b13, -1, 2018-11-13 15:00:04.0, 1062027257133924352, Shell,后端,命令行,操作系统]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [85, NSX高级路由架构, -1, post, IT大咖说, 2018-11-12 13:57:56.0, 0, 0, https://juejin.im/post/5be91281518825170d1a9aaf, https://juejin.im/user/5948e562ac502e5490ee6064, -1, 2018-11-13 15:00:04.0, 1062027257343639552, 后端,图片资源,服务器,架构]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [88, C#实现.Net对邮件进行DKIM签名和验证，支持附件，发送邮件签名后直接投递到对方服务器（无需己方邮件服务器）, -1, post, xiangyuecn, 2018-11-12 16:31:43.0, 1, 0, https://juejin.im/post/5be7f05fe51d451e5a32ee85, https://juejin.im/user/5b1e1087e51d4506d168168e, -1, 2018-11-13 15:00:04.0, 1062027257482051584, .NET,C#,后端,服务器]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [89, 从零单排学Redis【黄金】, -1, post, Java3y, 2018-11-09 16:39:44.0, 34, 2, https://juejin.im/post/5be523b3f265da613b6f47d5, https://juejin.im/user/5a7005b46fb9a01c995117a7, -1, 2018-11-13 15:00:04.0, 1062027257532383232, Java,Redis,后端,服务器]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [91, [kubernetes系列]Scheduler模块深度讲解, -1, post, 奇犽, 2018-11-11 19:45:52.0, 8, 0, https://juejin.im/post/5be816516fb9a049f153b833, https://juejin.im/user/591907fcda2f60005df17496, -1, 2018-11-13 15:00:04.0, 1062027257578520576, Kubernetes ,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [92, php单元测试（phpunit）中自定义万能通用仿件, -1, article, pp3489102, 2018-11-12 10:31:18.0, 3, 0, https://my.oschina.net/u/2394701/blog/2874779, https://juejin.im/user/5a424fd3f265da4327187d47, -1, 2018-11-13 15:00:04.0, 1062027257599492096, PHP,编程语言]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [94, 调用链系列三：解读UAVStack中的调用链技术, -1, post, iEven, 2018-11-12 17:07:21.0, 1, 0, https://juejin.im/post/5be550a05188250ae0661f85, https://juejin.im/user/5bc6c109e51d450e7042db83, -1, 2018-11-13 15:00:04.0, 1062027257729515520, Java,后端,容器,架构]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [95, Go语言学习(3) - 变量与初始化, -1, post, 翻身码农把歌唱, 2018-11-12 10:32:53.0, 1, 0, https://juejin.im/post/5be82c35f265da613e21c40a, https://juejin.im/user/59489e04128fe1006a576fbb, -1, 2018-11-13 15:00:04.0, 1062027257754681344, Go,Java,后端,编译器]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [119, Netty实战（三）：客户端与服务端双向通信, -1, article, fageiguanbing, 2018-11-12 17:11:31.0, 1, 0, https://fageiguanbing.gitee.io/blog/2018/11/11/Netty实战（三）：客户端与服务端双向通信/, https://juejin.im/user/5a17bad66fb9a0451a7610c7, -1, 2018-11-13 16:00:03.0, 1062042352429826048, Netty]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [123, Django-Rest-Framework 权限管理源码浅析, -1, post, 行行出bug, 2018-11-12 11:50:50.0, 2, 5, https://juejin.im/post/5be8f771f265da611c2680a0, https://juejin.im/user/5b62ddd451882506e232cdf4, -1, 2018-11-13 17:00:01.0, 1062057441643986944, Django,Python,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [124, 每天一道leetcode142-寻找链表中环的入口, -1, post, 公众号_程序员乔戈里, 2018-11-12 16:56:20.0, 1, 0, https://juejin.im/post/5be8058ee51d4536f4451432, https://juejin.im/user/5be1bd47e51d45562a666aec, -1, 2018-11-13 17:00:01.0, 1062057441681735680, Java,LeetCode,后端,百度]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [138, 如何构建高性能、稳定的后端服务系统 | 美团技术沙龙第45期, -1, entry, 稀土君, 2018-11-12 17:02:37.0, 0, 0, http://www.huodongxing.com/event/4465518704511?qd=juejin, https://juejin.im/user/551d6923e4b0cd5b623f54da, -1, 2018-11-13 18:00:01.0, 1062072545466908672, 后端,架构,线下活动]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [139, 使用 postman 调试 jwt 开发的接口, -1, post, 自行脑补, 2018-11-09 13:59:15.0, 15, 0, https://juejin.im/post/5be4482c518825601330c9cf, https://juejin.im/user/5b8b50e16fb9a019cd4e6d68, -1, 2018-11-13 18:00:01.0, 1062072545487880192, JavaScript,Postman,前端,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [141, 实战swoole【聊天室】, -1, post, OMGZui, 2018-11-09 14:10:29.0, 14, 0, https://juejin.im/post/5be42bf96fb9a049f818c773, https://juejin.im/user/57a7d99a0a2b5800585b73ef, -1, 2018-11-13 21:00:00.0, 1062117839063744512, PHP,Swoole,WebSocket,服务器]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [142, 认真的 Netty 源码解析（二）, -1, post, Javajavajava, 2018-11-09 17:50:40.0, 14, 1, https://juejin.im/post/5be54a37f265da61407e68b1, https://juejin.im/user/5a5dfd24f265da3e347b43c4, -1, 2018-11-13 21:00:00.0, 1062117839139241984, Java,Netty,Promise,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [143, 【译】Consul负载均衡策略, -1, post, 爱学园, 2018-11-09 10:41:36.0, 9, 0, https://juejin.im/post/5be4073df265da613b6f450a, https://juejin.im/user/5be2a2e06fb9a049ba410c41, -1, 2018-11-13 21:00:00.0, 1062117839156019200, DNS,Nginx,后端,负载均衡]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [144, 漫话：如何给女朋友解释什么是并发和并行, -1, post, 漫话编程_公众号mhcoding, 2018-11-05 13:42:08.0, 35, 7, https://juejin.im/post/5bdf0667e51d450b267fe3e3, https://juejin.im/user/5ab1e12d6fb9a028be35de21, -1, 2018-11-13 21:00:00.0, 1062117839172796416, Windows,后端,操作系统,面试]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [145, 【动图详解】通过 User-Agent 识别爬虫的原理、实践与对应的绕过方法, -1, post, 韦世东, 2018-11-05 10:34:11.0, 41, 11, https://juejin.im/post/5bdeb32d51882516fa635ace, https://juejin.im/user/59df53d151882578d30167e6, -1, 2018-11-13 21:00:00.0, 1062117839185379328, Nginx,Python,浏览器,爬虫]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [146, go 开发属于自己的日志库-文件日志库原型实现, -1, post, 旱鸭子, 2018-11-09 15:22:11.0, 17, 1, https://juejin.im/post/5be529106fb9a04a0279d97e, https://juejin.im/user/5814c73f5bbb500059a33944, -1, 2018-11-13 21:00:00.0, 1062117839202156544, Go,单元测试,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [147, 数据库中间件 MyCAT 源码解析 —— 分片结果合并（一）, -1, article, Java公众号_芋道源码_每日更新, 2018-11-05 06:00:35.0, 29, 0, http://www.iocoder.cn/MyCAT/sharding-result-merge-first?juejin&2018-11-05, https://juejin.im/user/5904c637b123db3ee479d923, -1, 2018-11-13 21:00:00.0, 1062117839214739456, Java]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20005} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20006} created. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20006} Parameters : []
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20006} Types : []
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20006} executed. 4.75375 millis. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} open
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Header: [count(0)]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Result: [225]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20006} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20007} created. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20007} Parameters : [0, 20]
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20007} Types : [INTEGER, INTEGER]
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20007} executed. 23.037614 millis. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} open
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Header: [id, title, hot, type, author, create_time, good_num, message_num, article_url, author_url, is_origin, modify_time, xuehua_id, tags]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [81, 计算机系统漫游, -1, post, 刘小绪同学, 2018-11-12 10:33:32.0, 0, 0, https://juejin.im/post/5be82ae0e51d452acb74eef1, https://juejin.im/user/5be82991e51d450698156b13, -1, 2018-11-13 15:00:04.0, 1062027257133924352, Shell,后端,命令行,操作系统]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [85, NSX高级路由架构, -1, post, IT大咖说, 2018-11-12 13:57:56.0, 0, 0, https://juejin.im/post/5be91281518825170d1a9aaf, https://juejin.im/user/5948e562ac502e5490ee6064, -1, 2018-11-13 15:00:04.0, 1062027257343639552, 后端,图片资源,服务器,架构]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [88, C#实现.Net对邮件进行DKIM签名和验证，支持附件，发送邮件签名后直接投递到对方服务器（无需己方邮件服务器）, -1, post, xiangyuecn, 2018-11-12 16:31:43.0, 1, 0, https://juejin.im/post/5be7f05fe51d451e5a32ee85, https://juejin.im/user/5b1e1087e51d4506d168168e, -1, 2018-11-13 15:00:04.0, 1062027257482051584, .NET,C#,后端,服务器]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [89, 从零单排学Redis【黄金】, -1, post, Java3y, 2018-11-09 16:39:44.0, 34, 2, https://juejin.im/post/5be523b3f265da613b6f47d5, https://juejin.im/user/5a7005b46fb9a01c995117a7, -1, 2018-11-13 15:00:04.0, 1062027257532383232, Java,Redis,后端,服务器]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [91, [kubernetes系列]Scheduler模块深度讲解, -1, post, 奇犽, 2018-11-11 19:45:52.0, 8, 0, https://juejin.im/post/5be816516fb9a049f153b833, https://juejin.im/user/591907fcda2f60005df17496, -1, 2018-11-13 15:00:04.0, 1062027257578520576, Kubernetes ,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [92, php单元测试（phpunit）中自定义万能通用仿件, -1, article, pp3489102, 2018-11-12 10:31:18.0, 3, 0, https://my.oschina.net/u/2394701/blog/2874779, https://juejin.im/user/5a424fd3f265da4327187d47, -1, 2018-11-13 15:00:04.0, 1062027257599492096, PHP,编程语言]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [94, 调用链系列三：解读UAVStack中的调用链技术, -1, post, iEven, 2018-11-12 17:07:21.0, 1, 0, https://juejin.im/post/5be550a05188250ae0661f85, https://juejin.im/user/5bc6c109e51d450e7042db83, -1, 2018-11-13 15:00:04.0, 1062027257729515520, Java,后端,容器,架构]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [95, Go语言学习(3) - 变量与初始化, -1, post, 翻身码农把歌唱, 2018-11-12 10:32:53.0, 1, 0, https://juejin.im/post/5be82c35f265da613e21c40a, https://juejin.im/user/59489e04128fe1006a576fbb, -1, 2018-11-13 15:00:04.0, 1062027257754681344, Go,Java,后端,编译器]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [119, Netty实战（三）：客户端与服务端双向通信, -1, article, fageiguanbing, 2018-11-12 17:11:31.0, 1, 0, https://fageiguanbing.gitee.io/blog/2018/11/11/Netty实战（三）：客户端与服务端双向通信/, https://juejin.im/user/5a17bad66fb9a0451a7610c7, -1, 2018-11-13 16:00:03.0, 1062042352429826048, Netty]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [123, Django-Rest-Framework 权限管理源码浅析, -1, post, 行行出bug, 2018-11-12 11:50:50.0, 2, 5, https://juejin.im/post/5be8f771f265da611c2680a0, https://juejin.im/user/5b62ddd451882506e232cdf4, -1, 2018-11-13 17:00:01.0, 1062057441643986944, Django,Python,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [124, 每天一道leetcode142-寻找链表中环的入口, -1, post, 公众号_程序员乔戈里, 2018-11-12 16:56:20.0, 1, 0, https://juejin.im/post/5be8058ee51d4536f4451432, https://juejin.im/user/5be1bd47e51d45562a666aec, -1, 2018-11-13 17:00:01.0, 1062057441681735680, Java,LeetCode,后端,百度]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [138, 如何构建高性能、稳定的后端服务系统 | 美团技术沙龙第45期, -1, entry, 稀土君, 2018-11-12 17:02:37.0, 0, 0, http://www.huodongxing.com/event/4465518704511?qd=juejin, https://juejin.im/user/551d6923e4b0cd5b623f54da, -1, 2018-11-13 18:00:01.0, 1062072545466908672, 后端,架构,线下活动]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [139, 使用 postman 调试 jwt 开发的接口, -1, post, 自行脑补, 2018-11-09 13:59:15.0, 15, 0, https://juejin.im/post/5be4482c518825601330c9cf, https://juejin.im/user/5b8b50e16fb9a019cd4e6d68, -1, 2018-11-13 18:00:01.0, 1062072545487880192, JavaScript,Postman,前端,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [141, 实战swoole【聊天室】, -1, post, OMGZui, 2018-11-09 14:10:29.0, 14, 0, https://juejin.im/post/5be42bf96fb9a049f818c773, https://juejin.im/user/57a7d99a0a2b5800585b73ef, -1, 2018-11-13 21:00:00.0, 1062117839063744512, PHP,Swoole,WebSocket,服务器]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [142, 认真的 Netty 源码解析（二）, -1, post, Javajavajava, 2018-11-09 17:50:40.0, 14, 1, https://juejin.im/post/5be54a37f265da61407e68b1, https://juejin.im/user/5a5dfd24f265da3e347b43c4, -1, 2018-11-13 21:00:00.0, 1062117839139241984, Java,Netty,Promise,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [143, 【译】Consul负载均衡策略, -1, post, 爱学园, 2018-11-09 10:41:36.0, 9, 0, https://juejin.im/post/5be4073df265da613b6f450a, https://juejin.im/user/5be2a2e06fb9a049ba410c41, -1, 2018-11-13 21:00:00.0, 1062117839156019200, DNS,Nginx,后端,负载均衡]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [144, 漫话：如何给女朋友解释什么是并发和并行, -1, post, 漫话编程_公众号mhcoding, 2018-11-05 13:42:08.0, 35, 7, https://juejin.im/post/5bdf0667e51d450b267fe3e3, https://juejin.im/user/5ab1e12d6fb9a028be35de21, -1, 2018-11-13 21:00:00.0, 1062117839172796416, Windows,后端,操作系统,面试]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [145, 【动图详解】通过 User-Agent 识别爬虫的原理、实践与对应的绕过方法, -1, post, 韦世东, 2018-11-05 10:34:11.0, 41, 11, https://juejin.im/post/5bdeb32d51882516fa635ace, https://juejin.im/user/59df53d151882578d30167e6, -1, 2018-11-13 21:00:00.0, 1062117839185379328, Nginx,Python,浏览器,爬虫]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [146, go 开发属于自己的日志库-文件日志库原型实现, -1, post, 旱鸭子, 2018-11-09 15:22:11.0, 17, 1, https://juejin.im/post/5be529106fb9a04a0279d97e, https://juejin.im/user/5814c73f5bbb500059a33944, -1, 2018-11-13 21:00:00.0, 1062117839202156544, Go,单元测试,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [147, 数据库中间件 MyCAT 源码解析 —— 分片结果合并（一）, -1, article, Java公众号_芋道源码_每日更新, 2018-11-05 06:00:35.0, 29, 0, http://www.iocoder.cn/MyCAT/sharding-result-merge-first?juejin&2018-11-05, https://juejin.im/user/5904c637b123db3ee479d923, -1, 2018-11-13 21:00:00.0, 1062117839214739456, Java]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10005, pstmt-20007} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8888-exec-3 druid.sql.Connection - {conn-10001} connected
+DEBUG http-nio-8888-exec-3 druid.sql.Connection - {conn-10002} connected
+DEBUG http-nio-8888-exec-3 druid.sql.Connection - {conn-10003} connected
+DEBUG http-nio-8888-exec-3 druid.sql.Connection - {conn-10004} connected
+DEBUG http-nio-8888-exec-3 druid.sql.Connection - {conn-10005} connected
+DEBUG http-nio-8888-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8888-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} created. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : []
+DEBUG http-nio-8888-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} Types : []
+DEBUG http-nio-8888-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} executed. 17.810094 millis. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [count(0)]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [225]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8888-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} closed
+DEBUG http-nio-8888-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} created. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [0, 20]
+DEBUG http-nio-8888-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [INTEGER, INTEGER]
+DEBUG http-nio-8888-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 24.577369 millis. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, title, hot, type, author, create_time, good_num, message_num, article_url, author_url, is_origin, modify_time, xuehua_id, tags]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [81, 计算机系统漫游, -1, post, 刘小绪同学, 2018-11-12 10:33:32.0, 0, 0, https://juejin.im/post/5be82ae0e51d452acb74eef1, https://juejin.im/user/5be82991e51d450698156b13, -1, 2018-11-13 15:00:04.0, 1062027257133924352, Shell,后端,命令行,操作系统]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [85, NSX高级路由架构, -1, post, IT大咖说, 2018-11-12 13:57:56.0, 0, 0, https://juejin.im/post/5be91281518825170d1a9aaf, https://juejin.im/user/5948e562ac502e5490ee6064, -1, 2018-11-13 15:00:04.0, 1062027257343639552, 后端,图片资源,服务器,架构]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [88, C#实现.Net对邮件进行DKIM签名和验证，支持附件，发送邮件签名后直接投递到对方服务器（无需己方邮件服务器）, -1, post, xiangyuecn, 2018-11-12 16:31:43.0, 1, 0, https://juejin.im/post/5be7f05fe51d451e5a32ee85, https://juejin.im/user/5b1e1087e51d4506d168168e, -1, 2018-11-13 15:00:04.0, 1062027257482051584, .NET,C#,后端,服务器]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [89, 从零单排学Redis【黄金】, -1, post, Java3y, 2018-11-09 16:39:44.0, 34, 2, https://juejin.im/post/5be523b3f265da613b6f47d5, https://juejin.im/user/5a7005b46fb9a01c995117a7, -1, 2018-11-13 15:00:04.0, 1062027257532383232, Java,Redis,后端,服务器]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [91, [kubernetes系列]Scheduler模块深度讲解, -1, post, 奇犽, 2018-11-11 19:45:52.0, 8, 0, https://juejin.im/post/5be816516fb9a049f153b833, https://juejin.im/user/591907fcda2f60005df17496, -1, 2018-11-13 15:00:04.0, 1062027257578520576, Kubernetes ,后端]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [92, php单元测试（phpunit）中自定义万能通用仿件, -1, article, pp3489102, 2018-11-12 10:31:18.0, 3, 0, https://my.oschina.net/u/2394701/blog/2874779, https://juejin.im/user/5a424fd3f265da4327187d47, -1, 2018-11-13 15:00:04.0, 1062027257599492096, PHP,编程语言]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [94, 调用链系列三：解读UAVStack中的调用链技术, -1, post, iEven, 2018-11-12 17:07:21.0, 1, 0, https://juejin.im/post/5be550a05188250ae0661f85, https://juejin.im/user/5bc6c109e51d450e7042db83, -1, 2018-11-13 15:00:04.0, 1062027257729515520, Java,后端,容器,架构]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [95, Go语言学习(3) - 变量与初始化, -1, post, 翻身码农把歌唱, 2018-11-12 10:32:53.0, 1, 0, https://juejin.im/post/5be82c35f265da613e21c40a, https://juejin.im/user/59489e04128fe1006a576fbb, -1, 2018-11-13 15:00:04.0, 1062027257754681344, Go,Java,后端,编译器]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [119, Netty实战（三）：客户端与服务端双向通信, -1, article, fageiguanbing, 2018-11-12 17:11:31.0, 1, 0, https://fageiguanbing.gitee.io/blog/2018/11/11/Netty实战（三）：客户端与服务端双向通信/, https://juejin.im/user/5a17bad66fb9a0451a7610c7, -1, 2018-11-13 16:00:03.0, 1062042352429826048, Netty]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [123, Django-Rest-Framework 权限管理源码浅析, -1, post, 行行出bug, 2018-11-12 11:50:50.0, 2, 5, https://juejin.im/post/5be8f771f265da611c2680a0, https://juejin.im/user/5b62ddd451882506e232cdf4, -1, 2018-11-13 17:00:01.0, 1062057441643986944, Django,Python,后端]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [124, 每天一道leetcode142-寻找链表中环的入口, -1, post, 公众号_程序员乔戈里, 2018-11-12 16:56:20.0, 1, 0, https://juejin.im/post/5be8058ee51d4536f4451432, https://juejin.im/user/5be1bd47e51d45562a666aec, -1, 2018-11-13 17:00:01.0, 1062057441681735680, Java,LeetCode,后端,百度]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [138, 如何构建高性能、稳定的后端服务系统 | 美团技术沙龙第45期, -1, entry, 稀土君, 2018-11-12 17:02:37.0, 0, 0, http://www.huodongxing.com/event/4465518704511?qd=juejin, https://juejin.im/user/551d6923e4b0cd5b623f54da, -1, 2018-11-13 18:00:01.0, 1062072545466908672, 后端,架构,线下活动]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [139, 使用 postman 调试 jwt 开发的接口, -1, post, 自行脑补, 2018-11-09 13:59:15.0, 15, 0, https://juejin.im/post/5be4482c518825601330c9cf, https://juejin.im/user/5b8b50e16fb9a019cd4e6d68, -1, 2018-11-13 18:00:01.0, 1062072545487880192, JavaScript,Postman,前端,后端]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [141, 实战swoole【聊天室】, -1, post, OMGZui, 2018-11-09 14:10:29.0, 14, 0, https://juejin.im/post/5be42bf96fb9a049f818c773, https://juejin.im/user/57a7d99a0a2b5800585b73ef, -1, 2018-11-13 21:00:00.0, 1062117839063744512, PHP,Swoole,WebSocket,服务器]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [142, 认真的 Netty 源码解析（二）, -1, post, Javajavajava, 2018-11-09 17:50:40.0, 14, 1, https://juejin.im/post/5be54a37f265da61407e68b1, https://juejin.im/user/5a5dfd24f265da3e347b43c4, -1, 2018-11-13 21:00:00.0, 1062117839139241984, Java,Netty,Promise,后端]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [143, 【译】Consul负载均衡策略, -1, post, 爱学园, 2018-11-09 10:41:36.0, 9, 0, https://juejin.im/post/5be4073df265da613b6f450a, https://juejin.im/user/5be2a2e06fb9a049ba410c41, -1, 2018-11-13 21:00:00.0, 1062117839156019200, DNS,Nginx,后端,负载均衡]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [144, 漫话：如何给女朋友解释什么是并发和并行, -1, post, 漫话编程_公众号mhcoding, 2018-11-05 13:42:08.0, 35, 7, https://juejin.im/post/5bdf0667e51d450b267fe3e3, https://juejin.im/user/5ab1e12d6fb9a028be35de21, -1, 2018-11-13 21:00:00.0, 1062117839172796416, Windows,后端,操作系统,面试]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [145, 【动图详解】通过 User-Agent 识别爬虫的原理、实践与对应的绕过方法, -1, post, 韦世东, 2018-11-05 10:34:11.0, 41, 11, https://juejin.im/post/5bdeb32d51882516fa635ace, https://juejin.im/user/59df53d151882578d30167e6, -1, 2018-11-13 21:00:00.0, 1062117839185379328, Nginx,Python,浏览器,爬虫]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [146, go 开发属于自己的日志库-文件日志库原型实现, -1, post, 旱鸭子, 2018-11-09 15:22:11.0, 17, 1, https://juejin.im/post/5be529106fb9a04a0279d97e, https://juejin.im/user/5814c73f5bbb500059a33944, -1, 2018-11-13 21:00:00.0, 1062117839202156544, Go,单元测试,后端]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [147, 数据库中间件 MyCAT 源码解析 —— 分片结果合并（一）, -1, article, Java公众号_芋道源码_每日更新, 2018-11-05 06:00:35.0, 29, 0, http://www.iocoder.cn/MyCAT/sharding-result-merge-first?juejin&2018-11-05, https://juejin.im/user/5904c637b123db3ee479d923, -1, 2018-11-13 21:00:00.0, 1062117839214739456, Java]
+DEBUG http-nio-8888-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
+DEBUG http-nio-8888-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} closed
+DEBUG http-nio-8888-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} created. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} executed. 5.892779 millis. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} open
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Header: [count(0)]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Result: [225]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} created. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : [20, 20]
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} Types : [INTEGER, INTEGER]
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10004, pstmt-20004} created. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10004, pstmt-20004} Parameters : []
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10004, pstmt-20004} Types : []
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10004, pstmt-20004} executed. 13.921282 millis. SELECT count(0) FROM article_description a
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20004, rs-50003} open
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20004, rs-50003} Header: [count(0)]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20004, rs-50003} Result: [225]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20004, rs-50003} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10004, pstmt-20004} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10004, pstmt-20005} created. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10004, pstmt-20005} Parameters : [40, 20]
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10004, pstmt-20005} Types : [INTEGER, INTEGER]
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} executed. 27.02985 millis. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} open
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Header: [id, title, hot, type, author, create_time, good_num, message_num, article_url, author_url, is_origin, modify_time, xuehua_id, tags]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [148, Java 设计模式之工厂方法模式与抽象工厂模式, -1, post, 木木匠, 2018-11-09 15:21:31.0, 7, 0, https://juejin.im/post/5be27dd2f265da6151143967, https://juejin.im/user/5b0261e2518825426b277d47, -1, 2018-11-13 21:00:00.0, 1062117839231516672, Java,产品,后端,设计模式]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [149, Java 8 常用时间 api, -1, post, Simeone_xu, 2018-11-08 15:12:14.0, 15, 1, https://juejin.im/post/5bdebd3ee51d4576452d224f, https://juejin.im/user/55f6a00160b2521fb5b30c4f, -1, 2018-11-13 21:00:00.0, 1062117839244099584, Java,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [150, 这可能是你见过的最全的网络爬虫干货总结！, -1, post, 崔庆才丨静觅, 2018-10-23 11:05:17.0, 350, 20, https://juejin.im/post/5bce8201518825773605597d, https://juejin.im/user/58131b84da2f60005db28799, -1, 2018-11-13 21:00:00.0, 1062117839273459712, API,JavaScript,Python,Scrapy,前端,后端,爬虫]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [151, 这可能是目前最透彻的Netty原理架构解析, -1, post, Javajavajava, 2018-11-05 17:12:51.0, 71, 1, https://juejin.im/post/5be00763e51d453d4a5cf289, https://juejin.im/user/5a5dfd24f265da3e347b43c4, -1, 2018-11-13 21:00:00.0, 1062117839336374272, Netty,后端,服务器,架构,源码]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [152, 数据库中间件 MyCAT 源码分析  —— XA分布式事务, -1, article, Java公众号_芋道源码_每日更新, 2018-11-04 06:00:35.0, 31, 0, http://www.iocoder.cn/MyCAT/xa-distributed-transaction?juejin&2018-11-04, https://juejin.im/user/5904c637b123db3ee479d923, -1, 2018-11-13 21:00:00.0, 1062117839348957184, Java]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [153, Python爬取中国银行外汇牌价(爬虫 + PyFlux简单预测分析)--(一), -1, post, NullSpider, 2018-11-08 14:22:58.0, 9, 0, https://juejin.im/post/5be2c5b26fb9a049f153adfd, https://juejin.im/user/5a17ce3451882503eb4af750, -1, 2018-11-13 21:00:00.0, 1062117839365734400, GitHub,pandas,Python,爬虫]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [154, 数据库中间件 MyCAT 源码分析 —— 【单库单表】查询, -1, article, Java公众号_芋道源码_每日更新, 2018-11-02 06:00:38.0, 44, 0, http://www.iocoder.cn/MyCAT/single-db-single-table-select?juejin&2018-11-02, https://juejin.im/user/5904c637b123db3ee479d923, -1, 2018-11-13 21:00:00.0, 1062117839378317312, Java]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [155, 浅析如何设计一个亿级网关, -1, post, 公众号_咖啡拿铁, 2018-11-01 10:43:17.0, 84, 7, https://juejin.im/post/5bda67f26fb9a0223e4da611, https://juejin.im/user/57e4a4e80e3dd9005809b6fb, -1, 2018-11-13 21:00:00.0, 1062117839395094528, Dubbo,HTTP,后端,开源]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [156, Redis知识总结, -1, post, PatrickLee666, 2018-11-05 14:38:26.0, 42, 6, https://juejin.im/post/5bdeed406fb9a049dd7fb968, https://juejin.im/user/5b6ce923e51d451958674c63, -1, 2018-11-13 21:00:00.0, 1062117839411871744, NoSQL,Redis,数据库,服务器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [157, node+express框架中连接使用mysql经验总结, -1, post, 極楽, 2018-11-09 10:41:15.0, 16, 2, https://juejin.im/post/5be3f01ce51d452c4c4a10c1, https://juejin.im/user/5ad0a12d5188255c620f7fc9, -1, 2018-11-13 21:00:00.0, 1062117839424454656, Express,MySQL,Node.js,数据库]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [158, 百度的一道 java 高频面试题的多种解法, -1, post, 公众号_程序员乔戈里, 2018-11-07 14:29:44.0, 18, 4, https://juejin.im/post/5be1bf40e51d450e0d3984bc, https://juejin.im/user/5be1bd47e51d45562a666aec, -1, 2018-11-13 21:00:00.0, 1062117839441231872, .NET,Java,后端,百度]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [159, 面试还在被红-黑树虐？看完这篇动图文章轻松反虐面试官, -1, article, 公众号_Java进阶架构师, 2018-11-05 10:07:49.0, 42, 1, http://mp.weixin.qq.com/s?__biz=MzAxMjEwMzQ5MA==&mid=301402585&idx=1&sn=9d37392643f2f3441cc72904945997e0&chksm=0fb553f438c2dae2e8a4e37423f6e7f64759aa3fefb35be2dacfa106596ac6685984d23373e9#rd, https://juejin.im/user/59954824f265da2473441bc3, -1, 2018-11-13 21:00:00.0, 1062117839458009088, Java,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [223, Java并发（11）- 有关线程池的10个问题, -1, post, knock_小新, 2018-11-09 10:16:49.0, 19, 0, https://juejin.im/post/5be443fce51d45547779a82e, https://juejin.im/user/5947a1a4ac502e006baa7a88, -1, 2018-11-14 06:00:01.0, 1062253739001249792, Java,Spring,后端,服务器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [224, 评论模块 - 后端数据库设计及功能实现, -1, post, solocoder, 2018-11-08 14:11:04.0, 31, 11, https://juejin.im/post/5be2c213e51d453dfe02d406, https://juejin.im/user/5b06d578f265da0de02f3b0c, -1, 2018-11-14 06:00:01.0, 1062253739034804224, React.js,前端,后端,数据库]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [225, 饿了么在API的实践——构建API Everything框架, -1, post, IT大咖说, 2018-11-07 11:03:04.0, 29, 1, https://juejin.im/post/5be24d02e51d450b3647d90e, https://juejin.im/user/5948e562ac502e5490ee6064, -1, 2018-11-14 06:00:01.0, 1062253739059970048, API,前端,后端,服务器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [226, Spring Cloud 微服务实战详细笔记, -1, post, solocoder, 2018-11-08 16:59:49.0, 31, 2, https://juejin.im/post/5be3f6326fb9a04a0279d640, https://juejin.im/user/5b06d578f265da0de02f3b0c, -1, 2018-11-14 06:00:01.0, 1062253739080941568, RabbitMQ,Spring,后端,服务器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [227, Python爬取王者荣耀英雄皮肤高清图片, -1, post, gxcuizy, 2018-11-07 15:31:52.0, 22, 14, https://juejin.im/post/5be28dd66fb9a049ac78a03e, https://juejin.im/user/59b0de6e5188250f4850ea06, -1, 2018-11-14 06:00:01.0, 1062253739097718784, GitHub,Python,爬虫,王者荣耀]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [228, 5分钟学会Java9-Java11的七大新特性, -1, post, 网易云信, 2018-11-06 17:16:08.0, 38, 4, https://juejin.im/post/5be12ef6f265da616d53a5bb, https://juejin.im/user/5b10ac64e51d45069352adf7, -1, 2018-11-14 06:00:01.0, 1062253739177410560, Java,JavaScript,架构,编译器]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [229, 配置中心  Apollo 源码解析 —— Admin Service 发送 ReleaseMessage, -1, article, Java公众号_芋道源码_每日更新, 2018-11-06 06:00:35.0, 25, 0, http://www.iocoder.cn/Apollo/admin-server-send-release-message?juejin&2018-11-06, https://juejin.im/user/5904c637b123db3ee479d923, -1, 2018-11-14 06:00:01.0, 1062253739202576384, Java]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} Result: [230, 前后端协同开发，使用 GraphQL 正确的姿势, -1, post, IT大咖说, 2018-11-08 14:02:02.0, 24, 0, https://juejin.im/post/5be3b0f46fb9a049e65fbb33, https://juejin.im/user/5948e562ac502e5490ee6064, -1, 2018-11-14 06:00:01.0, 1062253739261296640, API,GraphQL,前端,后端]
+DEBUG http-nio-8888-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50004} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} closed
+DEBUG http-nio-8888-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10004, pstmt-20005} executed. 24.765785 millis. select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a order by a.modify_time limit ?,?
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} open
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Header: [id, title, hot, type, author, create_time, good_num, message_num, article_url, author_url, is_origin, modify_time, xuehua_id, tags]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [231, 一条慢SQL导致购物车服务无法使用, -1, article, Sam同学, 2018-11-08 15:23:19.0, 21, 0, https://blog.csdn.net/linsongbin1/article/details/83860077, https://juejin.im/user/578665c65bbb50006011a067, -1, 2018-11-14 06:00:01.0, 1062253739307433984, SQL,数据库,服务器]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [232, Go语言字符串高效拼接（一）, -1, post, 飞雪无情, 2018-11-07 09:04:47.0, 28, 3, https://juejin.im/post/5be23a01518825697344f05e, https://juejin.im/user/5921910aa22b9d00587e4596, -1, 2018-11-14 06:00:01.0, 1062253739408097280, Go,后端,数据库,编程语言]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [233, Redis入门手册, -1, post, Allen烽, 2018-11-09 13:53:24.0, 12, 0, https://juejin.im/post/5be4ee3a51882516c22e53c1, https://juejin.im/user/5bbbf655e51d450e7b175960, -1, 2018-11-14 06:00:01.0, 1062253739496177664, Lua,Node.js,Redis,数据库]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [256, Go反射机制Reflect, -1, post, Jsp, 2018-11-09 13:57:40.0, 15, 0, https://juejin.im/post/5be452d96fb9a049ef261452, https://juejin.im/user/59a9a6426fb9a0247c6efb51, -1, 2018-11-14 08:00:01.0, 1062283934424891392, Go,Java,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [257, 一文理解Netty模型架构, -1, post, 贝聊科技, 2018-11-01 08:48:29.0, 87, 7, https://juejin.im/post/5bda4cc55188257f630dac07, https://juejin.im/user/5941fa488d6d810058c0d4df, -1, 2018-11-14 08:00:01.0, 1062283934550720512, Netty,后端,服务器,架构]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [258, python版：单机redis实现秒杀，防止超限, -1, post, ilyq69, 2018-11-07 13:50:31.0, 22, 2, https://juejin.im/post/5be1a104f265da615f76be0c, https://juejin.im/user/58918919b123db16a3816aed, -1, 2018-11-14 08:00:01.0, 1062283934714298368, Gevent,Python,Redis,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [259, Python爬取电影天堂, -1, post, Dwyane_Coding, 2018-11-02 17:19:46.0, 44, 3, https://juejin.im/post/5bdad392e51d451c5b474a35, https://juejin.im/user/5a3cb4935188257d391d3ce8, -1, 2018-11-14 08:00:01.0, 1062283934974345216, .NET,HTML,Python,爬虫]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [260, 注册中心 Eureka 源码解析 —— 项目结构简介, -1, article, Java公众号_芋道源码_每日更新, 2018-11-01 06:00:35.0, 30, 0, http://www.iocoder.cn/Eureka/project-structure?juejin&2018-11-01, https://juejin.im/user/5904c637b123db3ee479d923, -1, 2018-11-14 08:00:01.0, 1062283935205031936, Java]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [261, 单手撸了个springboot+mybatis+druid, -1, post, 顾家进, 2018-11-01 10:10:25.0, 72, 17, https://juejin.im/post/5bd9ea096fb9a02260209a58, https://juejin.im/user/5b64835b518825615d2fcfea, -1, 2018-11-14 08:00:01.0, 1062283935410552832, MyBatis,Spring Boot,SQL,后端,数据库]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [262, Apache ServiceComb架构演进：支持多数据中心微服务发现, -1, post, 二手雄狮, 2018-11-09 13:47:38.0, 7, 0, https://juejin.im/post/5be4ebf4e51d452e7243ae16, https://juejin.im/user/5ba344355188255c880abaa0, -1, 2018-11-14 08:00:01.0, 1062283935783845888, etcd,后端,微服务,服务器]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [263, 在 Java 中初始化 List 的五种方法, -1, post, yzbyzz, 2018-11-07 17:27:34.0, 7, 2, https://juejin.im/post/5bddcee3e51d4520b6639663, https://juejin.im/user/58d7e8df1b69e6006bb943a4, -1, 2018-11-14 08:00:01.0, 1062283935968395264, Java,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [264, 细嚼慢咽 Mongoose 5, -1, post, 网易云社区, 2018-11-08 15:17:13.0, 19, 1, https://juejin.im/post/5bda570f5188257f764c63c6, https://juejin.im/user/5ab35ebbf265da23884cf80c, -1, 2018-11-14 08:00:01.0, 1062283936165527552, MongoDB,Promise,产品,数据库]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [265, KOA + egg.js 集成 kafka 消息队列, -1, post, KnoveZ, 2018-11-08 14:24:24.0, 21, 0, https://juejin.im/post/5be3d3ca51882508851b3995, https://juejin.im/user/5bc977086fb9a05d353cad6e, -1, 2018-11-14 08:00:01.0, 1062283936345882624, Egg.js,JavaScript,Kafka,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [267, Laravel Telescope：优雅的应用调试工具, -1, post, Summer__, 2018-11-08 10:18:21.0, 17, 1, https://juejin.im/post/5be37eddf265da615f76c25d, https://juejin.im/user/563b1f1d60b2298f457137c9, -1, 2018-11-14 08:00:01.0, 1062283936865976320, Laravel,Redis,后端,数据库]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [268, MySQL——优化嵌套查询和分页查询, -1, post, CoderFocus, 2018-11-01 10:22:43.0, 83, 9, https://juejin.im/post/5bda4a966fb9a022852a74e0, https://juejin.im/user/5af3b110f265da0b74522ca9, -1, 2018-11-14 08:00:01.0, 1062283937063108608, MySQL,SQL,后端,微信]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [269, 很高兴！终于踩到了慢查询的坑, -1, post, 这个名字有点特别, 2018-10-23 16:46:30.0, 174, 18, https://juejin.im/post/5bcc2935f265da0ac66987c9, https://juejin.im/user/5b8f8cc05188255c735f3f1d, -1, 2018-11-14 08:00:01.0, 1062283937188937728, MySQL,Spring,SQL,后端]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [270, SpringSession：集成SpringBoot, -1, post, glmapper, 2018-11-03 17:22:40.0, 53, 4, https://juejin.im/post/5bdd449b6fb9a04a09557a40, https://juejin.im/user/58fcc0768d6d810058965a06, -1, 2018-11-14 08:00:01.0, 1062283937281212416, Redis,后端,容器,嵌入式]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [272, Java8使用小结, -1, article, 千早群像, 2018-11-04 00:49:11.0, 40, 2, https://www.jianshu.com/p/c99f6c50199d, https://juejin.im/user/57b5661e0a2b580057f9d5c2, -1, 2018-11-14 08:00:01.0, 1062283937516093440, Java]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [273, 单例模式个人整理, -1, post, simplejian, 2018-11-05 10:16:39.0, 20, 3, https://juejin.im/post/5bdc57d6e51d4505525b0b22, https://juejin.im/user/57e5134267f35600578826c2, -1, 2018-11-14 08:00:01.0, 1062283937637728256, Java,JVM,后端,设计模式]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [253, Ruby2.X 远程代码执行漏洞分析之反序列化gadget链, -1, article, 黑夜 BUG 多, 2018-11-13 15:24:02.0, 0, 0, https://www.anquanke.com/post/id/163962, https://juejin.im/user/5bceea116fb9a05cde1d92b9, -1, 2018-11-14 08:00:01.0, 1062283935859343360, null]
+DEBUG http-nio-8888-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20005, rs-50005} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Statement - {conn-10004, pstmt-20005} closed
+DEBUG http-nio-8888-exec-1 druid.sql.Connection - {conn-10004} pool-recycle

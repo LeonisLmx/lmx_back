@@ -2,12 +2,14 @@ package com.lmx.blog.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.lmx.blog.annotation.RedisCache;
 import com.lmx.blog.common.Response;
 import com.lmx.blog.model.ArticleDetail;
 import com.lmx.blog.service.ArticleDetailSercice;
 import com.lmx.blog.service.Commonservice;
 import com.lmx.blog.service.JuejinCrawerService;
 import com.sun.org.apache.regexp.internal.RE;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -56,6 +58,7 @@ public class UserController {
         return Response.ok(articleDetailSercice.getPrimaryKeyById(1L));
     }
 
+    @RedisCache(type = Response.class)
     @RequestMapping("/getList")
     public Response getListArticles(Integer pageNum){
         PageHelper.startPage(pageNum,pageSize);

@@ -1,5 +1,10 @@
 package com.lmx.blog;
 
+import net.sourceforge.pinyin4j.PinyinHelper;
+import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
+import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
+import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
+import net.sourceforge.pinyin4j.format.HanyuPinyinVCharType;
 import org.junit.Test;
 
 import java.util.*;
@@ -50,5 +55,14 @@ public class TestSuanfa {
         for(int L=0;L <= min;L++){
 
         }
+    }
+
+    @Test
+    public void testPinyin() throws Exception{
+        HanyuPinyinOutputFormat defaultFormat = new HanyuPinyinOutputFormat();
+        defaultFormat.setCaseType(HanyuPinyinCaseType.LOWERCASE); // 输出拼音全部小写
+        defaultFormat.setToneType(HanyuPinyinToneType.WITHOUT_TONE);// 不带声调
+        defaultFormat.setVCharType(HanyuPinyinVCharType.WITH_V) ;
+        System.out.println(PinyinHelper.toHanYuPinyinString("刘明新",defaultFormat,"",false));
     }
 }

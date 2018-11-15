@@ -100,8 +100,11 @@ public interface ArticleDescriptionMapper {
     int batchUpdate(@Param("list")List<ArticleDescription> list);
 
     @Select({
+            "<script>",
             "select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a",
+            "<if test='isOrigin!=null'>where a.is_origin = #{isOrigin}</if>",
             "order by a.modify_time desc,id asc",
+            "</script>"
     })
-    List<Map<String,Object>> queryAllArticles();
+    List<Map<String,Object>> queryAllArticles(@Param("isOrigin")Integer isOrigin);
 }

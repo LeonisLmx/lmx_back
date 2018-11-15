@@ -1,5 +1,6 @@
 package com.lmx.blog;
 
+import com.lmx.blog.service.Commonservice;
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
@@ -157,5 +158,10 @@ public class TestSuanfa {
         for(int a:arr){
             System.out.println(a);
         }
+    }
+
+    @Test
+    public void testXuehua(){
+        System.out.println(Commonservice.getNextId());
     }
 }

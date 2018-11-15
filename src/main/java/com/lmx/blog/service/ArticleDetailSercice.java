@@ -33,14 +33,20 @@ public class ArticleDetailSercice {
         return map;
     }
 
-    public List<Map<String,Object>> queryAllArticles(){
-        List<Map<String,Object>> list = articleDescriptionMapper.queryAllArticles();
+    public List<Map<String,Object>> queryAllArticles(Integer isOrigin){
+        List<Map<String,Object>> list = articleDescriptionMapper.queryAllArticles(isOrigin);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         for(Map<String,Object> entity:list){
             if(entity.get("tags") != null){
                 entity.put("tags",Commonservice.strToList(entity.get("tags").toString()));
             }
-            entity.put("type",entity.get("type").equals("post")?"专栏":"");
+            if(entity.get("type").equals("post")){
+                entity.put("type","专栏");
+            }else if(entity.get("type").equals("me")){
+                entity.put("type","[原创]");
+            }else{
+                entity.put("type","");
+            }
             entity.put("hot",entity.get("hot").equals("1"));
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(sdf.parse(entity.get("create_time").toString(),new ParsePosition(0)));

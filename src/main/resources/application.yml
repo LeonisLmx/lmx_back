@@ -4,7 +4,7 @@ spring:
   profiles.active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://101.132.137.156:3306/lmx?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true
+    url: jdbc:mysql://101.132.137.156:3306/lmx?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=CTT
     username: root
     password: lmx@123456
     initialSize: 5
@@ -25,15 +25,25 @@ spring:
     logSlowSql: true
   resources:
         staticLocations:classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
-  data:
-      elasticsearch:
-        # es 集群名称
-        cluster-name: blog
-          # es 节点地址
-        cluster-nodes: 101.132.137.156:9300
-        # 是否开启本地存储
-        repositories:
-          enabled: true
+  redis:
+    host: 101.132.137.156
+    port: 6379
+    password: lmx123456@
+    jedis:
+      pool:
+        max-active: 20
+        min-idle: 0
+    timeout: 10000s
+    database: 1
+#  data:
+#      elasticsearch:
+#        # es 集群名称
+#        cluster-name: blog
+#          # es 节点地址
+#        cluster-nodes: 101.132.137.156:9300
+#        # 是否开启本地存储
+#        repositories:
+#          enabled: true
 logging:
     config: classpath:logback.xml
 mybatis:

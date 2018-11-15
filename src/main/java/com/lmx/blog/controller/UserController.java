@@ -60,9 +60,9 @@ public class UserController {
 
     @RedisCache(type = Response.class)
     @RequestMapping("/getList")
-    public Response getListArticles(Integer pageNum){
+    public Response getListArticles(Integer pageNum,Integer isOrigin){
         PageHelper.startPage(pageNum,pageSize);
-        List<Map<String,Object>> lists = articleDetailSercice.queryAllArticles();
+        List<Map<String,Object>> lists = articleDetailSercice.queryAllArticles(isOrigin);
         PageInfo page = new PageInfo(lists);
         return Response.ok(page);
     }

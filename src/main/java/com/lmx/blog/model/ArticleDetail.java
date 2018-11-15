@@ -1,8 +1,9 @@
 package com.lmx.blog.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class ArticleDetail {
+public class ArticleDetail implements Serializable {
 
     private Long id;
     private String content;

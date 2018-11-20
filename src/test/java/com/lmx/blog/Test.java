@@ -1,6 +1,8 @@
 package com.lmx.blog;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 public class Test {
 
@@ -56,5 +58,29 @@ public class Test {
         {
             System.out.print(list.get(i) + ",");
         }
+    }
+
+    @org.junit.Test
+    public void testAuto(){
+        Long startTime = System.currentTimeMillis();
+        Long sum = 0L;
+        for(Integer i = 0;i<Long.MAX_VALUE;i++){
+            sum += i;
+        }
+        System.out.println(sum);
+        Long endTime = System.currentTimeMillis();
+        System.out.println((endTime - startTime)/1000);
+    }
+
+    @org.junit.Test
+    public void testToStr(){
+        List<String> stringList = new ArrayList<>();
+        for(int i=0;i<10;i++){
+            stringList.add(UUID.randomUUID().toString());
+        }
+        String user = stringList.toString().replaceAll(",","|").replaceAll(" ","");
+        System.out.println(stringList.toString());
+        System.out.println(stringList.toString().replaceAll(",","|").replaceAll(" ",""));
+        System.out.println(user.substring(1,user.length()-1));
     }
 }

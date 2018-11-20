@@ -102,9 +102,13 @@ public interface ArticleDescriptionMapper {
     @Select({
             "<script>",
             "select a.*,(select GROUP_CONCAT(name) as tags from tag b where a.xuehua_id = b.xuehua_id) as tags from article_description a",
-            "<if test='isOrigin!=null'>where a.is_origin = #{isOrigin}</if>",
-            "order by a.modify_time desc,id asc",
+            "where 1 = 1",
+            "<if test='isOrigin!=null'>and a.is_origin = #{isOrigin}</if>",
+            "<if test='text != null and text != \"\"'>and a.title like '%${text}%'</if>",
+            "order by",
+            "<if test='isOrigin == null'>a.good_num desc,</if>",
+            " a.modify_time desc,id asc",
             "</script>"
     })
-    List<Map<String,Object>> queryAllArticles(@Param("isOrigin")Integer isOrigin);
+    List<Map<String,Object>> queryAllArticles(@Param("isOrigin")Integer isOrigin,@Param("text")String text);
 }

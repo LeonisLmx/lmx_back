@@ -33,8 +33,8 @@ public class ArticleDetailSercice {
         return map;
     }
 
-    public List<Map<String,Object>> queryAllArticles(Integer isOrigin){
-        List<Map<String,Object>> list = articleDescriptionMapper.queryAllArticles(isOrigin);
+    public List<Map<String,Object>> queryAllArticles(Integer isOrigin,String text){
+        List<Map<String,Object>> list = articleDescriptionMapper.queryAllArticles(isOrigin,text);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         for(Map<String,Object> entity:list){
             if(entity.get("tags") != null){

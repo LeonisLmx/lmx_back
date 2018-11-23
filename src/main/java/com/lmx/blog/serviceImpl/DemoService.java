@@ -1,4 +1,4 @@
-package com.lmx.blog.service;
+package com.lmx.blog.serviceImpl;
 
 import com.lmx.blog.common.RedisUtil;
 import com.lmx.blog.mapper.ArticleDetailMapper;

@@ -1,4 +1,4 @@
-package com.lmx.blog.service;
+package com.lmx.blog.serviceImpl;
 
 import com.lmx.blog.mapper.ArticleDescriptionMapper;
 import com.lmx.blog.mapper.ArticleDetailMapper;
@@ -47,7 +47,7 @@ public class ArticleDetailSercice {
             }else{
                 entity.put("type","");
             }
-            entity.put("hot",entity.get("hot").equals("1"));
+            entity.put("hot",entity.get("hot").equals("1")?"热":"");
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(sdf.parse(entity.get("create_time").toString(),new ParsePosition(0)));
             entity.put("time",Commonservice.getDateCompareNow(calendar));

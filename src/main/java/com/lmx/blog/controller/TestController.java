@@ -1,9 +1,8 @@
 package com.lmx.blog.controller;
 
-import com.lmx.blog.common.RedisUtil;
 import com.lmx.blog.common.Response;
 import com.lmx.blog.model.ArticleDetail;
-import com.lmx.blog.service.DemoService;
+import com.lmx.blog.serviceImpl.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

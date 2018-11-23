@@ -1,4 +1,4 @@
-package com.lmx.blog.service;
+package com.lmx.blog.serviceImpl;
 
 import com.lmx.blog.common.SnowFlakeGenerator;
 import org.apache.commons.lang3.StringUtils;

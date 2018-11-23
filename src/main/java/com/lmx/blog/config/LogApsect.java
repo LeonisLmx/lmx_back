@@ -56,14 +56,15 @@ public class LogApsect {
         System.out.println("name:" + arg);
         System.out.println("方法环绕start...around");
         String result = null;
+        Object object = pjp.proceed();
         try{
-            result = pjp.proceed().toString() + "aop String";
+            result = object.toString() + "aop String";
             System.out.println(result);
         }catch (Throwable e){
             e.printStackTrace();
         }
         System.out.println("方法环绕end...around");
-        return (Response) pjp.proceed();
+        return (Response) object;
     }
 
     @After("within(com.lmx.blog.controller.*Controller)")
@@ -73,6 +74,9 @@ public class LogApsect {
 
     @AfterReturning(pointcut="pointCut()",returning = "rst")
     public void afterRunning(Response rst){
+        if(startTime.get() == null){
+            startTime.set(System.currentTimeMillis());
+        }
         System.out.println("方法执行完执行...afterRunning");
         logger.info("耗时（毫秒）：" +  (System.currentTimeMillis() - startTime.get()));
         logger.info("返回数据：{}", rst);

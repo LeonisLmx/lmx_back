@@ -4,12 +4,10 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.lmx.blog.common.HttpClient;
 import com.lmx.blog.model.result.JuejinEntity;
-import com.lmx.blog.service.JuejinCrawerService;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Random;
 
 /**

@@ -1,12 +1,11 @@
 package com.lmx.blog.task;
 
-import com.lmx.blog.service.JuejinCrawerService;
+import com.lmx.blog.serviceImpl.JuejinCrawerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 

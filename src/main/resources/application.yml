@@ -35,6 +35,15 @@ spring:
         min-idle: 0
     timeout: 10000s
     database: 1
+#  email:
+#    host: smtp.qq.com
+#    username: 710285449@qq.com
+#    password: hngtswgqlxyabdbb
+#    default-encoding: UTF-8
+#    port: 587
+mail:
+  fromMail:
+    addr: 710285449@qq.com
 #  data:
 #      elasticsearch:
 #        # es 集群名称

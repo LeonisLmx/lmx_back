@@ -1,4 +1,4 @@
-package com.lmx.blog.config;
+package com.lmx.blog.config.redis;
 
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;

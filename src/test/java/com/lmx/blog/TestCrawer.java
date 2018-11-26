@@ -16,7 +16,7 @@ import java.util.Random;
  */
 public class TestCrawer {
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         try{
             String response = HttpClient.Get("https://timeline-merger-ms.juejin.im/v1/get_entry_by_rank?src=web&before=20&limit=20&category=5562b419e4b00c57d9b94ae2");
             response = response.substring(response.indexOf("\"entrylist\":") + 12,response.lastIndexOf("}}"));
@@ -33,5 +33,5 @@ public class TestCrawer {
         Float random = new Random().nextFloat();
         Float f = a + random;
         System.out.println(f);
-    }
+    }*/
 }

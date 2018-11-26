@@ -11,11 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+/*@RunWith(SpringRunner.class)
+@SpringBootTest*/
 public class Test {
 
-    @Autowired(required = true)
+    /*@Autowired(required = true)
     private EmailService emailService;
 
     public void printNum()
@@ -82,22 +82,10 @@ public class Test {
         System.out.println(sum);
         Long endTime = System.currentTimeMillis();
         System.out.println((endTime - startTime)/1000);
-    }
+    }*/
 
-    @org.junit.Test
-    public void testToStr(){
-        List<String> stringList = new ArrayList<>();
-        for(int i=0;i<10;i++){
-            stringList.add(UUID.randomUUID().toString());
-        }
-        String user = stringList.toString().replaceAll(",","|").replaceAll(" ","");
-        System.out.println(stringList.toString());
-        System.out.println(stringList.toString().replaceAll(",","|").replaceAll(" ",""));
-        System.out.println(user.substring(1,user.length()-1));
-    }
-
-    @org.junit.Test
-    public void sendSimpleMail() throws Exception {
-        emailService.sendSimpleEmail("805288035@qq.com","邮件发送主题","Hello World！");
-    }
+//    @org.junit.Test
+//    public void sendSimpleMail() throws Exception {
+//        emailService.sendSimpleEmail("805288035@qq.com","邮件发送主题","Hello World！");
+//    }
 }

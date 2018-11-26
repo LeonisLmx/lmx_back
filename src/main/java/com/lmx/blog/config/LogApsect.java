@@ -2,11 +2,17 @@ package com.lmx.blog.config;
 
 import com.alibaba.druid.support.json.JSONUtils;
 import com.lmx.blog.common.Response;
+import com.lmx.blog.mapper.IpRequestMapper;
+import com.lmx.blog.model.IpRequest;
+import com.lmx.blog.model.SendMessage;
+import com.lmx.blog.serviceImpl.Commonservice;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -14,10 +20,17 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
+import java.util.Date;
 
 @Aspect
 @Component
 public class LogApsect {
+
+    @Autowired
+    private AmqpTemplate amqpTemplate;
+
+    @Autowired
+    private HttpServletRequest request;
 
     private static final Logger logger = LoggerFactory.getLogger(LogApsect.class);
 
@@ -47,6 +60,12 @@ public class LogApsect {
         logger.info("响应方法：" + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
         logger.info("请求参数：" + Arrays.toString(joinPoint.getArgs()));
         logger.info("------------------------------------------------------");
+        IpRequest ipRequest = new IpRequest();
+        ipRequest.setIpAddress(request.getRemoteAddr());
+        ipRequest.setRoute(request.getRequestURI());
+        ipRequest.setCreateTime(new Date());
+        amqpTemplate.convertAndSend("request",ipRequest);
+//        ipRequestMapper.insert(ipRequest);
         startTime.set(System.currentTimeMillis());
     }
 

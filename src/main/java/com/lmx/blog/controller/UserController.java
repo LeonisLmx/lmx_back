@@ -4,16 +4,20 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.lmx.blog.annotation.RedisCache;
 import com.lmx.blog.common.Response;
+import com.lmx.blog.config.redis.RedisExecutor;
+import com.lmx.blog.model.SendMessage;
 import com.lmx.blog.service.EmailService;
 import com.lmx.blog.serviceImpl.ArticleDetailSercice;
+import com.lmx.blog.serviceImpl.Commonservice;
 import com.lmx.blog.serviceImpl.JuejinCrawerService;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import sun.nio.ch.ThreadPool;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.*;
@@ -32,7 +36,7 @@ public class UserController {
 
     @Autowired private EmailService emailService;
 
-    @Autowired private RedisTemplate redisTemplate;
+    @Autowired private AmqpTemplate amqpTemplate;
 
     @RequestMapping("/test")
     public Response test(){
@@ -73,7 +77,17 @@ public class UserController {
     @RequestMapping("/sendEmail")
     public Response sendEmailToAuthor(String content, HttpServletRequest request){
         // 获取当前的IP地址，防止恶意刷IP地址
-        String ip = request.getHeader("x-forwarded-for");
+        String ip = Commonservice.getIp(request);
+        if(RedisExecutor.getByKey(ip) != null){
+            return Response.ok(false);
+        }
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setContent(content);
+        sendMessage.setFromIp(request.getRemoteAddr());
+        sendMessage.setCreateTime(new Date());
+        // 记录发送的消息
+        amqpTemplate.convertAndSend("send_message",sendMessage);
+        RedisExecutor.addKeyAndExpireTimes(ip,content,5L,TimeUnit.MINUTES);
         ExecutorService singPool = Executors.newSingleThreadExecutor();
         singPool.execute(new Runnable() {
             @Override

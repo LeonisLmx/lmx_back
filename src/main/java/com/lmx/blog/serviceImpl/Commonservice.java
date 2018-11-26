@@ -4,6 +4,7 @@ import com.lmx.blog.common.SnowFlakeGenerator;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
@@ -95,5 +96,28 @@ public class Commonservice {
             return "-1"; // 返回了一个负数
         }
         return strdate;
+    }
+
+    // 获取IP地址
+    public static String getIp(HttpServletRequest request) {
+        String remoteAddr = request.getRemoteAddr();
+        String forwarded = request.getHeader("X-Forwarded-For");
+        String realIp = request.getHeader("X-Real-IP");
+
+        String ip = null;
+        if (realIp == null) {
+            if (forwarded == null) {
+                ip = remoteAddr;
+            } else {
+                ip = remoteAddr + "/" + forwarded;
+            }
+        } else {
+            if (realIp.equals(forwarded)) {
+                ip = realIp;
+            } else {
+                ip = realIp + "/" + forwarded.replaceAll(", " + realIp, "");
+            }
+        }
+        return ip;
     }
 }

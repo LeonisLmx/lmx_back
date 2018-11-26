@@ -12,7 +12,7 @@ import java.util.*;
 
 public class TestSuanfa {
 
-    @Test
+   /* @Test
     public void breakchain(){
         int A[] = {5,2,4,6,3,7} ;
         List<Integer> list = new LinkedList<>();
@@ -163,5 +163,5 @@ public class TestSuanfa {
     @Test
     public void testXuehua(){
         System.out.println(Commonservice.getNextId());
-    }
+    }*/
 }

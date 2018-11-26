@@ -35,6 +35,13 @@ spring:
         min-idle: 0
     timeout: 10000s
     database: 1
+  rabbitmq:
+    host: 101.132.137.156
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true
+    virtual-host: /
 #  email:
 #    host: smtp.qq.com
 #    username: 710285449@qq.com

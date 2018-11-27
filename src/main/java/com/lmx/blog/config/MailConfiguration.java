@@ -14,6 +14,7 @@ public class MailConfiguration {
         mailSender.setUsername("710285449@qq.com");
         mailSender.setPassword("hngtswgqlxyabdbb");
         mailSender.setDefaultEncoding("UTF-8");    // 不加这部分会导致html格式的邮件乱码
+        mailSender.setPort(587);    //  阿里云服务器只支持587端口发送
         return mailSender;
     }
 }

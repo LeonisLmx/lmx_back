@@ -81,12 +81,14 @@ public class UserController {
         if(RedisExecutor.getByKey(ip) != null){
             return Response.ok(false);
         }
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setContent(content);
-        sendMessage.setFromIp(request.getRemoteAddr());
-        sendMessage.setCreateTime(new Date());
-        // 记录发送的消息
-        amqpTemplate.convertAndSend("send_message",sendMessage);
+        if(!request.getRemoteAddr().equals("0:0:0:0:0:0:0:1")){
+            SendMessage sendMessage = new SendMessage();
+            sendMessage.setContent(content);
+            sendMessage.setFromIp(request.getRemoteAddr());
+            sendMessage.setCreateTime(new Date());
+            // 记录发送的消息
+            amqpTemplate.convertAndSend("send_message",sendMessage);
+        }
         RedisExecutor.addKeyAndExpireTimes(ip,content,5L,TimeUnit.MINUTES);
         ExecutorService singPool = Executors.newSingleThreadExecutor();
         singPool.execute(new Runnable() {

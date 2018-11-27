@@ -60,11 +60,13 @@ public class LogApsect {
         logger.info("响应方法：" + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
         logger.info("请求参数：" + Arrays.toString(joinPoint.getArgs()));
         logger.info("------------------------------------------------------");
-        IpRequest ipRequest = new IpRequest();
-        ipRequest.setIpAddress(request.getRemoteAddr());
-        ipRequest.setRoute(request.getRequestURI());
-        ipRequest.setCreateTime(new Date());
-        amqpTemplate.convertAndSend("request",ipRequest);
+        if(!request.getRemoteAddr().equals("0:0:0:0:0:0:0:1")){
+            IpRequest ipRequest = new IpRequest();
+            ipRequest.setIpAddress(request.getRemoteAddr());
+            ipRequest.setRoute(request.getRequestURI());
+            ipRequest.setCreateTime(new Date());
+            amqpTemplate.convertAndSend("request",ipRequest);
+        }
 //        ipRequestMapper.insert(ipRequest);
         startTime.set(System.currentTimeMillis());
     }

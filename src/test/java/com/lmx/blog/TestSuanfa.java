@@ -158,10 +158,10 @@ public class TestSuanfa {
         for(int a:arr){
             System.out.println(a);
         }
-    }
+    }*/
 
     @Test
     public void testXuehua(){
         System.out.println(Commonservice.getNextId());
-    }*/
+    }
 }

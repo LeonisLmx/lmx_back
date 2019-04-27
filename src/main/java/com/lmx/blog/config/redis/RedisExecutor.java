@@ -6,14 +6,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.script.DefaultRedisScript;
+import org.springframework.data.redis.core.script.RedisScript;
+import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Component;
 import redis.clients.jedis.Jedis;
 
 import javax.annotation.PostConstruct;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @Component
@@ -252,5 +253,55 @@ public class RedisExecutor {
     // 获取指定对象目前的排序分
     public Double getScore(String key,Object object){
         return redisTemplate.opsForZSet().score(key,object);
+    }
+
+    private static final Long SUCCESS = 1L;
+
+    /**
+     * 获取锁
+     * @param lockKey
+     * @param value
+     * @param expireTime：单位-秒
+     * @return
+     */
+    public boolean getLock(String lockKey, String value, int expireTime){
+        boolean ret = false;
+        try{
+            String script = "if redis.call('setNx',KEYS[1],ARGV[1]) then if redis.call('get',KEYS[1])==ARGV[1] then return redis.call('expire',KEYS[1],ARGV[2]) else return 0 end end";
+
+            RedisScript<Long> redisScript = new DefaultRedisScript<>(script, Long.class);
+
+            Object result = redisTemplate.execute(redisScript,new StringRedisSerializer(),new StringRedisSerializer(), Collections.singletonList(lockKey),value,expireTime + "");
+            System.out.println(result + "-----------");
+            //Object result = redisTemplate.execute(redisScript, Collections.singletonList(lockKey),value,expireTime + "");
+
+            if(SUCCESS.equals(result)){
+                return true;
+            }
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return ret;
+    }
+
+    /**
+     * 释放锁
+     * @param lockKey
+     * @param value
+     * @return
+     */
+    public boolean releaseLock(String lockKey, String value){
+
+        String script = "if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
+
+        RedisScript<Long> redisScript = new DefaultRedisScript<>(script, Long.class);
+
+        Object result = redisTemplate.execute(redisScript,new StringRedisSerializer(),new StringRedisSerializer(), Collections.singletonList(lockKey),value);
+        if(SUCCESS.equals(result)) {
+            return true;
+        }
+
+        return false;
     }
 }

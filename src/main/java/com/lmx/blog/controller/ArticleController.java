@@ -13,6 +13,7 @@ import javax.annotation.PostConstruct;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 
 @RequestMapping("/article")
 @RestController
@@ -26,6 +27,8 @@ public class ArticleController {
 
     @Autowired
     private ArticleDescriptionMapper articleDescriptionMapper;
+
+    private final String TEST_REDIS_KEY = "TEST_REDIS_KEY";
 
     // 初始化zset列表数据
     @PostConstruct
@@ -43,13 +46,21 @@ public class ArticleController {
     // 获取排行榜
     @RequestMapping("/giveLike")
     public Response addNum(Long start,Long end,int index){
-        Long allList = redisTemplate.opsForZSet().count("zset",70,80);
-        System.out.println(allList);
-        Set<Object> strings = redisExecutor.getZSet("zset",start,end,index);
-        List<String> list = new LinkedList<>();
-        strings.forEach((v) -> {
-            list.add(v.toString());
-        });
-        return Response.ok(list);
+        String uuid = UUID.randomUUID().toString();
+        Boolean flag = redisExecutor.getLock(TEST_REDIS_KEY, uuid,30);
+        if(flag) {
+            System.out.println(flag + "--------------");
+            Long allList = redisTemplate.opsForZSet().count("zset", 70, 80);
+            System.out.println(allList);
+            Set<Object> strings = redisExecutor.getZSet("zset", start, end, index);
+            List<String> list = new LinkedList<>();
+            strings.forEach((v) -> {
+                list.add(v.toString());
+            });
+            redisExecutor.releaseLock(TEST_REDIS_KEY,uuid);
+            return Response.ok(list);
+        }else{
+            return Response.ok("Redis未释放锁");
+        }
     }
 }

@@ -1,5 +1,9 @@
 package com.lmx.blog;
 
+import org.junit.Test;
+import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
+
 /**
  * @author 刘明新
  * @date 2018/11/8 下午4:52
@@ -24,4 +28,19 @@ public class TestCrawer {
         Float f = a + random;
         System.out.println(f);
     }*/
+
+    @Test
+    public void testSerizable(){
+        JdkSerializationRedisSerializer jdkSerializationRedisSerializer = new JdkSerializationRedisSerializer();
+        byte[] bytes = jdkSerializationRedisSerializer.serialize("5");
+        System.out.println(bytes);
+        Object result = jdkSerializationRedisSerializer.deserialize(bytes);
+        System.out.println(result instanceof String);
+        System.out.println(result);
+        StringRedisSerializer stringRedisSerializer = new StringRedisSerializer();
+        byte[] bytes1 = stringRedisSerializer.serialize("5");
+        System.out.println(bytes);
+        Object result2 = stringRedisSerializer.deserialize(bytes);
+        System.out.println(result2);
+    }
 }

@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8555
 spring:
   profiles.active: dev
   datasource:
@@ -27,8 +27,8 @@ spring:
         staticLocations:classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
   redis:
     host: 101.132.137.156
-    port: 6379
-    password: lmx123456@
+    port: 6380
+    #password: lmx123456@
     jedis:
       pool:
         max-active: 20

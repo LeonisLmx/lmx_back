@@ -3,6 +3,7 @@ package com.lmx.blog.serviceImpl;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.lmx.blog.common.HttpClient;
+import com.lmx.blog.config.redis.RedisExecutor;
 import com.lmx.blog.mapper.ArticleDescriptionMapper;
 import com.lmx.blog.mapper.TagMapper;
 import com.lmx.blog.model.ArticleDescription;
@@ -26,6 +27,9 @@ public class JuejinCrawerService {
     @Autowired private ArticleDescriptionMapper articleDescriptionMapper;
 
     @Autowired private TagMapper tagMapper;
+
+    @Autowired
+    private RedisExecutor redisExecutor;
 
     public Boolean getArticle() throws Exception{
         int a = new Random().nextInt(30);
@@ -56,6 +60,13 @@ public class JuejinCrawerService {
                 articleDescription.setXuehuaId(xuehuaId);
                 articleDescription.setIsOrigin(-1);
                 if(articleDescriptionMapper.selectArticleIsHave(entity.getOriginalUrl()) == null) {
+                    // 说明是不存在的
+                    if(redisExecutor.getRankByObject("zset",entity.getAuthor()) == null){
+                        redisExecutor.addZSet("zset",entity.getAuthor(),1L);
+                    }else{
+                        // 存在则自增加1
+                        redisExecutor.addScore("zset",entity.getAuthor(),1L);
+                    }
                     articleDescriptions.add(articleDescription);
                 }else{
                     articleDescription.setId(articleDescriptionMapper.selectArticleIsHave(entity.getOriginalUrl()));

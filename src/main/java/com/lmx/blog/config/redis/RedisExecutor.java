@@ -2,23 +2,29 @@ package com.lmx.blog.config.redis;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
+import redis.clients.jedis.Jedis;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 @Component
 public class RedisExecutor {
 
+    private static Logger logger = LoggerFactory.getLogger(RedisExecutor.class);
+
     @Autowired
-    private RedisTemplate<String, String> redisTemplate;
-    @Autowired
-    private static RedisTemplate<String, String> redisTemplateDao;
+    private RedisTemplate redisTemplate;
+
+    private static RedisTemplate redisTemplateDao;
     // 初始化调用
     @PostConstruct
     public void init() {
@@ -165,18 +171,18 @@ public class RedisExecutor {
      * 查找List记录
      * @param key
      */
-    public List<Object> getList(String key){
+    public List<Object> getList(String key,Long start,Long end){
         List list = null;
-        if(redisTemplate.opsForList().range(key,0,-1) != null){
-            list= redisTemplate.opsForList().range(key,0,-1);
+        if(redisTemplate.opsForList().range(key,start,end) != null){
+            list= redisTemplate.opsForList().range(key,start,end);
         }
         return list;
     }
 
-    public <T> List<T> getList(String key, Class cls){
+    public <T> List<T> getList(String key, Class cls,Long start,Long end){
         List list = new ArrayList<T>();
-        if(redisTemplate.opsForList().range(key,0,-1) != null){
-            List jsonList = redisTemplate.opsForList().range(key,0,-1);
+        if(redisTemplate.opsForList().range(key,start,end) != null){
+            List jsonList = redisTemplate.opsForList().range(key,start,end);
             jsonList.forEach((v)->{
                 list.add(new Gson().fromJson(v.toString(),cls));
             });
@@ -217,4 +223,34 @@ public class RedisExecutor {
         redisTemplateDao.opsForValue().set(key,value,hours,timeUnit);
     }
 
+    // 添加zset列表
+    public void addZSet(String key,Object value,double l){
+        redisTemplate.opsForZSet().add(key,value,l);
+    }
+
+    // 获取排序值
+    public Set<Object> getZSet(String key,Long start,Long end,int index){
+        if(index == -1){
+            // 倒叙
+            return redisTemplate.opsForZSet().reverseRange(key,start,end);
+        }else{
+            // 正序
+            return redisTemplate.opsForZSet().range(key,start,end);
+        }
+    }
+
+    // 获取指定的排名
+    public Long getRankByObject(String key,Object object){
+        return redisTemplate.opsForZSet().rank(key,object);
+    }
+
+    // 自定义增长zset的值
+    public void addScore(String key,Object object,Long increase){
+        redisTemplate.opsForZSet().incrementScore(key,object,increase);
+    }
+
+    // 获取指定对象目前的排序分
+    public Double getScore(String key,Object object){
+        return redisTemplate.opsForZSet().score(key,object);
+    }
 }

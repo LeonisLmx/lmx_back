@@ -1,5 +1,6 @@
 package com.lmx.blog.task;
 
+import com.lmx.blog.config.redis.RedisExecutor;
 import com.lmx.blog.serviceImpl.JuejinCrawerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -16,8 +17,13 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class JuejinTask {
 
+    private final String PULL_REDIS_LOCK = "pull_article";
+
     @Autowired
     private JuejinCrawerService juejinCrawerService;
+
+    @Autowired
+    private RedisExecutor redisExecutor;
 
     @Scheduled(cron = "0 0 * * * ?")
     public void crawerJuejin(){

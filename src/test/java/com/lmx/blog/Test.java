@@ -1,5 +1,6 @@
 package com.lmx.blog;
 
+import com.google.gson.Gson;
 import com.lmx.blog.service.EmailService;
 import javafx.application.Application;
 import org.junit.runner.RunWith;
@@ -9,6 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 /*@RunWith(SpringRunner.class)
@@ -88,4 +90,10 @@ public class Test {
 //    public void sendSimpleMail() throws Exception {
 //        emailService.sendSimpleEmail("805288035@qq.com","邮件发送主题","Hello World！");
 //    }
+
+    public static void main(String[] args) {
+        String result = "{good_num=1365, create_time=2018-09-25 13:03:37.0, author=SnailClimb, modify_time=2018-12-19 20:00:01.0, xuehua_id=1064805571649077248, title=可能是一份最适合你的后端面试指南（部分内容前端同样适用）| 掘金技术征文, hot=1, type=post, article_url=https://juejin.im/post/5ba591386fb9a05cd31eb85f, tags=Java,前端,掘金技术征文,数据库,面试, is_origin=-1, author_url=https://juejin.im/user/59fbb2daf265da4319559f3a, message_num=34, id=1841}";
+        Map<String,Object>  map = new Gson().fromJson(result,Map.class);
+        System.out.println(map);
+    }
 }

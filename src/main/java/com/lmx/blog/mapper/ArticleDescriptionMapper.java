@@ -1,6 +1,7 @@
 package com.lmx.blog.mapper;
 
 import com.lmx.blog.model.ArticleDescription;
+import com.lmx.blog.model.result.ZsetTestModel;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
 
@@ -18,7 +19,7 @@ public interface ArticleDescriptionMapper {
         "insert into article_description (title, type, author, ",
         "create_time, good_num, ",
         "message_num, article_url, ",
-        "authorUrl,is_origin, modify_time)",
+        "author_url,is_origin, modify_time)",
         "values (#{title,jdbcType=VARCHAR},#{type,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, ",
         "#{createTime,jdbcType=TIMESTAMP}, #{goodNum,jdbcType=INTEGER}, ",
         "#{messageNum,jdbcType=INTEGER}, #{articleUrl,jdbcType=VARCHAR}, ",
@@ -33,7 +34,7 @@ public interface ArticleDescriptionMapper {
 
     @Select({
         "select",
-        "id, title, type, author, create_time, good_num, message_num, article_url, authorUrl, ",
+        "id, title, type, author, create_time, good_num, message_num, article_url, author_url, ",
         "is_origin,modify_time",
         "from article_description",
         "where id = #{id,jdbcType=BIGINT}"
@@ -111,4 +112,9 @@ public interface ArticleDescriptionMapper {
             "</script>"
     })
     List<Map<String,Object>> queryAllArticles(@Param("isOrigin")Integer isOrigin,@Param("text")String text);
+
+    @Select({
+            "select DISTINCT author,count(0) as count from article_description GROUP BY author order by count(0) desc"
+    })
+    List<ZsetTestModel> selectCount();
 }

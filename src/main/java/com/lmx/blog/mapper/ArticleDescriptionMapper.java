@@ -106,12 +106,13 @@ public interface ArticleDescriptionMapper {
             "where 1 = 1",
             "<if test='isOrigin!=null'>and a.is_origin = #{isOrigin}</if>",
             "<if test='text != null and text != \"\"'>and a.title like '%${text}%'</if>",
+            "<if test='author != null and author != \"\"'>and a.author = #{author}</if>",
             "order by",
             "<if test='isOrigin == null'>a.good_num desc,</if>",
             " a.modify_time desc,id asc",
             "</script>"
     })
-    List<Map<String,Object>> queryAllArticles(@Param("isOrigin")Integer isOrigin,@Param("text")String text);
+    List<Map<String,Object>> queryAllArticles(@Param("isOrigin")Integer isOrigin,@Param("text")String text,@Param("author")String author);
 
     @Select({
             "select DISTINCT author,count(0) as count from article_description GROUP BY author order by count(0) desc"

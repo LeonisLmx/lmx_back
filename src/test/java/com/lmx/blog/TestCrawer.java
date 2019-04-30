@@ -1,8 +1,10 @@
 package com.lmx.blog;
 
 import org.junit.Test;
-import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
-import org.springframework.data.redis.serializer.StringRedisSerializer;
+
+import java.text.DecimalFormat;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @author 刘明新
@@ -31,16 +33,21 @@ public class TestCrawer {
 
     @Test
     public void testSerizable(){
-        JdkSerializationRedisSerializer jdkSerializationRedisSerializer = new JdkSerializationRedisSerializer();
-        byte[] bytes = jdkSerializationRedisSerializer.serialize("5");
-        System.out.println(bytes);
-        Object result = jdkSerializationRedisSerializer.deserialize(bytes);
-        System.out.println(result instanceof String);
-        System.out.println(result);
-        StringRedisSerializer stringRedisSerializer = new StringRedisSerializer();
-        byte[] bytes1 = stringRedisSerializer.serialize("5");
-        System.out.println(bytes);
-        Object result2 = stringRedisSerializer.deserialize(bytes);
-        System.out.println(result2);
+        double result = Math.pow(2,64);
+        DecimalFormat decimalFormat=new DecimalFormat("0");
+        System.out.println(decimalFormat.format(result));
+    }
+
+    @Test
+    public void testList(){
+        List<Integer> list = new LinkedList<>();
+        for(int i=0;i<300;i++){
+            list.add(0,i);
+        }
+        list = list.subList(0,200);
+        System.out.println(list.size());
+        list.forEach((v) -> {
+            System.out.println(v);
+        });
     }
 }

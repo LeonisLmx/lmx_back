@@ -68,7 +68,7 @@ public class UserController {
     public Response getListArticles(Integer pageNum,Integer isOrigin,String text){
         System.out.println("执行了----------------------------------");
         PageHelper.startPage(pageNum,pageSize);
-        List<Map<String,Object>> lists = articleDetailSercice.queryAllArticles(isOrigin,text);
+        List<Map<String,Object>> lists = articleDetailSercice.queryAllArticles(isOrigin,text,null);
         PageInfo page = new PageInfo(lists);
         return Response.ok(page);
     }

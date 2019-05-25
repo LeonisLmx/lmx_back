@@ -2,7 +2,7 @@ package com.lmx.blog.serviceImpl;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.lmx.blog.common.HttpClient;
+import com.lmx.blog.common.HttpClientRequest;
 import com.lmx.blog.config.redis.RedisExecutor;
 import com.lmx.blog.mapper.ArticleDescriptionMapper;
 import com.lmx.blog.mapper.TagMapper;
@@ -13,7 +13,9 @@ import com.lmx.blog.model.result.JuejinTags;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.Date;
+import java.util.Random;
+import java.util.Vector;
 
 
 /**
@@ -37,7 +39,7 @@ public class JuejinCrawerService {
         // 由于掘金文章是根据before取值的。所以随机生成数字
         Float f = a + random;
         String url = "https://timeline-merger-ms.juejin.im/v1/get_entry_by_rank?src=web&before=" + f + "&limit=20&category=5562b419e4b00c57d9b94ae2";
-        String response = HttpClient.Get(url);
+        String response = HttpClientRequest.Get(url);
         response = response.substring(response.indexOf("\"entrylist\":") + 12,response.lastIndexOf("}}"));
         Vector<JuejinEntity> reponseMap = new Gson().fromJson(response,new TypeToken<Vector<JuejinEntity>>(){}.getType());
         Vector<ArticleDescription> articleDescriptions = new Vector<>();

@@ -56,7 +56,7 @@ public class ArticleController {
         String uuid = UUID.randomUUID().toString();
         Boolean flag = redisExecutor.getLock(TEST_REDIS_KEY, uuid,30);
         if(flag) {
-            Set<Object> strings = redisExecutor.getZSet("zset", start, end, index);
+            Set<Object> strings = redisExecutor.getZSet("zset", start + 1, end + 1, index);
             List<String> list = new LinkedList<>();
             strings.forEach((v) -> {
                 list.add(v.toString());

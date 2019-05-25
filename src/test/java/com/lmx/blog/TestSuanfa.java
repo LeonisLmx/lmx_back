@@ -1,13 +1,19 @@
 package com.lmx.blog;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
 import com.lmx.blog.serviceImpl.Commonservice;
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
 import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinVCharType;
+import org.json.JSONArray;
 import org.junit.Test;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class TestSuanfa {
@@ -163,5 +169,10 @@ public class TestSuanfa {
     @Test
     public void testXuehua(){
         System.out.println(Commonservice.getNextId());
+    }
+
+    @Test
+    public void testLong(){
+        System.out.println(Math.abs(new Random().nextInt() % 999) % 999);
     }
 }

@@ -120,4 +120,23 @@ public class Commonservice {
         }
         return ip;
     }
+
+    // 将map排序
+    public static StringBuilder sortMap(Map<String,Object> map){
+        if(map == null || map.isEmpty()){
+            return null;
+        }
+        Map<String,Object> sortMap = new TreeMap<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o1.compareTo(o2);
+            }
+        });
+        sortMap.putAll(map);
+        StringBuilder sb = new StringBuilder();
+        for(Map.Entry entity:sortMap.entrySet()){
+            sb.append(entity.getKey()).append(entity.getValue());
+        }
+        return sb;
+    }
 }

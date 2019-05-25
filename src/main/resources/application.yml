@@ -65,4 +65,9 @@ logging:
 mybatis:
   mapper-locations: classpath:mybatis-config.xml
   type-aliases-package: com.lmx.log.mapper
+api:
+  secret: a5471c3d69da4989a48e7412425e4d2e
+  appId: 88986
+  ipUrl: http://route.showapi.com/20-2
+
 

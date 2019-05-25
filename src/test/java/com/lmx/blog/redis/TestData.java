@@ -9,6 +9,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.LinkedList;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -33,7 +34,7 @@ public class TestData {
 
     @Test
     public void testList(){
-        ZsetTestModel zsetTestModel = new ZsetTestModel();
+        /*ZsetTestModel zsetTestModel = new ZsetTestModel();
         for(int i=0;i<300;i++) {
             zsetTestModel.setAuthor("user" + i);
             zsetTestModel.setCount(i);
@@ -46,6 +47,9 @@ public class TestData {
         System.out.println(list.size() + "----------");
         list.forEach((n) -> {
             System.out.println(n.getCount());
-        });
+        });*/
+        List<String> list = new LinkedList<>();
+        list.add(0,"a");
+        System.out.println(list.toString());
     }
 }

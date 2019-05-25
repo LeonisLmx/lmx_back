@@ -1,5 +1,6 @@
 package com.lmx.blog.controller;
 
+import com.lmx.blog.annotation.RedisCache;
 import com.lmx.blog.common.Response;
 import com.lmx.blog.model.ArticleDetail;
 import com.lmx.blog.serviceImpl.DemoService;
@@ -19,8 +20,11 @@ public class TestController {
     }
 
     @RequestMapping("/deleteRedis")
-    public Response delete(){
-        demoService.deleteById(1L);
+    @RedisCache(type = Response.class)
+    public Response delete(String message){
+        //demoService.deleteById(1L);
+        String a = null;
+        System.out.println(a.substring(1));
         return Response.ok("删除成功");
     }
 

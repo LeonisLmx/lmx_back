@@ -14,6 +14,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -31,6 +32,9 @@ public class LogApsect {
 
     @Autowired
     private HttpServletRequest request;
+
+    @Autowired
+    private StringRedisTemplate redisTemplate;
 
     private static final Logger logger = LoggerFactory.getLogger(LogApsect.class);
 
@@ -72,13 +76,18 @@ public class LogApsect {
     }
 
     // 定义需要匹配的切点表达式，同时需要匹配参数
-    @Around("pointCut() && args(arg)")
-    public Response around(ProceedingJoinPoint pjp,String arg) throws Throwable{
-        System.out.println("name:" + arg);
+    @Around(value = "pointCut()")
+    public Response around(ProceedingJoinPoint pjp){
+        // 限流
+        Object limitResult = redisTemplate.opsForList().leftPop("limit_list");
+        if(limitResult == null){
+            return Response.ok("访问受限，请稍候重试");
+        }
         System.out.println("方法环绕start...around");
         String result = null;
-        Object object = pjp.proceed();
+        Object object = null;
         try{
+            object = pjp.proceed();
             result = object.toString() + "aop String";
             System.out.println(result);
         }catch (Throwable e){
@@ -104,8 +113,8 @@ public class LogApsect {
         logger.info("==========================================>");
     }
 
-    @AfterThrowing("within(com.lmx.blog.controller.*Controller)")
-    public void afterThrowing(){
+    @AfterThrowing(value = "within(com.lmx.blog.controller.*Controller)",throwing = "e")
+    public void afterThrowing(Exception e){
         System.out.println("异常出现之后...afterThrowing");
     }
 

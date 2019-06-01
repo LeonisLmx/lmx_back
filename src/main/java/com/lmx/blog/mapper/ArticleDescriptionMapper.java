@@ -8,7 +8,7 @@ import org.apache.ibatis.type.JdbcType;
 import java.util.List;
 import java.util.Map;
 
-public interface ArticleDescriptionMapper {
+public interface ArticleDescriptionMapper{
     @Delete({
         "delete from article_description",
         "where id = #{id,jdbcType=BIGINT}"
@@ -16,14 +16,14 @@ public interface ArticleDescriptionMapper {
     int deleteByPrimaryKey(Long id);
 
     @Insert({
-        "insert into article_description (title, type, author, ",
+        "insert into article_description (title, hot, type, author, ",
         "create_time, good_num, ",
         "message_num, article_url, ",
-        "author_url,is_origin, modify_time)",
-        "values (#{title,jdbcType=VARCHAR},#{type,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, ",
+        "author_url,is_origin, modify_time, xuehua_id)",
+        "values (#{title,jdbcType=VARCHAR},#{hot,jdbcType=INTEGER},#{type,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, ",
         "#{createTime,jdbcType=TIMESTAMP}, #{goodNum,jdbcType=INTEGER}, ",
         "#{messageNum,jdbcType=INTEGER}, #{articleUrl,jdbcType=VARCHAR}, ",
-        "#{authorurl,jdbcType=VARCHAR}, #{isOrigin,jdbcType=INTEGER},#{modifyTime,jdbcType=TIMESTAMP})"
+        "#{authorUrl,jdbcType=VARCHAR}, #{isOrigin,jdbcType=INTEGER},#{modifyTime,jdbcType=TIMESTAMP},#{xuehuaId,jdbcType=BIGINT})"
     })
     @Options(useGeneratedKeys=true,keyProperty="id")
     int insert(ArticleDescription record);
@@ -118,4 +118,9 @@ public interface ArticleDescriptionMapper {
             "select DISTINCT author,count(0) as count from article_description GROUP BY author order by count(0) desc"
     })
     List<ZsetTestModel> selectCount();
+
+    @Select({
+            "select * from article_description where article_url = #{url}"
+    })
+    ArticleDescription selectIsExitByUrl(@Param("url")String url);
 }

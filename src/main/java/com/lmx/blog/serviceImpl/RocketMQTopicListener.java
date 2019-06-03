@@ -1,35 +1,12 @@
 package com.lmx.blog.serviceImpl;
 
-import co.matrix.huskar.mqs.rocketmq.HuskarRocketMQMessageListener;
-import co.matrix.huskar.mqs.rocketmq.NameAddrUtils;
-import co.matrix.huskar.mqs.rocketmq.NamespaceUtil;
-import com.alibaba.fastjson.JSONObject;
-import com.lmx.blog.model.MapEsData;
-import com.lmx.blog.service.MapEsDataRepository;
-import org.apache.rocketmq.client.producer.SendCallback;
-import org.apache.rocketmq.client.producer.SendResult;
-import org.apache.rocketmq.common.message.MessageExt;
-import org.apache.rocketmq.spring.annotation.ConsumeMode;
-import org.apache.rocketmq.spring.core.RocketMQListener;
-import org.apache.rocketmq.spring.core.RocketMQTemplate;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.messaging.support.MessageBuilder;
-import org.springframework.stereotype.Service;
+//@Service
+//@HuskarRocketMQMessageListener(consumerGroup = "GID_blog", topic = "q_matrix_to_local", consumeMode = ConsumeMode.ORDERLY)
+public class RocketMQTopicListener {//implements RocketMQListener<MessageExt> {
 
-import javax.annotation.PostConstruct;
-import java.io.UnsupportedEncodingException;
+    //private static Logger logger = LoggerFactory.getLogger(RocketMQTopicListener.class);
 
-@Service
-@HuskarRocketMQMessageListener(consumerGroup = "GID_blog", topic = "q_matrix_to_local", consumeMode = ConsumeMode.ORDERLY)
-public class RocketMQTopicListener implements RocketMQListener<MessageExt> {
-
-    private static Logger logger = LoggerFactory.getLogger(RocketMQTopicListener.class);
-
-    @Autowired
+    /*@Autowired
     private StringRedisTemplate redisTemplate;
 
     @Autowired
@@ -114,5 +91,5 @@ public class RocketMQTopicListener implements RocketMQListener<MessageExt> {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 }

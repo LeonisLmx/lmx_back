@@ -76,15 +76,15 @@ api:
   appId: 88986
   ipUrl: http://route.showapi.com/20-2
 rocketmq:
-  name-server: ${ROCKET_NAMESERVER:MQ_INST_1116953134321254_Baw04Je0.mq-internet-access.mq-internet.aliyuncs.com:80}
+  name-server: ${ROCKET_NAMESERVER}
   producer:
-    group: ${ROCKETMQ_PRODUCER_GROUP_ID:GID_blog}
-    access-key: ${ROCKETMQ_ACCESS_KEY:LTAIt1YQ40hjYhc8}
-    secret-key: ${ROCKETMQ_SECRET_KEY:K00OqM0ckxbKebrLbFqqpOraWdWW7T}
+    group: ${ROCKETMQ_PRODUCER_GROUP_ID}
+    access-key: ${ROCKETMQ_ACCESS_KEY}
+    secret-key: ${ROCKETMQ_SECRET_KEY}
     enable-msg-trace: false
     send-message-timeout: 10000
   consumer:
-    access-key: ${ROCKETMQ_ACCESS_KEY:LTAIt1YQ40hjYhc8}
-    secret-key: ${ROCKETMQ_SECRET_KEY:K00OqM0ckxbKebrLbFqqpOraWdWW7T}
+    access-key: ${ROCKETMQ_ACCESS_KEY}
+    secret-key: ${ROCKETMQ_SECRET_KEY}
 
 

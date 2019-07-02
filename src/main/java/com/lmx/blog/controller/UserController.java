@@ -45,11 +45,8 @@ public class UserController {
     @Autowired
     private StringRedisTemplate redisTemplate;
 
-    @Value("${api.secret}")
-    private String secret;
-
-    @Value("${api.appId}")
-    private Long apiId;
+    @Value("${api.key}")
+    private String key;
 
     @Value("${api.ipUrl}")
     private String ipUrl;
@@ -119,30 +116,26 @@ public class UserController {
     }
 
     @RequestMapping("/get_address")
-    public Response getAddress(HttpServletRequest request){
+    public Response getAddress(HttpServletRequest request) throws Exception {
         Gson gson = new Gson();
         DateTime dateTime = new DateTime();
-        String ip = Commonservice.getIp(request);
-        map.put("showapi_appid",apiId);
-        map.put("showapi_sign",secret);
-        map.put("domain",ip);
+        //String ip = Commonservice.getIp(request);
+        String ip = "222.66.20.82";
         Boolean flag = redisTemplate.opsForZSet().add(dateTime.year().get() + "/" + dateTime.monthOfYear().get() + "/" + dateTime.dayOfMonth().get(),ip,dateTime.getMillis());
-        System.out.println(dateTime.year().get() + "/" + dateTime.monthOfYear().get() + "/" + dateTime.dayOfMonth().get());
-        String result = HttpClientRequest.doPost(ipUrl,map);
+        String result = HttpClientRequest.Get(ipUrl + ip + "&key=" + key);
         Map<String,Object> bMap = gson.fromJson(result,Map.class);
-        System.out.println(bMap.toString());
         Map<String,Object> returnMap = new HashMap<>();
         if(flag) {
             StringBuilder sb = new StringBuilder();
             Long count = redisTemplate.opsForZSet().rank(dateTime.year().get() + "/" + dateTime.monthOfYear().get() + "/" + dateTime.dayOfMonth().get(),ip);
-            System.out.println(count);
-            Map<String,Object> resultMap = gson.fromJson(gson.toJson(bMap.get("showapi_res_body")),Map.class);
-            System.out.println(resultMap.toString());
-            sb.append(resultMap.get("country")).append("-").append(resultMap.get("region")).append("-").append(resultMap.get("county"))
+            Map<String,Object> resultMap = gson.fromJson(gson.toJson(bMap.get("result")),Map.class);
+            sb.append(resultMap.get("Country")).append("-").append(resultMap.get("Province")).append("-").append(resultMap.get("City"))
                     .append("-")
-                    .append(resultMap.get("isp"))
+                    .append(resultMap.get("Isp"))
                     .append("的用户！您好，您是当天第").append(count + 1).append("位访问用户");
-            Point point = new Point(Double.valueOf(resultMap.get("lnt").toString()),Double.valueOf(resultMap.get("lat").toString()));
+            String ipResult = HttpClientRequest.Get("http://ip-api.com/json/" + ip);
+            Map<String,Object> ipResultMap = gson.fromJson(ipResult,Map.class);
+            Point point = new Point(Double.valueOf(ipResultMap.get("lon").toString()),Double.valueOf(ipResultMap.get("lat").toString()));
             redisTemplate.opsForGeo().add("location",point, ip);
             Metric metric = new Metric() {
                 @Override
@@ -171,7 +164,6 @@ public class UserController {
                     list.add(geoResult.getContent().getName().toString() + "_" + geoResult.getDistance().getValue() + "km");
                 }
             }
-            System.out.println(geoResults.toString() + "------------");
             returnMap.put("message",sb);
             returnMap.put("near",list);
             returnMap.put("flag",true);

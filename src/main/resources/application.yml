@@ -72,9 +72,8 @@ mybatis:
   mapper-locations: classpath:mybatis-config.xml
   type-aliases-package: com.lmx.log.mapper
 api:
-  secret: a5471c3d69da4989a48e7412425e4d2e
-  appId: 88986
-  ipUrl: http://route.showapi.com/20-2
+  ipUrl: http://apis.juhe.cn/ip/ipNew?ip=
+  key: 64b89e1f7ec763888eb2505936e5a24a
 #rocketmq:
 #  name-server: ${ROCKET_NAMESERVER}
 #  producer:

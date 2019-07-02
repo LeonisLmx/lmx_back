@@ -73,7 +73,7 @@ public class JuejinTask {
     }
 
     // 1h更新一次CSDN博客阅读数量
-    //@Scheduled(fixedDelay = 3600_000,initialDelay = 0)
+    @Scheduled(fixedDelay = 3600_000,initialDelay = 0)
     public void sychorinizedArticeByCSDN() throws IOException {
         Document document = Jsoup.connect("https://me.csdn.net/lmx125254").get();
         Elements elements = document.body().getElementsByClass("tab_page_list");

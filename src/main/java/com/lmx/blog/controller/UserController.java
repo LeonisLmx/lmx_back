@@ -119,8 +119,7 @@ public class UserController {
     public Response getAddress(HttpServletRequest request) throws Exception {
         Gson gson = new Gson();
         DateTime dateTime = new DateTime();
-        //String ip = Commonservice.getIp(request);
-        String ip = "222.66.20.82";
+        String ip = Commonservice.getIp(request);
         Boolean flag = redisTemplate.opsForZSet().add(dateTime.year().get() + "/" + dateTime.monthOfYear().get() + "/" + dateTime.dayOfMonth().get(),ip,dateTime.getMillis());
         String result = HttpClientRequest.Get(ipUrl + ip + "&key=" + key);
         Map<String,Object> bMap = gson.fromJson(result,Map.class);

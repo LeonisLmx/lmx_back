@@ -12,7 +12,7 @@
         </encoder>
     </appender>
 
-    <!-- 文件输出日志(Default) -->
+    <!-- 文件输出日志(Default) <appender> 为异步输出日志-->
     <appender name="default-log-file" class="ch.qos.logback.core.rolling.RollingFileAppender" filePermissions="rw-r--rw-">
         <File>${LOG_DIR}/${APP_NAME}(${HOSTNAME})-default-current.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">

@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8999
 spring:
   profiles.active: dev
   datasource:

@@ -173,4 +173,27 @@ public class UserController {
             return Response.ok(returnMap);
         }
     }
+
+    @RedisCache(type = Response.class)
+    @RequestMapping("/sendEmail_wangjia")
+    public Response sendEmailToWangJia(String content, HttpServletRequest request){
+        // 获取当前的IP地址，防止恶意刷IP地址
+        String ip = Commonservice.getIp(request);
+        if(!request.getRemoteAddr().equals("0:0:0:0:0:0:0:1")){
+            SendMessage sendMessage = new SendMessage();
+            sendMessage.setContent(content);
+            sendMessage.setFromIp(request.getRemoteAddr());
+            sendMessage.setCreateTime(new Date());
+            // 记录发送的消息
+            amqpTemplate.convertAndSend("send_message",sendMessage);
+        }
+        ExecutorService singPool = Executors.newSingleThreadExecutor();
+        singPool.execute(new Runnable() {
+            @Override
+            public void run() {
+                emailService.sendSimpleEmail("18262388063@sina.cn","王佳的邮件",content);
+            }
+        });
+        return Response.ok(true);
+    }
 }

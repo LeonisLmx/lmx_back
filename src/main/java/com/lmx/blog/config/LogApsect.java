@@ -52,6 +52,7 @@ public class LogApsect {
     @Order(1) // Order 代表优先级，数字越小优先级越高
     public void annoationPoint(){};
 
+    @Order(1)
     @Before(value = "annoationPoint() || pointCut()")
     public void before(JoinPoint joinPoint){
         System.out.println("方法执行前执行......before");

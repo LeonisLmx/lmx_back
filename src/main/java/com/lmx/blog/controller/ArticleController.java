@@ -1,19 +1,20 @@
 package com.lmx.blog.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.lmx.blog.common.Response;
 import com.lmx.blog.config.redis.RedisExecutor;
+import com.lmx.blog.config.rocketMQ.Producer;
 import com.lmx.blog.mapper.ArticleDescriptionMapper;
 import com.lmx.blog.model.ArticleDescription;
+import com.lmx.blog.model.ArticleDetail;
 import com.lmx.blog.model.MapEsData;
-import com.lmx.blog.model.result.ZsetTestModel;
 import com.lmx.blog.service.ArticleRepositroy;
 import com.lmx.blog.serviceImpl.ArticleDetailSercice;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.rocketmq.client.exception.MQClientException;
 import org.elasticsearch.index.query.QueryBuilders;
-import org.elasticsearch.index.query.QueryStringQueryBuilder;
-import org.elasticsearch.index.query.RangeQueryBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
@@ -27,7 +28,7 @@ import java.util.*;
 
 @RequestMapping("/article")
 @RestController
-public class ArticleController {
+public class ArticleController{
 
     private final Integer pageSize = 20;
 
@@ -51,19 +52,22 @@ public class ArticleController {
     @Autowired
     private ArticleRepositroy articleRepositroy;
 
+    @Autowired
+    private Producer producer;
+
     private final String TEST_REDIS_KEY = "TEST_REDIS_KEY";
 
     // 初始化zset列表数据
     @PostConstruct
     public void init(){
-        Long num = redisTemplate.opsForZSet().size("zset");
+        /*Long num = redisTemplate.opsForZSet().size("zset");
         System.out.println(num);
         if(num == null || num.compareTo(0L) == 0) {
             List<ZsetTestModel> lists = articleDescriptionMapper.selectCount();
             lists.forEach((n) -> {
                 redisExecutor.addZSet("zset", n.getAuthor(), Long.valueOf(n.getCount() + ""));
             });
-        }
+        }*/
     }
 
     // 获取排行榜
@@ -139,5 +143,16 @@ public class ArticleController {
         System.out.println(esTemplate.count(searchQuery,MapEsData.class) + "------------");
         List<MapEsData> list = esTemplate.queryForList(searchQuery,MapEsData.class);
         return Response.ok(list);
+    }
+
+    @RequestMapping("/test/rocketMQ")
+    public Response testRocketMQ() throws MQClientException {
+        ArticleDetail articleDetail = new ArticleDetail();
+        articleDetail.setReadNum(10);
+        articleDetail.setContent("safda");
+        articleDetail.setCreateTime(new Date());
+        articleDetail.setTitle("fasda");
+        producer.send("test_transcation", JSON.toJSONString(articleDetail),null);
+        return Response.ok("");
     }
 }

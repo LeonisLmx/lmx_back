@@ -1,7 +1,12 @@
 package com.lmx.blog;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.LinkedList;
 import java.util.List;
@@ -49,5 +54,15 @@ public class TestCrawer {
         list.forEach((v) -> {
             System.out.println(v);
         });
+    }
+
+    @Test
+    public void test() throws IOException {
+        Document document = Jsoup.connect("https://blog.csdn.net/lmx125254/article/details/84398412").get();
+        Element element = document.body().getElementById("supportCount");
+        System.out.println(element.toString());
+        System.out.println("点赞数是：" + element.text());
+        Element message = document.body().getElementsByClass("hover-show text").get(1).nextElementSibling();
+        System.out.println(message.text());
     }
 }

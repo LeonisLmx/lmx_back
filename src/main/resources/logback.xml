@@ -2,7 +2,7 @@
 <configuration>
 
 
-    <property name="LOG_DIR" value="/data/log" />
+    <property name="LOG_DIR" value="/var/match-engine-snapshot/log" />
     <property name="APP_NAME" value="blog" />
 
     <!-- 控制台输出日志 -->

@@ -8,6 +8,9 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * ES entity
+ */
 @Document(indexName = "article_description",type = "docs",shards = 1,replicas = 0)
 public class ArticleDescription implements Serializable {
     @Id
@@ -30,6 +33,9 @@ public class ArticleDescription implements Serializable {
 
     @Field(type = FieldType.Integer)
     private Integer goodNum;
+
+    @Field(type = FieldType.Integer)
+    private Integer readNum;
 
     @Field(type = FieldType.Integer)
     private Integer messageNum;
@@ -151,5 +157,13 @@ public class ArticleDescription implements Serializable {
 
     public void setXuehuaId(Long xuehuaId) {
         this.xuehuaId = xuehuaId;
+    }
+
+    public Integer getReadNum() {
+        return readNum;
+    }
+
+    public void setReadNum(Integer readNum) {
+        this.readNum = readNum;
     }
 }

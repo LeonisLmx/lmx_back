@@ -56,6 +56,7 @@ public class JuejinCrawerService {
                 articleDescription.setAuthorUrl("https://juejin.im/user/" + entity.getUser().getObjectId());
                 articleDescription.setCreateTime(entity.getCreatedAt());
                 articleDescription.setGoodNum(entity.getCollectionCount());
+                articleDescription.setReadNum(entity.getViewsCount());
                 articleDescription.setMessageNum(entity.getCommentsCount());
                 articleDescription.setType(entity.getType());
                 articleDescription.setHot(entity.getHot()?1:-1);

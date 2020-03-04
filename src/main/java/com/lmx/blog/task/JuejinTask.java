@@ -7,6 +7,7 @@ import com.lmx.blog.serviceImpl.Commonservice;
 import com.lmx.blog.serviceImpl.JuejinCrawerService;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -79,6 +80,12 @@ public class JuejinTask {
         Elements elements = document.body().getElementsByClass("tab_page_list");
         elements.forEach( (n) -> {
             ArticleDescription articleDescription = articleDescriptionMapper.selectIsExitByUrl(n.getElementsByTag("a").get(0).attr("href"));
+            Map<String,Integer> map = new HashMap<>();
+            try {
+                map = getReadAndMessageNum(n.getElementsByTag("a").get(0).attr("href"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             if(articleDescription == null){
                 articleDescription = new ArticleDescription();
                 articleDescription.setArticleUrl(n.getElementsByTag("a").get(0).attr("href"));
@@ -86,19 +93,32 @@ public class JuejinTask {
                 articleDescription.setTitle(n.getElementsByTag("a").get(0).text());
                 articleDescription.setHot(-1);
                 articleDescription.setType("me");
-                articleDescription.setMessageNum(0);
+                articleDescription.setMessageNum(map.get("messgeNum"));
+                articleDescription.setReadNum(Integer.valueOf(n.getElementsByTag("em").text()));
                 articleDescription.setCreateTime(new Date());
-                articleDescription.setGoodNum(Integer.valueOf(n.getElementsByTag("em").text()));
+                articleDescription.setGoodNum(map.get("goodNum"));
                 articleDescription.setAuthorUrl("https://blog.csdn.net/lmx125254");
                 articleDescription.setIsOrigin(1);
                 articleDescription.setModifyTime(articleDescription.getCreateTime());
                 articleDescription.setXuehuaId(Commonservice.getNextId());
                 articleDescriptionMapper.insert(articleDescription);
-            }else if(Integer.valueOf(n.getElementsByTag("em").text()) - articleDescription.getGoodNum() > 0){
-                articleDescription.setGoodNum(Integer.valueOf(n.getElementsByTag("em").text()));
+            }else if(Integer.valueOf(n.getElementsByTag("em").text()) - articleDescription.getReadNum() > 0){
+                articleDescription.setReadNum(Integer.valueOf(n.getElementsByTag("em").text()));
+                articleDescription.setGoodNum(map.get("goodNum"));
+                articleDescription.setMessageNum(map.get("messageNum"));
                 articleDescription.setModifyTime(new Date());
                 articleDescriptionMapper.updateByPrimaryKey(articleDescription);
             }
         });
+    }
+
+    private Map<String,Integer> getReadAndMessageNum(String url) throws IOException {
+        Map<String,Integer> map = new HashMap<>();
+        Document document = Jsoup.connect(url).get();
+        Element element = document.body().getElementById("supportCount");
+        map.put("goodNum", "".equals(element.text())?0:Integer.valueOf(element.text()));
+        Element message = document.body().getElementsByClass("hover-show text").get(1).nextElementSibling();
+        map.put("messageNum", "".equals(message.text())?0:Integer.valueOf(message.text()));
+        return map;
     }
 }

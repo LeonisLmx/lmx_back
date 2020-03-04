@@ -4,9 +4,9 @@ spring:
   profiles.active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://101.132.137.156:3306/lmx?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=CTT
-    username: root
-    password: lmx@123456
+    url: jdbc:mysql://localhost:3306/lmx?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=CTT
+    username: blog
+    password: 123456
     initialSize: 5
     minIdle: 5
     maxActive: 20
@@ -26,22 +26,15 @@ spring:
   resources:
         staticLocations:classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
   redis:
-    host: 101.132.137.156
-    port: 6380
-    password: lmx123456@
+    host: localhost
+    port: 6379
+    password:
     jedis:
       pool:
         max-active: 20
         min-idle: 0
     timeout: 10000s
     database: 1
-  rabbitmq:
-    host: 101.132.137.156
-    port: 5672
-    username: guest
-    password: guest
-    publisher-confirms: true
-    virtual-host: /
   data:
     elasticsearch:
       cluster-name: docker-cluster    # 本地docker集群名称

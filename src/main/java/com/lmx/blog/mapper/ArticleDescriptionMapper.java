@@ -4,10 +4,12 @@ import com.lmx.blog.model.ArticleDescription;
 import com.lmx.blog.model.result.ZsetTestModel;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 
+@Repository
 public interface ArticleDescriptionMapper{
     @Delete({
         "delete from article_description",

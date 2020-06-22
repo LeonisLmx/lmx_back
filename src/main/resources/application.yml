@@ -4,9 +4,9 @@ spring:
   profiles.active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/lmx?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=CTT
-    username: blog
-    password: 123456
+    url: jdbc:mysql://localhost:3306/blog?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=CTT
+    username: root
+    password: xMlPtD92AB3BEGVF
     initialSize: 5
     minIdle: 5
     maxActive: 20

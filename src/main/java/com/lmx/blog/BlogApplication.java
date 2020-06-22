@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-@SpringBootApplication(scanBasePackages = {"co.matrix","com"})
+@SpringBootApplication(scanBasePackages = {"com"})
 @EnableScheduling
 @EnableCaching
 public class BlogApplication extends WebMvcConfigurerAdapter {

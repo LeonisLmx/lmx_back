@@ -5,6 +5,7 @@ import com.lmx.blog.mapper.ArticleDescriptionMapper;
 import com.lmx.blog.model.ArticleDescription;
 import com.lmx.blog.serviceImpl.Commonservice;
 import com.lmx.blog.serviceImpl.JuejinCrawerService;
+import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -41,13 +42,14 @@ public class JuejinTask {
     @Autowired
     private ArticleDescriptionMapper articleDescriptionMapper;
 
-    @Scheduled(cron = "0 0 * * * ?")
+    private static final ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(5, 5, 3, TimeUnit.SECONDS,
+            new ArrayBlockingQueue<>(10), new ThreadPoolExecutor.DiscardOldestPolicy());
+
+    @Scheduled(fixedDelay = 1800_000,initialDelay = 0)
     public void crawerJuejin(){
         String uuid = UUID.randomUUID().toString();
         Boolean flag = redisExecutor.getLock(PULL_REDIS_LOCK, uuid,30);
         if(flag) {
-            ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(2, 4, 3, TimeUnit.SECONDS,
-                    new ArrayBlockingQueue<>(6), new ThreadPoolExecutor.DiscardOldestPolicy());
             for (int i = 1; i <= 10; i++) {
                 threadPoolExecutor.execute(new Runnable() {
                     @Override
@@ -78,47 +80,52 @@ public class JuejinTask {
     public void sychorinizedArticeByCSDN() throws IOException {
         Document document = Jsoup.connect("https://me.csdn.net/lmx125254").get();
         Elements elements = document.body().getElementsByClass("tab_page_list");
-        elements.forEach( (n) -> {
-            ArticleDescription articleDescription = articleDescriptionMapper.selectIsExitByUrl(n.getElementsByTag("a").get(0).attr("href"));
-            Map<String,Integer> map = new HashMap<>();
-            try {
-                map = getReadAndMessageNum(n.getElementsByTag("a").get(0).attr("href"));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            if(articleDescription == null){
-                articleDescription = new ArticleDescription();
-                articleDescription.setArticleUrl(n.getElementsByTag("a").get(0).attr("href"));
-                articleDescription.setAuthor("刘明新");
-                articleDescription.setTitle(n.getElementsByTag("a").get(0).text());
-                articleDescription.setHot(-1);
-                articleDescription.setType("me");
-                articleDescription.setMessageNum(map.get("messgeNum"));
-                articleDescription.setReadNum(Integer.valueOf(n.getElementsByTag("em").text()));
-                articleDescription.setCreateTime(new Date());
-                articleDescription.setGoodNum(map.get("goodNum"));
-                articleDescription.setAuthorUrl("https://blog.csdn.net/lmx125254");
-                articleDescription.setIsOrigin(1);
-                articleDescription.setModifyTime(articleDescription.getCreateTime());
-                articleDescription.setXuehuaId(Commonservice.getNextId());
-                articleDescriptionMapper.insert(articleDescription);
-            }else if(Integer.valueOf(n.getElementsByTag("em").text()) - articleDescription.getReadNum() > 0){
-                articleDescription.setReadNum(Integer.valueOf(n.getElementsByTag("em").text()));
-                articleDescription.setGoodNum(map.get("goodNum"));
-                articleDescription.setMessageNum(map.get("messageNum"));
-                articleDescription.setModifyTime(new Date());
-                articleDescriptionMapper.updateByPrimaryKey(articleDescription);
-            }
-        });
+        // 会封IP。所以try catch获取异常继续执行
+        try {
+            elements.forEach( (n) -> {
+                ArticleDescription articleDescription = articleDescriptionMapper.selectIsExitByUrl(n.getElementsByTag("a").get(0).attr("href"));
+                Map<String,Integer> map = new HashMap<>();
+                try {
+                    map = getReadAndMessageNum(n.getElementsByTag("a").get(0).attr("href"));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                if(articleDescription == null){
+                    articleDescription = new ArticleDescription();
+                    articleDescription.setArticleUrl(n.getElementsByTag("a").get(0).attr("href"));
+                    articleDescription.setAuthor("刘明新");
+                    articleDescription.setTitle(n.getElementsByTag("a").get(0).text());
+                    articleDescription.setHot(-1);
+                    articleDescription.setType("me");
+                    articleDescription.setMessageNum(map.get("messageNum"));
+                    articleDescription.setReadNum(Integer.valueOf(n.getElementsByTag("em").text()));
+                    articleDescription.setCreateTime(new Date());
+                    articleDescription.setGoodNum(map.get("goodNum"));
+                    articleDescription.setAuthorUrl("https://blog.csdn.net/lmx125254");
+                    articleDescription.setIsOrigin(1);
+                    articleDescription.setModifyTime(articleDescription.getCreateTime());
+                    articleDescription.setXuehuaId(Commonservice.getNextId());
+                    articleDescriptionMapper.insert(articleDescription);
+                }else if(Integer.valueOf(n.getElementsByTag("em").text()) - articleDescription.getReadNum() > 0){
+                    articleDescription.setReadNum(Integer.valueOf(n.getElementsByTag("em").text()));
+                    articleDescription.setGoodNum(map.get("goodNum"));
+                    articleDescription.setMessageNum(map.get("messageNum"));
+                    articleDescription.setModifyTime(new Date());
+                    articleDescriptionMapper.updateByPrimaryKey(articleDescription);
+                }
+            });
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     private Map<String,Integer> getReadAndMessageNum(String url) throws IOException {
         Map<String,Integer> map = new HashMap<>();
         Document document = Jsoup.connect(url).get();
-        Element element = document.body().getElementById("supportCount");
-        map.put("goodNum", "".equals(element.text())?0:Integer.valueOf(element.text()));
-        Element message = document.body().getElementsByClass("hover-show text").get(1).nextElementSibling();
-        map.put("messageNum", "".equals(message.text())?0:Integer.valueOf(message.text()));
+        Element element = document.body().getElementById("spanCount");
+        map.put("goodNum", StringUtils.isBlank(element.text()) ?0:Integer.valueOf(element.text()));
+        Element message = document.body().getElementsByClass("tool-item-comment").get(0).getElementsByClass("count").get(0);
+        map.put("messageNum", StringUtils.isBlank(message.text())?0:Integer.valueOf(message.text()));
         return map;
     }
 }

@@ -272,8 +272,6 @@ public class RedisExecutor {
             RedisScript<Long> redisScript = new DefaultRedisScript<>(script, Long.class);
 
             Object result = redisTemplate.execute(redisScript,new StringRedisSerializer(),new StringRedisSerializer(), Collections.singletonList(lockKey),value,expireTime + "");
-            System.out.println(result + "-----------");
-            //Object result = redisTemplate.execute(redisScript, Collections.singletonList(lockKey),value,expireTime + "");
 
             if(SUCCESS.equals(result)){
                 return true;

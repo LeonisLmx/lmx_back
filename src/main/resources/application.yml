@@ -4,7 +4,7 @@ spring:
   profiles.active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=CTT
+    url: jdbc:mysql://${MYSQL_URL:124.70.185.49}:3306/blog?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=CTT
     username: root
     password: xMlPtD92AB3BEGVF
     initialSize: 5
@@ -50,15 +50,6 @@ spring:
 mail:
   fromMail:
     addr: 710285449@qq.com
-#  data:
-#      elasticsearch:
-#        # es 集群名称
-#        cluster-name: blog
-#          # es 节点地址
-#        cluster-nodes: 101.132.137.156:9300
-#        # 是否开启本地存储
-#        repositories:
-#          enabled: true
 logging:
     config: classpath:logback.xml
 mybatis:
@@ -67,16 +58,5 @@ mybatis:
 api:
   ipUrl: http://apis.juhe.cn/ip/ipNew?ip=
   key: 64b89e1f7ec763888eb2505936e5a24a
-#rocketmq:
-#  name-server: ${ROCKET_NAMESERVER}
-#  producer:
-#    group: ${ROCKETMQ_PRODUCER_GROUP_ID}
-#    access-key: ${ROCKETMQ_ACCESS_KEY}
-#    secret-key: ${ROCKETMQ_SECRET_KEY}
-#    enable-msg-trace: false
-#    send-message-timeout: 10000
-#  consumer:
-#    access-key: ${ROCKETMQ_ACCESS_KEY}
-#    secret-key: ${ROCKETMQ_SECRET_KEY}
 
 

@@ -45,7 +45,7 @@ public class JuejinTask {
     private static final ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(5, 5, 3, TimeUnit.SECONDS,
             new ArrayBlockingQueue<>(10), new ThreadPoolExecutor.DiscardOldestPolicy());
 
-    @Scheduled(fixedDelay = 1800_000,initialDelay = 0)
+    //@Scheduled(fixedDelay = 1800_000,initialDelay = 0)
     public void crawerJuejin(){
         String uuid = UUID.randomUUID().toString();
         Boolean flag = redisExecutor.getLock(PULL_REDIS_LOCK, uuid,30);

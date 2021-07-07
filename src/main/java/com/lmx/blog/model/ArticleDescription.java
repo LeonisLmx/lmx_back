@@ -1,58 +1,38 @@
 package com.lmx.blog.model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.elasticsearch.annotations.Document;
-import org.springframework.data.elasticsearch.annotations.Field;
-import org.springframework.data.elasticsearch.annotations.FieldType;
-
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * ES entity
  */
-@Document(indexName = "article_description",type = "docs",shards = 1,replicas = 0)
 public class ArticleDescription implements Serializable {
-    @Id
     private Long id;
 
-    @Field(type = FieldType.Text)
     private String title;
 
-    @Field(type = FieldType.Text)
     private String type;
 
-    @Field(type = FieldType.Integer)
     private Integer hot;
 
-    @Field(type = FieldType.Text)
     private String author;
 
-    @Field(type = FieldType.Date)
     private Date createTime;
 
-    @Field(type = FieldType.Integer)
     private Integer goodNum;
 
-    @Field(type = FieldType.Integer)
     private Integer readNum;
 
-    @Field(type = FieldType.Integer)
     private Integer messageNum;
 
-    @Field(type = FieldType.Text)
     private String articleUrl;
 
-    @Field(type = FieldType.Text)
     private String authorUrl;
 
-    @Field(type = FieldType.Integer)
     private Integer isOrigin;
 
-    @Field(type = FieldType.Date)
     private Date modifyTime;
 
-    @Field(type = FieldType.Long)
     private Long xuehuaId;
 
     public Long getId() {
@@ -165,5 +145,25 @@ public class ArticleDescription implements Serializable {
 
     public void setReadNum(Integer readNum) {
         this.readNum = readNum;
+    }
+
+    @Override
+    public String toString() {
+        return "ArticleDescription{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", type='" + type + '\'' +
+                ", hot=" + hot +
+                ", author='" + author + '\'' +
+                ", createTime=" + createTime +
+                ", goodNum=" + goodNum +
+                ", readNum=" + readNum +
+                ", messageNum=" + messageNum +
+                ", articleUrl='" + articleUrl + '\'' +
+                ", authorUrl='" + authorUrl + '\'' +
+                ", isOrigin=" + isOrigin +
+                ", modifyTime=" + modifyTime +
+                ", xuehuaId=" + xuehuaId +
+                '}';
     }
 }

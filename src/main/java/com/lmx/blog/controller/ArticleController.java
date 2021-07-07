@@ -1,30 +1,24 @@
 package com.lmx.blog.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.lmx.blog.common.Response;
 import com.lmx.blog.config.redis.RedisExecutor;
-import com.lmx.blog.config.rocketMQ.Producer;
 import com.lmx.blog.mapper.ArticleDescriptionMapper;
-import com.lmx.blog.model.ArticleDescription;
-import com.lmx.blog.model.ArticleDetail;
-import com.lmx.blog.model.MapEsData;
-import com.lmx.blog.service.ArticleRepositroy;
 import com.lmx.blog.serviceImpl.ArticleDetailSercice;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.rocketmq.client.exception.MQClientException;
-import org.elasticsearch.index.query.QueryBuilders;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
-import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
-import org.springframework.data.elasticsearch.core.query.SearchQuery;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
 
 @RequestMapping("/article")
 @RestController
@@ -46,29 +40,7 @@ public class ArticleController{
     @Autowired
     private ArticleDetailSercice articleDetailSercice;
 
-    @Autowired
-    private ElasticsearchTemplate esTemplate;
-
-    @Autowired
-    private ArticleRepositroy articleRepositroy;
-
-    @Autowired
-    private Producer producer;
-
     private final String TEST_REDIS_KEY = "TEST_REDIS_KEY";
-
-    // 初始化zset列表数据
-    @PostConstruct
-    public void init(){
-        /*Long num = redisTemplate.opsForZSet().size("zset");
-        System.out.println(num);
-        if(num == null || num.compareTo(0L) == 0) {
-            List<ZsetTestModel> lists = articleDescriptionMapper.selectCount();
-            lists.forEach((n) -> {
-                redisExecutor.addZSet("zset", n.getAuthor(), Long.valueOf(n.getCount() + ""));
-            });
-        }*/
-    }
 
     // 获取排行榜
     @RequestMapping("/giveLike")
@@ -107,7 +79,7 @@ public class ArticleController{
     // 限流方式第一种
     @RequestMapping("/limit_flow")
     public Response limitFlow(){
-        Long currentTime = new Date().getTime();
+        Long currentTime = System.currentTimeMillis();
         System.out.println(currentTime);
         if(redisTemplate.hasKey("limit")) {
             Integer count = redisTemplate.opsForZSet().rangeByScore("limit", currentTime - intervalTime, currentTime).size();
@@ -118,41 +90,5 @@ public class ArticleController{
         }
         redisTemplate.opsForZSet().add("limit",UUID.randomUUID().toString(),currentTime);
         return Response.ok("访问成功");
-    }
-
-    // 限流第二种方式，借助于List滑动窗口
-    @RequestMapping("/limit_flow_2")
-    public Response limitFlow2(Long id){
-        Object result = redisTemplate.opsForList().leftPop("limit_list");
-        if(result == null){
-            return Response.ok("访问受限，请稍后重试");
-        }
-        //esTemplate.createIndex(ArticleDescription.class);
-        ArticleDescription articleDescription = articleDescriptionMapper.selectByPrimaryKey(id);
-        articleDescription.setHot(2);
-        ArticleDescription articleDescription1 = articleRepositroy.save(articleDescription);
-        ArticleDescription articleDescription2 = articleRepositroy.findById(id).get();
-        return Response.ok(articleDescription2);
-    }
-
-    @RequestMapping("/search_es")
-    public Response searchEsData(){
-        SearchQuery searchQuery = new NativeSearchQueryBuilder()
-                .withQuery(QueryBuilders.rangeQuery("createdAt").from(1559285635881L).to(1559285635968L))
-                .build();
-        System.out.println(esTemplate.count(searchQuery,MapEsData.class) + "------------");
-        List<MapEsData> list = esTemplate.queryForList(searchQuery,MapEsData.class);
-        return Response.ok(list);
-    }
-
-    @RequestMapping("/test/rocketMQ")
-    public Response testRocketMQ() throws MQClientException {
-        ArticleDetail articleDetail = new ArticleDetail();
-        articleDetail.setReadNum(10);
-        articleDetail.setContent("safda");
-        articleDetail.setCreateTime(new Date());
-        articleDetail.setTitle("fasda");
-        producer.send("test_transcation", JSON.toJSONString(articleDetail),null);
-        return Response.ok("");
     }
 }

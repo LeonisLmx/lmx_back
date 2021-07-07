@@ -1,8 +1,12 @@
 package com.lmx.blog;
 
+import com.lmx.blog.mapper.ArticleDescriptionMapper;
+import com.lmx.blog.model.ArticleDescription;
 import javafx.application.Application;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -19,8 +23,15 @@ import java.util.*;
 @SpringBootTest
 public class BlogApplicationTests {
 
+    private static Logger logger = LoggerFactory.getLogger(BlogApplicationTests.class);
+
+    @Autowired
+    private ArticleDescriptionMapper articleDescriptionMapper;
+
     @Test
     public void contextLoads() {
+        ArticleDescription articleDescription = articleDescriptionMapper.selectByPrimaryKey(1L);
+        logger.info("id 1 data is {}",articleDescription.toString());
     }
 
 
